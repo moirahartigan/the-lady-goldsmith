@@ -1,7 +1,32 @@
 {% extends "base.html" %}
-{% load static %}
+    {% load static %}
 
-{% block content %}
+    {% block page_header %}
+        <div class="container header-container">
+            <div class="row">
+                <div class="col">
+                    
+                </div>
+            </div>
+        </div>
+    {% endblock %}
 
-<h1 class="display-4 text-success">Whoop whoop .. It works!</h1>
-{% endblock %}
+
+    {% block content %}
+
+    <!-- h-100 gives 100% height (container and row) and my-auto (column) for vertical centering -->
+        <div class="container h-100">
+            <div class="row h-100">
+                <!-- make the column sit to the left -->
+                <div class="col-7 col-md-6 my-auto">
+                    <!-- display-4 is a bootstrap heading class; logo-font and text-black will be manual css -->
+                    <h1 class="display-4 logo-font text-black">The new collections are here!</h1>
+                    <div class="my-5">
+                        <h4>
+                            <a href="" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop Now</a>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endblock %}
