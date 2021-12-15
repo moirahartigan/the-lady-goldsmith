@@ -1,0 +1,60 @@
+    <!-- the main-nav id matches the id of the toggle button in the base templates  -->
+    <div class="collapse navbar-collapse" id="main-nav">
+        <ul class="navbar-nav w-auto mx-auto">
+            <!-- home -->
+            <li class="nav-item">
+                <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'home' %}" id="home-link">
+                    Home
+                </a>
+            </li>
+            <!-- All products dropdown menu  -->
+            <li class="nav-item dropdown">
+                <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    All Products
+                </a>
+                <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
+                    <a href="" class="dropdown-item">By Price</a>
+                    <a href="" class="dropdown-item ">By Rating</a>
+                    <a href="" class="dropdown-item ">By Category</a>
+                    <a href="" class="dropdown-item">All Products</a>
+                </div>
+            </li>
+            <!-- Shop dropdown menu  -->
+            <li class="nav-item dropdown">
+                <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="shop-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Shop
+                </a>
+                <div class="dropdown-menu border-0" aria-labelledby="shop-link">
+                    <a href="" class="dropdown-item">View all</a>
+                    <a href="" class="dropdown-item">Necklaces</a>
+                    <a href="" class="dropdown-item">Rings</a>
+                    <a href="" class="dropdown-item">Earrings</a>
+                    <a href="" class="dropdown-item">Bracelets</a>
+                    <a href="" class="dropdown-item">Gift Cards</a>
+                </div>
+            </li>
+            <!-- About dropdown menu  -->
+            <li class="nav-item dropdown">
+                <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="about-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    About
+                </a>
+                <div class="dropdown-menu border-0" aria-labelledby="about-link">
+                    <a href="" class="dropdown-item">About The Lady Goldsmith</a>
+                    <a href="" class="dropdown-item">FAQ</a>
+                    <a href="" class="dropdown-item">Care Instructions</a>
+                    <a href="" class="dropdown-item">Returns</a>
+                </div>
+            </li>
+
+            <!-- Sale dropdown menu  -->
+
+            <li class="nav-item dropdown">
+                <a class="logo-font font-weight-bold nav-link text-black" href="#" id="sale-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Sale
+                </a>
+                <div class="dropdown-menu border-0" aria-labelledby="sale-link">
+                    <a href="" class="dropdown-item">Sale</a>
+                </div>
+            </li>
+        </ul>
+    </div>
