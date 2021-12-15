@@ -6,8 +6,8 @@ body {
     background: url('/media/Homepage_background.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
-    color: #555;
-    font-family: 'Open Sans', sans-serif;
+    /* color: #555; */
+    font-family: 'Poppins', sans-serif;
 }
 
 /* from Bulma */
@@ -23,15 +23,22 @@ body {
     text-transform: uppercase;
 }
 
+.hero-font {
+    font-family: 'Lora', serif;
+}
+
 .main-logo-link {
     width: fit-content;
 }
 
 .shop-now-button {
-    background: black;
-    color: white;
+    background-color: transparent;
     min-width: 260px;
+    color: #fff;
+    border: 1px solid #fff;
+    font-family: 'Poppins', sans-serif;
 }
+
 
 .btn-black {
     background: black;
@@ -44,8 +51,8 @@ body {
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: #222;
-    color: white;
+    background: #fff;
+    color: #222;
 }
 
 .text-black {
