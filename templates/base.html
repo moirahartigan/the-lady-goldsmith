@@ -98,6 +98,24 @@
             {% endif %}
             </div>
         </li>
+        <!-- Wishlist -->
+        <li class="list-inline-item">
+            <a class="{% if favourites_count %} font-weight-bold{% else %}text-black{% endif %} nav-link" href="">
+                <div class="text-center">
+                    {% if favourites_count %}
+                        <div><i class="fas fa-heart"></i></div>
+                        <p class="my-0">
+                             Favourites <!-- ({{ favourites_count }})   -->
+                        </p>
+                    {% else %}
+                       <div><i class="fas fa-heart"></i></div>
+                        <p class="my-0">
+                            Favourites (0)
+                        </p>
+                    {% endif %}
+                </div>
+            </a>
+        </li>
 
         <!-- Shopping bag link  -->
         <li class="list-inline-item">
