@@ -1,102 +1,49 @@
-[
-    {
-       "model":"products.product",
-       "pk":1,
-       "fields":{
-          "name":"GOLD INITIAL NECKLACE",
-          "category":1,
-          "price":"300.00",
-          "colour":"gold",
-          "sku":"93397613999",
-          "description":"14K Gold filled Initial Necklace. Hand Stamped and finished. ",
-          "rating":null,
-          "pre_sale_price":null,
-          "image_url":"",
-          "image":"noimage.png"
-       }
+[{
+        "model": "products.product",
+        "pk": 1,
+        "fields": {
+            "name": "GOLD INITIAL NECKLACE",
+            "category": 1,
+            "price": "300.00",
+            "colour": "gold",
+            "sku": "93397613999",
+            "description": "14K Gold filled Initial Necklace. Hand Stamped and finished. ",
+            "rating": null,
+            "pre_sale_price": null,
+            "image_url": "",
+            "image": "noimage.png"
+        }
     },
     {
-        "model":"products.product",
-        "pk":2,
-        "fields":{
-           "name":"Saphire and Diamond set",
-           "category":1,
-           "price":"250.00",
-           "colour":"gold",
-           "sku":"93397893999",
-           "description":"Blue Sapphire Pendant Necklace Earrings Set",
-           "rating":null,
-           "pre_sale_price":null,
-           "image_url":"",
-           "image":"diamond-gb1578162b_640.jpg"
+        "model": "products.product",
+        "pk": 2,
+        "fields": {
+            "name": "Saphire and Diamond set",
+            "category": 1,
+            "price": "250.00",
+            "colour": "gold",
+            "sku": "93397893999",
+            "description": "Blue Sapphire Pendant Necklace Earrings Set",
+            "rating": null,
+            "pre_sale_price": null,
+            "image_url": "",
+            "image": "diamond-gb1578162b_640.jpg"
         }
-     },
-     {
-        "model":"products.product",
-        "pk":3,
-        "fields":{
-           "name":"Solid Gold Full Moon Stud Earrings",
-           "category":3,
-           "price":"95.00",
-           "colour":"gold",
-           "sku":"9339761529",
-           "description":"5mm Solid 14ct gold ball studs , high polish finish Comes with our very special 14ct gold daisy ear nuts. ",
-           "rating":null,
-           "pre_sale_price":null,
-           "image_url":"",
-           "image":"noimage.png"
+    },
+    {
+        "model": "products.product",
+        "pk": 3,
+        "fields": {
+            "name": "Solid Gold Full Moon Stud Earrings",
+            "category": 3,
+            "price": "95.00",
+            "colour": "gold",
+            "sku": "9339761529",
+            "description": "5mm Solid 14ct gold ball studs , high polish finish Comes with our very special 14ct gold daisy ear nuts. ",
+            "rating": null,
+            "pre_sale_price": null,
+            "image_url": "",
+            "image": "noimage.png"
         }
-     },
-     {
-        "model":"products.product",
-        "pk":4,
-        "fields":{
-           "name":"Solid White Gold And Diamond Eternity Ring",
-           "category":2,
-           "price":"1230.00",
-           "colour":"white gold",
-           "sku":"933971244599",
-           "description":"Solid 14K White Gold Roxluna Eternity Ring. Polished finish. 1.00 grams of gold. 
-           32 diamonds - 1/2 (carat) CTW. Full cut round GH genuine Diamonds. 1.5 mm each. Clarity SI2-SI3
-           Shoulder Width- 1.8 mm - approx height 20.8 (size dependant) 
-           Available sizes 4-8 with half sizes. 
-           Please note this ring will be custom made just for you and will take 4-6 weeks.",
-           "rating":null,
-           "pre_sale_price":null,
-           "image_url":"",
-           "image":"noimage.png"
-        }
-     },
-     {
-        "model":"products.product",
-        "pk":5,
-        "fields":{
-           "name":"Love Heart Ring",
-           "category":2,
-           "price":"399.00",
-           "colour":"gold",
-           "sku":"93397456779",
-           "description":"The Love Heart ring cast in solid 14k solid gold. Delicate gold outlines an open heart on your finger, whether the heart contains someone you love or is waiting for the perfect someone is up to you. ",
-           "rating":null,
-           "pre_sale_price":null,
-           "image_url":"",
-           "image":"noimage.png"
-        }
-     },
-     {
-        "model":"products.product",
-        "pk":6,
-        "fields":{
-           "name":"Teardrop Pearl Necklace",
-           "category":1,
-           "price":"100.00",
-           "colour":"gold",
-           "sku":"93397613999",
-           "description":"14k Gold - 18 inches long. Solid Gold Teardrop Necklace. The pearls are freshwater baroque teardrops, each pearl is completely unique with its own imperfections and beauty. ",
-           "rating":null,
-           "pre_sale_price":null,
-           "image_url":"",
-           "image":"noimage.png"
-        }
-     }
+    }
 ]
