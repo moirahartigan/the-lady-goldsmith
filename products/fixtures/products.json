@@ -1,0 +1,50 @@
+[
+    {
+       "model":"products.product",
+       "pk":1,
+       "fields":{
+          "name":"GOLD INITIAL NECKLACE",
+          "category":1,
+          "price":"300.00",
+          "colour":"gold",
+          "sku":"93397613999",
+          "description":"14K Gold filled Initial Necklace. Hand Stamped and finished. ",
+          "rating":null,
+          "pre_sale_price":null,
+          "image_url":"",
+          "image":"noimage.png"
+       }
+    },
+    {
+        "model":"products.product",
+        "pk":2,
+        "fields":{
+           "name":"Saphire and Diamond set",
+           "category":1,
+           "price":"250.00",
+           "colour":"gold",
+           "sku":"93397613999",
+           "description":"Blue Sapphire Pendant Necklace Earrings Set",
+           "rating":null,
+           "pre_sale_price":null,
+           "image_url":"",
+           "image":"diamond-gb1578162b_640.jpg"
+        }
+     },
+     {
+        "model":"products.product",
+        "pk":3,
+        "fields":{
+           "name":"GOLD INITIAL CHARM BRACELET",
+           "category":1,
+           "price":"100.00",
+           "colour":"gold",
+           "sku":"93397613999",
+           "description":"14K Gold filled charm bracelet Our gorgeous charm bracelet features a large initial and luxurious 14ct gold filled expandable bangle. Fits all sizes. ",
+           "rating":null,
+           "pre_sale_price":null,
+           "image_url":"",
+           "image":"noimage.png"
+        }
+     }
+]

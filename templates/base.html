@@ -144,6 +144,18 @@
             {% include 'includes/main-nav.html' %}
         </nav>
     </div>
+     <!-- Banner -->
+     <div id="info-banner" class="row text-center bg-dark-grey">
+        <div class="col">
+            <div class="mt-1 mb-1">
+                <span class="d-none d-lg-inline font-white">Fast dispatch!</span>
+                <span class="d-none d-lg-inline ml-3 mr-3 font-white">-</span>
+                <span class="font-white">Free delivery on orders over €{{ free_delivery_threshold }}!</span>
+                <span class="d-none d-lg-inline ml-3 mr-3 font-white">-</span>
+                <span class="d-none d-lg-inline font-white"> Complimentary Gift Wrapping with each order</span>
+            </div>
+        </div>
+    </div>
     </header>
     
     {% if messages %}
