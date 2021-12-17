@@ -25,12 +25,12 @@
                     Shop
                 </a>
                 <div class="dropdown-menu border-0" aria-labelledby="shop-link">
-                    <a href="" class="dropdown-item">View all</a>
-                    <a href="" class="dropdown-item">Necklaces</a>
-                    <a href="" class="dropdown-item">Rings</a>
-                    <a href="" class="dropdown-item">Earrings</a>
-                    <a href="" class="dropdown-item">Bracelets</a>
-                    <a href="" class="dropdown-item">Gift Cards</a>
+                    <a href="{% url 'products' %}?category=necklaces,rings,earrings,bracelets,gift_cards" class="dropdown-item">View all</a>
+                    <a href="{% url 'products' %}?category=necklaces" class="dropdown-item">Necklaces</a>
+                    <a href="{% url 'products' %}?category=rings" class="dropdown-item">Rings</a>
+                    <a href="{% url 'products' %}?category=earrings" class="dropdown-item">Earrings</a>
+                    <a href="{% url 'products' %}?category=bracelets" class="dropdown-item">Bracelets</a>
+                    <a href="{% url 'products' %}?category=gift_cards" class="dropdown-item">Gift Cards</a>
                 </div>
             </li>
             <!-- About dropdown menu  -->
@@ -39,10 +39,10 @@
                     About
                 </a>
                 <div class="dropdown-menu border-0" aria-labelledby="about-link">
-                    <a href="" class="dropdown-item">About The Lady Goldsmith</a>
-                    <a href="" class="dropdown-item">FAQ</a>
-                    <a href="" class="dropdown-item">Care Instructions</a>
-                    <a href="" class="dropdown-item">Returns</a>
+                    <a href="{% url 'products' %}?category=about" class="dropdown-item">About The Lady Goldsmith</a>
+                    <a href="{% url 'products' %}?category=faq" class="dropdown-item">FAQ</a>
+                    <a href="{% url 'products' %}?category=care_instructions" class="dropdown-item">Care Instructions</a>
+                    <a href="{% url 'products' %}?category=returns" class="dropdown-item">Returns</a>
                 </div>
             </li>
 
@@ -53,7 +53,7 @@
                     Sale
                 </a>
                 <div class="dropdown-menu border-0" aria-labelledby="sale-link">
-                    <a href="" class="dropdown-item">Sale</a>
+                    <a href="{% url 'products' %}?category=sale" class="dropdown-item">Sale</a>
                 </div>
             </li>
         </ul>
