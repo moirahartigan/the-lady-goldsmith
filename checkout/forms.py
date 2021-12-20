@@ -30,11 +30,11 @@ class OrderForm(forms.ModelForm):
             'county': 'County',
         }
 
-        # Set cursor to start in full name when page loads 
+        # Set cursor to start in full name when page loads
         self.fields['full_name'].widget.attrs['autofocus'] = True
         # Go through the list
         for field in self.fields:
-            # If the field is required, add a star 
+            # If the field is required, add a star
             if self.fields[field].required:
                 placeholder = f'{placeholders[field]} *'
             else:
