@@ -66,6 +66,11 @@ class Product(models.Model):
     )
     description = models.TextField(
     )
+    has_sizes = models.BooleanField(
+        default=False,
+        null=True,
+        blank=True
+    )
     rating = models.DecimalField(
         max_digits=6,
         decimal_places=2,
