@@ -3,6 +3,7 @@ import uuid
 
 from django.db import models
 from django.db.models import Sum
+from django.conf import settings
 
 
 from products.models import Product
@@ -36,7 +37,12 @@ class Order(models.Model):
         null=False,
         blank=False
     )
-    
+    country = models.CharField(
+        max_length=40,
+        null=False,
+        blank=False,
+        default=''
+    )
     postcode = models.CharField(
         max_length=20,
         null=True,
@@ -184,10 +190,10 @@ class OrderLineItem(models.Model):
 
     def __str__(self):
         """
-        Returns the product code and order number
+        Returns the product sku and order number
         Args:
             self (object): self.
         Returns:
-            The product code and order number
+            The product sku and order number
         """
-        return f'SKU {self.product.code} on order {self.order.order_number}'
+        return f'SKU {self.product.sku} on order {self.order.order_number}'
