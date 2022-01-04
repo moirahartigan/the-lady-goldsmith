@@ -75,7 +75,22 @@ def add_product(request):
     Returns:
         Render of add product page with context
     """
-    form = ProductForm()
+    # post handler
+    if request.method == 'POST':
+        # Instantiate a new instance of the product form from request.post and
+        # include request.files to get the image of the product if one was submitted.
+        form = ProductForm(request.POST, request.FILES)
+        # If the form is valid, save it
+        if form.is_valid():
+            product = form.save()
+            messages.success(request, 'Successfully added product!')
+            return redirect(reverse('product_detail', args=[product.id]))
+        else:
+            # Error on form
+            messages.error(request, 'Failed to add product. Please ensure the form is valid.')
+    else:
+        form = ProductForm()
+
     template = 'products/add_product.html'
     context = {
         'form': form,
