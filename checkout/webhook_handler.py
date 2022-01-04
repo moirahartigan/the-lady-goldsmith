@@ -2,6 +2,7 @@ from django.http import HttpResponse
 
 from .models import Order, OrderLineItem
 from products.models import Product
+from profiles.models import UserProfile
 
 import json
 import time
@@ -45,15 +46,10 @@ class StripeWH_Handler:
             HttpResponse object
         """
         intent = event.data.object
-        print(intent)
-        # get payment id
         pid = intent.id
-        # get shopping bag
         bag = intent.metadata.bag
-        # get save preference
         save_info = intent.metadata.save_info
 
-        # store all of these details
         billing_details = intent.charges.data[0].billing_details
         shipping_details = intent.shipping
         grand_total = round(intent.charges.data[0].amount / 100, 2)
@@ -62,6 +58,23 @@ class StripeWH_Handler:
         for field, value in shipping_details.address.items():
             if value == "":
                 shipping_details.address[field] = None
+
+        # set profile to none so anonymous users can checkout
+        profile = None
+        username = intent.metadata.username
+        # if username isn't anonymous, they were authenticated
+        if username != 'AnonymousUser':
+            profile = UserProfile.objects.get(user__username=username)
+            # if the save info box is checked, we update their shipping details
+            if save_info:
+                profile.default_phone_number = shipping_details.phone
+                profile.default_country = shipping_details.address.country
+                profile.default_postcode = shipping_details.address.postal_code
+                profile.default_town_or_city = shipping_details.address.city
+                profile.default_street_address1 = shipping_details.address.line1
+                profile.default_street_address2 = shipping_details.address.line2
+                profile.default_county = shipping_details.address.state
+                profile.save()
 
         # Check if order exists
         order_exists = False
@@ -91,12 +104,11 @@ class StripeWH_Handler:
                 attempt += 1
                 time.sleep(1)
         if order_exists:
-            
+
             return HttpResponse(
-                content=(f'Webhook received: {event["type"]} | SUCCESS: '
-                         'Verified order already in database'),
+                content=f'Webhook received: {event["type"]} | SUCCESS: Verified order already in database',
                 status=200)
-        # Now handle an order that doesn't exist   
+        # Now handle an order that doesn't exist
         else:
             order = None
             try:
@@ -125,8 +137,7 @@ class StripeWH_Handler:
                         )
                         order_line_item.save()
                     else:
-                        for size, quantity in \
-                                item_data['items_by_size'].items():
+                        for size, quantity in item_data['items_by_size'].items():
                             order_line_item = OrderLineItem(
                                 order=order,
                                 product=product,
@@ -143,8 +154,7 @@ class StripeWH_Handler:
                     status=500)
         
         return HttpResponse(
-            content=(f'Webhook received: {event["type"]} | SUCCESS: '
-                     'Created order in webhook'),
+            content=f'Webhook received: {event["type"]} | SUCCESS: Created order in webhook',
             status=200)
 
     def handle_payment_intent_payment_failed(self, event):

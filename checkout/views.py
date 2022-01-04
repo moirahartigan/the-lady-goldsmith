@@ -139,7 +139,7 @@ def checkout(request):
             except UserProfile.DoesNotExist:
                 order_form = OrderForm()
         else:
-            order_form = OrderForm() 
+            order_form = OrderForm()
 
         # message incase you forget to set secret key
         if not stripe_public_key:
