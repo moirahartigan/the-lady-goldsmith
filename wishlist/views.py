@@ -9,14 +9,9 @@ from products.models import Product
 from .models import Wishlist
 
 
-
 def view_product_wishlist(request):
     """
     A view that displays users wishlist
-    Args:
-        request (object): HTTP request object.
-    Returns:
-        Renders the request, template and context
     """
     try:
         all_wishlist = Wishlist.objects.filter(username=request.user.id)[0]
@@ -52,7 +47,7 @@ def add_product_to_wishlist(request, item_id):
     return redirect(reverse('product_detail', args=[item_id]))
 
 
-def remove_product_from_wishlist(request, item_id):
+def remove_product_from_wishlist(request, item_id, redirect_from):
     """
     Remove a product item from wishlist
     """
@@ -63,4 +58,8 @@ def remove_product_from_wishlist(request, item_id):
         messages.info(request, 'Product item removed from your wishlist list')
     else:
         messages.error(request, 'That product item is not in your wishlist list!')
-    return redirect(reverse('product_detail', args=[item_id]))
+    if redirect_from == 'wishlist':
+        redirect_url = reverse('view_product_wishlist')
+    else:
+        redirect_url = reverse('product_detail', args=[item_id])
+    return redirect(redirect_url)

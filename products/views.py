@@ -1,3 +1,4 @@
+from django.http import Http404
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
@@ -6,6 +7,7 @@ from django.db.models.functions import Lower
 
 from .models import Product, Category
 from .forms import ProductForm
+from wishlist.models import Wishlist
 
 
 def all_products(request):
@@ -42,7 +44,7 @@ def all_products(request):
             if not query:
                 messages.error(request, "You didn't enter any search criteria!")
                 return redirect(reverse('products'))
-            
+
             queries = Q(name__icontains=query) | Q(description__icontains=query)
             products = products.filter(queries)
 
@@ -63,6 +65,17 @@ def product_detail(request, product_id):
 
     context = {
         'product': product,
+    }
+
+    try:
+        wishlist = get_object_or_404(Wishlist, username=request.user.id)
+    except Http404:
+        is_product_in_wishlist = False
+    else:
+        is_product_in_wishlist = bool(product in wishlist.products.all())
+    context = {
+        'product': product,
+        'is_product_in_wishlist': is_product_in_wishlist,
     }
 
     return render(request, 'products/product_detail.html', context)

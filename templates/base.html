@@ -102,17 +102,17 @@
         </li>
         <!-- Wishlist -->
         <li class="list-inline-item">
-            <a class="{% if favourites_count %} font-weight-bold{% else %}text-black{% endif %} nav-link" href="">
+            <a class="{% if wishlist_count %} font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_product_wishlist' %}">
                 <div class="text-center">
-                    {% if favourites_count %}
+                    {% if wishlist_count %}
                         <div><i class="fas fa-heart"></i></div>
                         <p class="my-0">
-                             Favourites <!-- ({{ favourites_count }})   -->
+                             Wishlist ({{ wishlist_count }})  
                         </p>
                     {% else %}
                        <div><i class="fas fa-heart"></i></div>
                         <p class="my-0">
-                            Favourites (0)
+                            Wishlist (0)
                         </p>
                     {% endif %}
                 </div>

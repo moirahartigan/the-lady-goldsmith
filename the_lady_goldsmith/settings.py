@@ -83,6 +83,7 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.media', # without this the media URL template tag doesn't work.
                 'bag.contexts.bag_contents',
+                'wishlist.contexts.wishlist_contents'
             ],
             'builtins': [
                 'crispy_forms.templatetags.crispy_forms_tags',

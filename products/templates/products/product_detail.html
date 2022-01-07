@@ -39,9 +39,9 @@
                     <p class="mb-0">{{ product.name }}</p>
                     <p class="lead mb-0 text-left font-weight-bold">€{{ product.price }}</p>
                     {% if is_product_in_wishlist %}
-                                    <a href="" aria-label="remove product from wishlist" class="wishlist wishlist-remove text-danger ml-3"><i class="fas fa-heart"></i></a>
+                                    <a href="{% url 'remove_product_from_wishlist' product.id 'product' %}" aria-label="remove product from wishlist" class="wishlist wishlist-remove text-danger ml-3"><i class="fas fa-heart"></i></a>
                                 {% else %}
-                                <a href="" aria-label="add product to wishlist" class="wishlist text-danger ml-3"><i class="far fa-heart"></i></a>
+                                <a href="{% url 'add_product_to_wishlist' product.id %}" aria-label="add product to wishlist" class="wishlist text-danger ml-3"><i class="far fa-heart"></i></a>
                                 {% endif %}
                     {% if product.category %}
                         <p class="small mt-1 mb-0">
