@@ -36,36 +36,37 @@
     <div class="row">
         <div class="">
             <div class="row">
-                {% for favourite in wishlist_items %}
+                {% for wish in wishlist_items %}
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
 
                                 <div class="card" style="width: 18rem;">
                                     <div class="card-body">
                                         <div class="row">
                                             <div class="col-12">
-                                                {% if favourite.image %}
-                                                    <a href="{% url 'product_detail' favourite.id %}">
-                                                        <img src="{{ favourite.image.url }}" class="card-img-top" alt="product image">
+                                                {% if wish.image %}
+                                                    <a href="{% url 'product_detail' wish.id %}">
+                                                        <img src="{{ wish.image.url }}" class="card-img-top" alt="product image">
                                                     </a>
                                                 {% else %}
-                                                    <a href="{% url 'product_detail' favourite.id %}">
+                                                    <a href="{% url 'product_detail' wish.id %}">
                                                         <img src="{{ MEDIA_URL }}noimage.png" class="card-img-top" alt="no image available">
                                                     </a>
                                                 {% endif %}
                                             </div>
                                             <div class="col-12">
-                                                <h5 class="card-title font-black">{{ favourite.name }}</h5>
+                                                <h5 class="card-title font-black">{{ wish.name }}</h5>
                                             </div>
                                             <div class="col-12">
-                                                <h6 class="font-weight-light font-black">{{ favourite.category }}</h6>
+                                                <h6 class="font-weight-light font-black">{{ wish.category }}</h6>
                                             </div>
                                             <div class="col-6 font-black">
-                                                {{ favourite.price }}
+                                                {{ wish.price }}
                                             </div>
                                             <div class="col-6 align-self-center font-black">
-                                                <strong>€{{ favourite.price }}</strong>
+                                                <strong>€{{ wish.price }}</strong>
                                             </div>
                                       </div>
+                                      <a class="btn green-btn" href="{% url 'remove_product_from_wishlist' wish.id 'wishlist' %}">Remove</a>
                                     </div>
                                   </div>
                         </div>
