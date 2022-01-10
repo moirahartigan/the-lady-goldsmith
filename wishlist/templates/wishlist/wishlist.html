@@ -13,7 +13,7 @@
 <div class="container-fluid px-3 wishlist-page">
     <div class="row">
         <div class="col-12 col-sm-6 p-4 my-auto">
-            <h1 class="font-black-bg">Wishlist ({{ favourites_items_count }})</h1>
+            <h1 class="font-black-bg">Wishlist ({{ wishlist_items_count }})</h1>
             {% if wish.products.all %}
             Number of wishlist:
             {{ wish.products.all|length }}
@@ -63,6 +63,7 @@
                                         <a class="btn green-btn" href="{% url 'remove_product_from_wishlist' wish.id 'wishlist' %}">Remove</a>
                                     </div>
                                 </div>
+                                
                             </div>
                         </div>
                         {% endfor %}

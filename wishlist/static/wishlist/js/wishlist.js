@@ -21,3 +21,6 @@ $('#sort-selector').change(function() {
         window.location.replace(currentUrl);
     }
 });
+
+
+$("[data-toggle='modal']").modal();
