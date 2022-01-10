@@ -73,9 +73,9 @@ def remove_product_from_wishlist(request, item_id, redirect_from):
     wishlist = get_object_or_404(Wishlist, username=request.user.id)
     if product in wishlist.products.all():
         wishlist.products.remove(product)
-        messages.info(request, 'Product item removed from your wishlist list')
+        messages.info(request, 'Product item removed from your wishlist')
     else:
-        messages.error(request, 'That product item is not in your wishlist list!')
+        messages.error(request, 'That product item is not on your wishlist!')
     if redirect_from == 'wishlist':
         redirect_url = reverse('view_product_wishlist')
     else:

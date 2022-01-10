@@ -104,6 +104,12 @@ a.category-badge > span.badge:hover {
     cursor: pointer;
 }
 
+/* ------------------------------- Product detail */
+
+.wish-remove {
+    cursor: pointer;
+}
+
 /* ------------------------------- bootstrap toasts */
 
 .message-container {

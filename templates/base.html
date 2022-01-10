@@ -102,7 +102,7 @@
         </li>
         <!-- Wishlist -->
         <li class="list-inline-item">
-            <a class="{% if wishlist_count %} font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_product_wishlist' %}">
+            <a class="{% if wishlist_count %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_product_wishlist' %}">
                 <div class="text-center">
                     {% if wishlist_count %}
                         <div><i class="fas fa-heart"></i></div>
