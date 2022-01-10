@@ -1,5 +1,5 @@
 /**
- * [Wishlist sorting functionality
+ * [Favourites sorting functionality
  * Credit: Code Institute project Boutique Ado ]
  */
  $('.btt-link').click(function(e) {

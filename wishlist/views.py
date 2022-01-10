@@ -1,5 +1,5 @@
 from django.http import Http404
-from django.shortcuts import (render, get_object_or_404, redirect)
+from django.shortcuts import render, get_object_or_404, redirect, reverse
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.urls import reverse
@@ -18,12 +18,14 @@ def view_product_wishlist(request):
     Returns:
         Renders the request, template and context
     """
+    wishlist_items_count = 0
     try:
         all_wishlist = Wishlist.objects.filter(username=request.user.id)[0]
     except IndexError:
         wishlist_items = None
     else:
         wishlist_items = all_wishlist.products.all()
+        wishlist_items_count = all_wishlist.products.all().count()
 
     if not wishlist_items:
         messages.info(request, 'Your wishlist list is empty!')
@@ -31,6 +33,7 @@ def view_product_wishlist(request):
     template = 'wishlist/wishlist.html'
     context = {
         'wishlist_items': wishlist_items,
+        'wishlist_items_count': wishlist_items_count
     }
     return render(request, template, context)
 
@@ -65,17 +68,18 @@ def remove_product_from_wishlist(request, item_id, redirect_from):
     Args:
         request (object): HTTP request object.
         item_id: Item id
-        redirect_from: Redirect form
     Returns:
-        Reuturns the redirect url
+        Returns the redirect url
     """
     product = get_object_or_404(Product, pk=item_id)
     wishlist = get_object_or_404(Wishlist, username=request.user.id)
     if product in wishlist.products.all():
         wishlist.products.remove(product)
-        messages.info(request, 'Product item removed from your wishlist')
+        messages.info(
+            request, 'Removed the product from your wishlist')
     else:
-        messages.error(request, 'That product item is not on your wishlist!')
+        messages.error(request, 'That product is '
+                                'not on your wishlist!')
     if redirect_from == 'wishlist':
         redirect_url = reverse('view_product_wishlist')
     else:
