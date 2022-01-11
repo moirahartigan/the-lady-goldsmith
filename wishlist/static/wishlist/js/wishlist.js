@@ -23,4 +23,6 @@ $('#sort-selector').change(function() {
 });
 
 
-$("[data-toggle='modal']").modal();
+$('#myModal').on('shown.bs.modal', function () {
+    $('#myInput').trigger('focus')
+  })
