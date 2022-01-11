@@ -18,7 +18,7 @@
             <!-- col 1: product image  -->
 
             <!-- offsetting pushes cols to the middle  -->
-            <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
+            <div class="col-sm-12 col-md-6 col-lg-4 offset-lg-2">
                 <div class="image-container my-5">
                     {% if product.image %}
                         <a href="{{ product.image.url }}" target="_blank">
@@ -135,12 +135,12 @@
                                         <p class="text-black mb-2 mt-3">Review Text: {{ review.review_text }}</p>
                                             {% if review.user == request.user or request.user.is_superuser %}
                                             <!-- Delete Button trigger modal -->
-                                            <button type="button" class="btn black-btn" data-bs-toggle="modal"
-                                                data-bs-target="#delete-review{{ review.id }}">
+                                            <button type="button" class="btn black-btn" data-toggle="modal"
+                                            data-target="#delete-review{{ review.id }}">
                                                 Delete
                                             </button>
                                             <!-- Delete Comment Modal -->
-                                            <div class="modal fade" id="delete-review{{ review.id }}" tabindex="-1" aria-hidden="true">
+                                            <div class="modal fade" id="delete-review{{ review.id }}" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                                                 <div class="modal-dialog modal-dialog-centered" role="document">
                                                     <div class="modal-content">
                                                         <div class="modal-header">
