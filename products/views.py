@@ -216,9 +216,8 @@ def delete_review(request, product_id, review_user):
     if request.method == 'POST':
         review.delete()
         reviews = Review.objects.filter(product=product)
-        
+    
         messages.info(request, 'Your review was deleted')
     else:
         messages.error(request, 'Invalid request')
     return redirect(reverse('product_detail', args=[product.id]))
-
