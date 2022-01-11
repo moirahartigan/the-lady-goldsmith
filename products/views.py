@@ -19,6 +19,9 @@ def all_products(request):
     sort = None
     direction = None
 
+    for product in products:
+        reviews = Review.objects.filter(product=product)
+
     if request.GET:
         if 'sort' in request.GET:
             sortkey = request.GET['sort']
@@ -49,13 +52,14 @@ def all_products(request):
             products = products.filter(queries)
 
     current_sorting = f'{sort}_{direction}'
-
-    for product in products:
-        reviews = Review.objects.filter(product=product)
+    product_count = products.count()
 
     context = {
         'products': products,
         'search_term': query,
+        'current_categories': categories,
+        'current_sorting': current_sorting,
+        'product_count': product_count
     }
 
     return render(request, 'products/products.html', context)
@@ -68,10 +72,7 @@ def product_detail(request, product_id):
     review_form = ProductReviewForm(data=request.POST or None)
 
     reviews = Review.objects.filter(product=product)
-
-    context = {
-        'product': product,
-    }
+    number_of_reviews = reviews.count()
 
     try:
         wishlist = get_object_or_404(Wishlist, username=request.user.id)
@@ -84,6 +85,7 @@ def product_detail(request, product_id):
         'is_product_in_wishlist': is_product_in_wishlist,
         'review_form': review_form,
         'reviews': reviews,
+        'number_of_reviews': number_of_reviews,
     }
 
     return render(request, 'products/product_detail.html', context)
@@ -110,7 +112,8 @@ def add_product(request):
             return redirect(reverse('product_detail', args=[product.id]))
         else:
             # Error on form
-            messages.error(request, 'Failed to add product. Please ensure the form is valid.')
+            messages.error(request, 'Failed to add product. '
+                                    'Please ensure the form is valid.')
     else:
         form = ProductForm()
 
@@ -165,7 +168,7 @@ def delete_product(request, product_id):
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
-    product = get_object_or_404(Product, pk=product_id)
+    # product = get_object_or_404(Product, pk=product_id)
     product.delete()
     messages.success(request, 'Product deleted!')
     return redirect(reverse('products'))
@@ -215,8 +218,6 @@ def delete_review(request, product_id, review_user):
         return redirect(reverse('home'))
     if request.method == 'POST':
         review.delete()
-        reviews = Review.objects.filter(product=product)
-    
         messages.info(request, 'Your review was deleted')
     else:
         messages.error(request, 'Invalid request')
