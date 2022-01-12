@@ -157,6 +157,28 @@ a.category-badge > span.badge:hover {
     font-size: 1.6rem; 
 }
 
+/* products page */
+
+.card {
+    width: 300px;
+    border: 0;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.card-img-product-detail {
+    height: 400px;
+    width: 400px;
+    border: 0;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.card-img-top {
+    width: 300px;
+    height: 300px;
+}
+
 /* ------------------------------- bootstrap toasts */
 
 .message-container {
@@ -303,3 +325,49 @@ color: #aab7c4;
           height: calc(100vh - 116px);
       }
   }
+
+  /* --- Greater than 576px --- */
+@media screen and (max-width: 576px) {
+    .container {
+        max-width: 100%;
+      }
+      .card-img-top {
+        width: 280px;
+        height: 280px;
+    }
+}
+
+/* SMALL SCREEN */
+@media screen and (max-width: 481px) {
+    h1{
+        font-size: 1.6rem;
+    }
+    h2 {
+        font-size: 1.4rem;
+    }
+    h3 {
+        font-size: 1.2rem;
+    }
+    h4 {
+        font-size: 1.1rem;
+    }
+    .product-name {
+        font-size: 1.6rem;
+    }
+    .pricing {
+        font-size: 1.3rem;
+    }
+    .dropdown-menu {
+        font-size: 0.8rem;
+    }
+    .message-container {
+        top: 60px;
+        right: 15px;
+    }
+    /* --- Product detail page --- */
+    .card-img-product-detail {
+        height: 300px;
+        width: 300px;
+    }
+   
+}
