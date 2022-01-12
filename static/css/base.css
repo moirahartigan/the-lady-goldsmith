@@ -149,6 +149,14 @@ a.category-badge > span.badge:hover {
     cursor: pointer;
 }
 
+.product-name{
+    font-size: 1.8rem;
+}
+
+.pricing {
+    font-size: 1.6rem; 
+}
+
 /* ------------------------------- bootstrap toasts */
 
 .message-container {
