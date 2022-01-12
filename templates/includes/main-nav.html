@@ -48,13 +48,10 @@
 
             <!-- Sale dropdown menu  -->
 
-            <li class="nav-item dropdown">
-                <a class="logo-font font-weight-bold nav-link text-black" href="#" id="sale-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <li class="nav-item">
+                <a class="logo-font font-weight-bold nav-link text-black" href="{% url 'sale_items' %}" id="sale-link" aria-haspopup="true" aria-expanded="false">
                     Sale
                 </a>
-                <div class="dropdown-menu border-0" aria-labelledby="sale-link">
-                    <a href="{% url 'products' %}?category=sale" class="dropdown-item">Sale</a>
-                </div>
             </li>
         </ul>
     </div>

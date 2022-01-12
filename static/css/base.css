@@ -10,6 +10,45 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+/* product detail page */
+.section-holder{
+	padding: 50px 10px;
+}
+
+.form-holder{
+    max-width: 600px;
+    margin: auto;
+    padding: 60px 50px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
+}
+
+.form-holder-generic{
+    max-width: 1000px;
+}
+.form-holder-lg{
+    margin: auto;
+    padding: 60px 50px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
+}
+
+.form-control{
+    padding: 0rem 0.75rem;
+}
+
+/* sale page */
+.red-strikethrough{
+    text-decoration: line-through;
+    color: #DB4437;
+}
+
 /* from Bulma */
 .icon {
     align-items: center;
