@@ -1,0 +1,1 @@
+web: gunicorn the_lady_goldsmith.wsgi:application
