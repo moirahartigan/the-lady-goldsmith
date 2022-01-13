@@ -76,18 +76,25 @@
                                     <div class="row">
                                         {% if product.pre_sale_price %}
                                             <div class="col-6">
-                                                <h3 class="font-weight-bold red-strikethrough">€{{ product.pre_sale_price }}</h3>
+                                                <h3 class="lead font-weight-bold strikethrough">€{{ product.pre_sale_price }}</h3>
                                             </div>
                                         {% endif %}
                                         <div class="col-6">
-                                            <p class="lead mb-0 text-left font-weight-bold">€{{ product.price }}</p>
+                                            <p class="lead mb-0 sale-price text-left font-weight-bold">€{{ product.price }}</p>                                         
+                                        </div>
+                                        <div class="col-6">
                                             {% if product.category %}
                                             <p class="small mt-1 mb-0">
                                                 <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
                                                     <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
                                                 </a>
                                             </p>
-                                            {% endif %}                                            
+                                            {% endif %}
+                                            {% if product.rating %}
+                                                <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
+                                            {% else %}
+                                                <small class="text-muted">No Rating</small>
+                                            {% endif %}   
                                         </div>
                                     </div>
                                     {% if request.user.is_superuser %}

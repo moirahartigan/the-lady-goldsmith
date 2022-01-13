@@ -44,7 +44,7 @@ body {
 }
 
 /* sale page */
-.red-strikethrough{
+.strikethrough{
     text-decoration: line-through;
     color: #DB4437;
 }
