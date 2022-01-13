@@ -1,0 +1,11 @@
+Dear Admin,
+
+
+A customer has sent you a message:
+
+
+"{{ contact.message }}"
+
+Please review and respond to {{ contact.name }} at {{ contact.email }}.
+
+Thank you.
