@@ -87,6 +87,8 @@ def product_detail(request, product_id):
         is_product_in_wishlist = False
     else:
         is_product_in_wishlist = bool(product in wishlist.products.all())
+
+
     context = {
         'product': product,
         'is_product_in_wishlist': is_product_in_wishlist,
