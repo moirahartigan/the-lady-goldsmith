@@ -290,6 +290,10 @@ color: #aab7c4;
     border-radius: 0;
 }
 
+/* Contact us form */
+.contact-us{
+    padding-top: 150px;
+}
 
 /* -------------------------------- Media Queries */
 
