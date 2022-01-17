@@ -300,7 +300,7 @@ color: #aab7c4;
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
     .container {
-      max-width: 50%;
+      max-width: 100%;
     }
   }
   
