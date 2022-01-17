@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
-
+{% block extra_title %}Products{% endblock %}
 {% block page_header %}
     <div class="container header-container">
         <div class="row">
@@ -29,7 +29,7 @@
         <div class="row">
             <div class="product-container col-10 offset-1">
                 <div class="row mt-1 mb-2">
-                    <div class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
+                    <div class="col-lg-4 offset-lg-8 col-md-10 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
                         <div class="sort-select-wrapper w-50">
                             <select id="sort-selector" class="custom-select custom-select-sm rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
                                 <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...</option>
@@ -43,36 +43,25 @@
                                 <option value="category_desc" {% if current_sorting == 'category_desc' %}selected{% endif %}>Category (Z-A)</option>
                             </select>
                         </div>
-                    </div>
-                    <div class="col-12 col-md-6 order-md-first">
-                        <p class="text-muted mt-3 text-center text-md-left">
-                            {% if search_term or current_categories or current_sorting != 'None_None' %}
-                                <span class="small"><a href="{% url 'products' %}">Products Home</a> | </span>
-                            {% endif %}
-                            {{ products|length }} Products{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
-                        </p>
-                    </div>   
+                    </div>  
                 </div>
-
-                <!-- row 2 - products  -->
-
+                <!-- products  -->
                 <div class="row">
                     {% for product in products %}
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                            <div class="card" style="width: 18rem;">
+                            <div class="card text-center rounded-0">
                                 {% if product.image %}
                                 <a href="{% url 'product_detail' product.id %}">
                                     <img class="card-img-top" src="{{ product.image.url }}" alt="{{ product.name }}">
                                 </a>
                                 {% else %}
                                 <a href="{% url 'product_detail' product.id %}">
-                                    <img class="card-img-top" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
-                                </a>
+                                    <img class="card-img-top" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}"></a>
                                 {% endif %}
-                                <div class="card-body pb-0">
+                                <div class="card-body text-center border-0 pb-0">
                                     <p class="mb-0">{{ product.name }}</p>
                                 </div>
-                                <div class="card-footer bg-white pt-0 border-0 text-left">
+                                <div class="card-footer bg-white text-center pt-0 border-0">
                                     <div class="row">
                                         {% if product.pre_sale_price %}
                                             <div class="col-6">
@@ -102,6 +91,7 @@
                                             {% endif %}
                                         </div>
                                     </div>
+                                    <a href="{% url 'product_detail' product.id %}" class="btn mt-2 small mb-2 cust-button rounded-0"> View This Product</a>
                                 </div>
                             </div>
                         </div>
