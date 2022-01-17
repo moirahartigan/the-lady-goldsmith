@@ -2,6 +2,7 @@ from django.http import Http404
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
+from django.core.paginator import Paginator
 from django.db.models import Q
 from django.db.models.functions import Lower
 
@@ -54,8 +55,14 @@ def all_products(request):
     current_sorting = f'{sort}_{direction}'
     product_count = products.count()
 
+    products_paginator = Paginator(products, 4)
+    page_num = request.GET.get('page')
+
+    page = products_paginator.get_page(page_num)
+
     context = {
         'products': products,
+        'page': page,
         'search_term': query,
         'current_categories': categories,
         'current_sorting': current_sorting,
