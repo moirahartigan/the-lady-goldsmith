@@ -37,7 +37,7 @@
                             <h1 class="mb-0 product-name">{{ product.name }}</h1>
                             <div class="pricing" style="display: flex;">
                                 {% if product.pre_sale_price %}
-                                    <p class="lead mb-0 text-left font-weight-bold red-strikethrough">€{{ product.pre_sale_price }}</p>
+                                    <p class="lead mb-0 text-left font-weight-bold strikethrough">€{{ product.pre_sale_price }}</p>
                                     <p class="lead mb-0 text-left font-weight-bold">&nbsp;</p>
                                 {% endif %}  
                                 <p class="lead mb-0 text-left font-weight-bold">&nbsp;€{{ product.price }}</p>
