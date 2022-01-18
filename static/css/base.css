@@ -3,8 +3,8 @@ html {
 }
 
 body {
-    background: url('/media/homepage_hero.jpg') no-repeat center center fixed;
-    background-size: cover;
+    /* background: url('/media/homepage_hero.jpg') no-repeat center center fixed;
+    background-size: cover; */
     height: calc(100vh - 164px);
     /* color: #555; */
     font-family: 'Poppins', sans-serif;
@@ -14,6 +14,12 @@ body {
 #sale-link {
     color: #dc3545;
 }
+
+#home-carousel {
+    max-height: calc(100vh - 145px);
+    overflow: hidden;
+}
+
 
 /* product detail page */
 .section-holder {

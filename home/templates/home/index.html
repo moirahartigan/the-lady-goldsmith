@@ -1,28 +1,66 @@
 {% extends "base.html" %}
 {% load static %}
-
+{% block extra_title %}Home{% endblock %}
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
     </div>
+</div>
 {% endblock %}
-
-
 {% block content %}
-    <div class="container h-100">
-        <div class="row h-100">
-            <div class="col-7 col-md-6 my-auto">
-                <h1 class="display-4 logo-font text-black">
-                    The new collections are here
-                </h1>
-                <div class="my-5">
-                    <h4>
-                        <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop Now</a>
-                    </h4>
-                </div>
+<div id="home-carousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#home-carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#home-carousel" data-slide-to="1"></li>
+        <li data-target="#home-carousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="{{ MEDIA_URL }}carousel-1.jpg" class="d-block w-100" alt="girl wearing earings">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Earrings</h5>
+                <p>View our collection of earrings</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="{{ MEDIA_URL }}carousel-2.jpg" class="d-block w-100" alt="selection of necklaces">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Necklaces</h5>
+                <p>View our collection of necklaces</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="{{ MEDIA_URL }}carousel-3.jpg" class="d-block w-100" alt="saphire diamond ring with flowers">
+            <div class="carousel-caption d-none d-md-block text-black">
+                <h5>Rings</h5>
+                <p>View our collection of rings</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="{{ MEDIA_URL }}carousel-4.jpg" class="d-block w-100" alt="saphire diamond ring with flowers">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Bracelets</h5>
+                <p>View our collection of bracelets</p>
             </div>
         </div>
     </div>
-{% endblock %}    
+    <a class="carousel-control-prev" href="#home-carousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#home-carousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+{% endblock %}
+<!-- Javascript to rotate images in carousel-->
+<!-- <script type="text/javascript">
+    var myCarousel = document.querySelector('#home-carousel')
+    var carousel = new bootstrap.Carousel(myCarousel, {
+        interval: 200,
+        wrap: false
+    })
+</script> -->
