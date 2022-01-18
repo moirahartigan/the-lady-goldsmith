@@ -179,6 +179,10 @@ a.category-badge > span.badge:hover {
     height: 300px;
 }
 
+.card-title {
+    font-size: 1.3rem;
+}
+
 /* ------------------------------- bootstrap toasts */
 
 .message-container {
