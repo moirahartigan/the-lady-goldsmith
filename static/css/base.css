@@ -15,10 +15,10 @@ body {
     color: #dc3545;
 }
 
-#home-carousel {
+/* #home-carousel {
     max-height: calc(100vh - 145px);
     overflow: hidden;
-}
+} */
 
 
 /* product detail page */
@@ -324,6 +324,15 @@ input[name='q']::placeholder {
     }
 }
 
+.carousel {
+    height: 700px;
+}
+
+img {
+    height: 700px;
+    object-fit: cover;
+}
+
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
     .fixed-top-desktop-only {
@@ -341,6 +350,15 @@ input[name='q']::placeholder {
     .quantity-width {
         width: 50%;
     }
+}
+
+.carousel {
+    height: 700px;
+}
+
+img {
+    height: 700px;
+    object-fit: cover;
 }
 
 /* pad the top a bit when navbar is collapsed on mobile */
