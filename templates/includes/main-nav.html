@@ -30,26 +30,17 @@
                     <a href="{% url 'products' %}?category=rings" class="dropdown-item">Rings</a>
                     <a href="{% url 'products' %}?category=earrings" class="dropdown-item">Earrings</a>
                     <a href="{% url 'products' %}?category=bracelets" class="dropdown-item">Bracelets</a>
-                    <a href="{% url 'products' %}?category=gift_cards" class="dropdown-item">Gift Cards</a>
                 </div>
             </li>
             <!-- About dropdown menu  -->
             <li class="nav-item dropdown">
-                <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="about-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    About
+                <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'contact' %}" id="contact-link" aria-haspopup="true" aria-expanded="false">
+                    Contact Us
                 </a>
-                <div class="dropdown-menu border-0" aria-labelledby="about-link">
-                    <a href="{% url 'contact' %}?category=contact" class="dropdown-item">Contact Us</a>
-                    <a href="{% url 'products' %}?category=faq" class="dropdown-item">FAQ</a>
-                    <a href="{% url 'products' %}?category=care_instructions" class="dropdown-item">Care Instructions</a>
-                    <a href="{% url 'products' %}?category=returns" class="dropdown-item">Returns</a>
-                </div>
             </li>
-
-            <!-- Sale dropdown menu  -->
-
+            <!-- Sale -->
             <li class="nav-item">
-                <a class="logo-font font-weight-bold nav-link text-black" href="{% url 'sale_items' %}" id="sale-link" aria-haspopup="true" aria-expanded="false">
+                <a class="logo-font font-weight-bold nav-link text-red" href="{% url 'sale_items' %}" id="sale-link" aria-haspopup="true" aria-expanded="false">
                     Sale
                 </a>
             </li>
