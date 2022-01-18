@@ -118,11 +118,9 @@
                                 {% endif %}
                                 {% if request.user.is_superuser %}
                                 <br>
-                                <small class="ml-3">
-                                    <a href="{% url 'edit_product' product.id %}">Edit</a> |
-                                    <a class="text-danger" data-toggle="modal"
-                                        data-target="#deleteProduct{{ product.id }}">Delete</a>
-                                    <!-- Delete product modal -->
+                                <div class="center-div pt-3">                                    
+                                    <a class="btn btn-success mx-2" href="{% url 'edit_product' product.id %}">Edit</a> 
+                                    <a class="btn btn-danger" data-toggle="modal" data-target="#deleteProduct{{ product.id }}">Delete</a>
                                     <div class="modal fade" id="deleteProduct{{ product.id }}" data-backdrop="static" tabindex="-1" aria-hidden="true">
                                         <div class="modal-dialog" role="document">
                                             <div class="modal-content">
@@ -142,7 +140,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                </small>
+                                </div>    
                             {% endif %}              
                         </div>
                     </div>
