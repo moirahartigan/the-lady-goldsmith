@@ -11,84 +11,96 @@
 {% block content %}
 <div class="overlay"></div>
 <div class="container-fluid px-3 wishlist-page">
+    <!-- Header row  -->
     <div class="row">
-        <div class="col-12 col-sm-6 p-4 my-auto">
+        <div class="col-12 text-center mt-3">
             <h1 class="font-black-bg">Wishlist ({{ wishlist_items_count }})</h1>
             <p class="font-black-bg">Here are your saved items</p>
+            <hr class="w-50 mb-1">
         </div>
     </div>
 
     <!-- Products row  -->
-    <!-- <div class="row"> -->
-        <div class="product-container col-10 offset-1">            
+    <div class="row">
+        <div class="product-container col-10 offset-1">
+            <div class="row mt-1 mb-2">
+            </div>
             <div class="row">
-                <div>
-                    <div class="row">
-                        {% for wish in wishlist_items %}
-                        <!-- Wishlist Items -->
-                        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3">
-                            <div class="card h-100 border-0">
-                                {% if wish.image %}
-                                <a href="{% url 'product_detail' wish.id %}">
-                                    <img class="card-img-top img-fluid" src="{{ wish.image.url }}" alt="{{ wish.name }}">
-                                </a>
-                                {% else %}
-                                <a href="{% url 'product_detail' wish.id %}">
-                                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="not available">
-                                </a>
-                                {% endif %}
-                                <div class="card-body pb-0">
-                                    <p class="mb-0">{{ wish.name }}</p>
+                {% for wish in wishlist_items %}
+                <!-- Wishlist Items -->
+                <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3">
+                    <div class="card text-center rounded-0" style="width: 18rem;">
+                        {% if wish.image %}
+                        <a href="{% url 'product_detail' wish.id %}">
+                            <img class="card-img-top img-fluid" src="{{ wish.image.url }}" alt="{{ wish.name }}">
+                        </a>
+                        {% else %}
+                        <a href="{% url 'product_detail' wish.id %}">
+                            <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="not available">
+                        </a>
+                        {% endif %}
+                        <div class="card-body text-center pb-0">
+                            <p class="card-title mb-3">{{ wish.name }}</p>
+                        </div>
+                        <div class="card-footer bg-white pt-0 border-0 text-left">
+                            <div class="row mb-2">
+                                {% if wish.pre_sale_price %}
+                                <div class="col-6">
+                                    <h3 class="lead test-center font-weight-bold strikethrough">€{{ wish.pre_sale_price }}</h3>
                                 </div>
-                                <div class="card-footer bg-white pt-0 border-0 text-left">
-                                    <div class="row">
-                                        <div class="col">
-                                            <p class="lead mb-0 text-left font-weight-bold">€{{ wish.price }}</p>
-                                            {% if wish.category %}
-                                            <p class="small mt-1 mb-0">
-                                                <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
-                                                    <i class="fas fa-tag mr-1"></i>{{ wish.category.friendly_name }}
-                                                </a>
-                                            </p>
-                                            {% endif %}                                            
-                                        </div>
-                                    </div>
-                                    <!-- <div class="center-div pt-3">
-                                        <a class="btn green-btn" href="{% url 'remove_product_from_wishlist' wish.id 'wishlist' %}">Remove</a>
-                                    </div> -->
-                                    <div class="center-div pt-3">
-                                        <a class="btn black-btn" data-toggle="modal" data-target="#deletewish{{ wish.id }}">Delete</a>
-                                        <!-- Delete wishlist item modal -->
-                                        <div class="modal fade" id="deletewish{{ wish.id }}" tabindex="-1" role="dialog" aria-hidden="true">
-                                            <div class="modal-dialog modal-dialog-centered" role="document">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <h2 class="modal-title font-black">Delete wishlist item</h2>
-                                                        <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
-                                                    </div>
-                                                    <div class="modal-body font-black">
-                                                        Are you sure you want to delete this wishlist item?
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <!-- Close and delete wishlist item buttons-->
-                                                        <button type="button" class="btn black-btn" data-dismiss="modal">Close</button>
-                                                        <a href="{% url 'remove_product_from_wishlist' wish.id 'wishlist' %}" class="btn red-btn">Delete</a>
-                                                    </div>
-                                                </div>
+                                {% endif %}
+                                <div class="col-6">
+                                    <p class="lead regular-price text-left font-weight-bold">€{{ wish.price }}</p>
+                                </div>
+                                <div class="col-12 test-left">
+                                    {% if wish.category %}
+                                    <p class="small mt-1 mb-0">
+                                        <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
+                                            <i class="fas fa-tag mr-1"></i>{{ wish.category.friendly_name }}
+                                        </a>
+                                    </p>
+                                    {% endif %}
+                                    {% if wish.rating %}
+                                    <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ wish.rating }} / 5</small>
+                                    {% else %}
+                                    <small class="text-muted">No Rating</small>
+                                    {% endif %}
+                                </div>
+                            </div>
+                            <div class="center-div pt-3">
+                                <a class="btn btn-dark text-light" data-toggle="modal" data-target="#deletewish{{ wish.id }}">Delete</a>
+                                <!-- Delete wishlist item modal -->
+                                <div class="modal fade" id="deletewish{{ wish.id }}" tabindex="-1" role="dialog" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h2 class="modal-title font-black">Delete wishlist item</h2>
+                                                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            </div>
+                                            <div class="modal-body font-black">
+                                                Are you sure you want to delete this wishlist item?
+                                            </div>
+                                            <div class="modal-footer">
+                                                <!-- Close and delete wishlist item buttons-->
+                                                <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                                                <a href="{% url 'remove_product_from_wishlist' wish.id 'wishlist' %}" class="btn btn-danger">Delete</a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+
                         </div>
-                        {% endfor %}
                     </div>
                 </div>
+                {% endfor %}
             </div>
-        </div>   
-    <!-- </div>  -->
-   
-</div> 
+        </div>
+    </div>
+</div>
+</div>
+
+</div>
 {% endblock %}
 {% block postloadjs %}
 {{ block.super }}
