@@ -489,71 +489,61 @@ input[name='q']::placeholder {
         padding: 0;
     }
 
-    /* .mobile-login {
-        padding: 0px 60px 20px 40px;
+    /* X-SMALL SCREEN */
+    @media (max-width: 320px) {
+        .container {
+            max-width: 100%;
+        }
+
+        .card-img-top {
+            width: 200px;
+            height: 200px;
+        }
+
+        .dropdown-menu {
+            font-size: 0.7rem;
+        }
+
+        .message-container {
+            top: 60px;
+            right: -25px;
+        }
+
+        .navbar {
+            padding: 0;
+        }
+
+        .register-container {
+            padding: 0;
+        }
+
+        .signin-container {
+            padding: 0;
+        }
+
+        .mobile-login {
+            padding: 0px 60px 20px 40px;
+        }
+
+        .forgot {
+            text-align: center;
+        }
+
+        .form-holder {
+            padding: 10px 15px 50px 10px;
+        }
+
+
+        /* --- Product detail page --- */
+
+        .card-img-product-detail {
+            height: 200px;
+            width: 200px;
+        }
+
+        .quantity-width {
+            width: 80%;
+        }
     }
 
-    .forgot {
-        text-align: center;
-    } */
-}
-
-
-/* X-SMALL SCREEN */
-@media (max-width: 320px) {
-    .container {
-        max-width: 100%;
-    }
-
-    .card-img-top {
-        width: 200px;
-        height: 200px;
-    }
-
-    .dropdown-menu {
-        font-size: 0.7rem;
-    }
-
-    .message-container {
-        top: 60px;
-        right: -25px;
-    }
-
-    .navbar {
-        padding: 0;
-    }
-
-    .register-container {
-        padding: 0;
-    }
-
-    .signin-container {
-        padding: 0;
-    }
-
-    .mobile-login {
-        padding: 0px 60px 20px 40px;
-    }
-
-    .forgot {
-        text-align: center;
-    }
-
-    .form-holder {
-        padding: 10px 15px 50px 10px;
-    }
-
-
-    /* --- Product detail page --- */
-
-    .card-img-product-detail {
-        height: 200px;
-        width: 200px;
-    }
-
-    .quantity-width {
-        width: 80%;
-    }
-}
-
-/* ----- End of Media Queries ----- */
+    /* ----- End of Media Queries ----- */
