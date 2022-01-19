@@ -166,6 +166,10 @@ a.category-badge>span.badge:hover {
     width: 100%;
 }
 
+.signin-container {
+    padding: 50px 10px;
+    width: 100%;
+}
 
 /* ------------------------------- Product detail */
 
@@ -480,6 +484,18 @@ input[name='q']::placeholder {
     .form-holder {
         padding: 30px 20px 60px 20px;
     }
+
+    .signin-container {
+        padding: 0;
+    }
+
+    /* .mobile-login {
+        padding: 0px 60px 20px 40px;
+    }
+
+    .forgot {
+        text-align: center;
+    } */
 }
 
 
@@ -509,6 +525,18 @@ input[name='q']::placeholder {
 
     .register-container {
         padding: 0;
+    }
+
+    .signin-container {
+        padding: 0;
+    }
+
+    .mobile-login {
+        padding: 0px 60px 20px 40px;
+    }
+
+    .forgot {
+        text-align: center;
     }
 
     .form-holder {
