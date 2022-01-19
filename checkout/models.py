@@ -1,18 +1,17 @@
 import uuid
-# uuid needed to generate order number
-
 from django.db import models
 from django.db.models import Sum
 from django.conf import settings
-
 from django_countries.fields import CountryField
 
 from products.models import Product
 from profiles.models import UserProfile
 
-# model for each model
+
 class Order(models.Model):
-    # order no. is auto generated and unique
+    """
+    A class for a model for a website order
+    """
     order_number = models.CharField(
         max_length=32,
         null=False,
@@ -105,10 +104,6 @@ class Order(models.Model):
     def _generate_order_number(self):
         """
         Generate a random, unique order number using UUID
-        Args:
-            self (object): self
-        Returns:
-            uuid: uuid
         """
         return uuid.uuid4().hex.upper()
 
@@ -139,17 +134,15 @@ class Order(models.Model):
     def __str__(self):
         """
         Returns the order number string
-        Args:
-            self (object): self.
-        Returns:
-            The order number string
         """
         return self.order_number
 
 
 # A line item is basically an individual shopping bag item
 class OrderLineItem(models.Model):
-    # For each item in an order, this info is created and added to the order. Then the delivery cost, order total and grand totals are updated
+    """
+    A model for a website order line item
+    """
     order = models.ForeignKey(
         Order,
         null=False,
@@ -192,9 +185,5 @@ class OrderLineItem(models.Model):
     def __str__(self):
         """
         Returns the product sku and order number
-        Args:
-            self (object): self.
-        Returns:
-            The product sku and order number
         """
         return f'SKU {self.product.sku} on order {self.order.order_number}'

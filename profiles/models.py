@@ -59,11 +59,6 @@ class UserProfile(models.Model):
 def create_or_update_user_profile(sender, instance, created, **kwargs):
     """
     Create or update the user profile
-    Args:
-        sender (object): sender
-        instance (object): instance
-        created (object): created
-        **kwargs (object): **kwargs
     Returns:
         N/A
     """
