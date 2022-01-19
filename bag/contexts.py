@@ -3,12 +3,15 @@ from django.conf import settings
 from django.shortcuts import get_object_or_404
 from products.models import Product
 
+
 def bag_contents(request):
     """
-      This is a context processor.
-      Its purpose is to make this dictionary available to all templates across the entire application
-      Don't forget to add this to the context processors in settings.py to make it available throughout the app
-      """
+    A context that contains the bag contents
+    Args:
+        request (object): HTTP request object.
+    Returns:
+        The bag contents context
+    """
 
     bag_items = []
     total = 0
