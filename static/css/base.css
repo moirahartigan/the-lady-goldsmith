@@ -90,6 +90,9 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+.btn {
+    border-radius: 0.25rem;
+}
 
 .btn-black {
     background: black;
@@ -155,6 +158,14 @@ a.category-badge>span.badge:hover {
 .remove-item {
     cursor: pointer;
 }
+
+/* Register page */
+
+.register-container {
+    padding: 50px 10px;
+    width: 100%;
+}
+
 
 /* ------------------------------- Product detail */
 
@@ -239,14 +250,11 @@ a.category-badge>span.badge:hover {
 
 .allauth-form-inner-content p {
     margin-top: 1.5rem;
-    /* mt-4 */
     color: #6c757d;
-    /* text-secondary */
 }
 
 .allauth-form-inner-content input {
     border-color: #000;
-    border-radius: 0;
 }
 
 .allauth-form-inner-content label:not([for='id_remember']) {
@@ -274,7 +282,6 @@ a.category-badge>span.badge:hover {
     padding: .375rem .75rem;
     font-size: 1rem;
     line-height: 1.5;
-    border-radius: 0;
 
     /* standard bootstrap btn transitions */
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
@@ -465,8 +472,16 @@ input[name='q']::placeholder {
     .quantity-width {
         width: 70%;
     }
+
+    .register-container {
+        padding: 10px;
+    }
+
+    .form-holder {
+        padding: 30px 20px 60px 20px;
+    }
 }
-}
+
 
 /* X-SMALL SCREEN */
 @media (max-width: 320px) {
@@ -487,6 +502,19 @@ input[name='q']::placeholder {
         top: 60px;
         right: -25px;
     }
+
+    .navbar {
+        padding: 0;
+    }
+
+    .register-container {
+        padding: 0;
+    }
+
+    .form-holder {
+        padding: 10px 15px 50px 10px;
+    }
+
 
     /* --- Product detail page --- */
 
