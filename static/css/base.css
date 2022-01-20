@@ -15,11 +15,10 @@ body {
     color: #dc3545;
 }
 
-/* #home-carousel {
-    max-height: calc(100vh - 145px);
-    overflow: hidden;
-} */
-
+/* carousel */
+.car-title {
+    text-decoration: none;
+}
 
 /* product detail page */
 .section-holder {
