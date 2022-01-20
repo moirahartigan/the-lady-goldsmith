@@ -192,31 +192,7 @@
     <footer class="text-center text-lg-start bg-light text-muted">
         <!-- Section: Social media -->
         <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-            <!-- Left -->
-            <div class="me-5 d-none d-lg-block">
-                <span>Get connected with us on social networks:</span>
-            </div>
-            <!-- Left -->
 
-            <!-- Right -->
-            <div>
-                <a href="" class="me-4 text-reset">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="" class="me-4 text-reset">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="https://www.instagram.com/?hl=en" class="me-4 text-reset">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://www.linkedin.com" class="me-4 text-reset">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://github.com/" class="me-4 text-reset">
-                    <i class="fab fa-github"></i>
-                </a>
-            </div>
-            <!-- Right -->
         </section>
         <!-- Section: Social media -->
 
@@ -229,11 +205,10 @@
                     <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                         <!-- Content -->
                         <h6 class="text-uppercase fw-bold mb-4">
-                            <i class="fas fa-gem me-3"></i>Company name
+                            <i class="fas fa-gem me-3"></i> The Lady Goldsmith
                         </h6>
                         <p>
-                            Here you can use rows and columns to organize your footer content. Lorem ipsum
-                            dolor sit amet, consectetur adipisicing elit.
+                            We believe that everyone has a story to tell, and the jewellery they wear is a part of that. We are inspired by you and your life's moments.
                         </p>
                     </div>
                     <!-- Grid column -->
@@ -245,16 +220,16 @@
                             Products
                         </h6>
                         <p>
-                            <a href="#!" class="text-reset">Bracelets</a>
+                            <a href="{% url 'products' %}?category=bracelets" class="text-reset">Bracelets</a>
                         </p>
                         <p>
-                            <a href="#!" class="text-reset">Rings</a>
+                            <a href="{% url 'products' %}?category=rings" class="text-reset">Rings</a>
                         </p>
                         <p>
-                            <a href="#!" class="text-reset">Necklaces</a>
+                            <a href="{% url 'products' %}?category=necklaces" class="text-reset">Necklaces</a>
                         </p>
                         <p>
-                            <a href="#!" class="text-reset">Earrings</a>
+                            <a href="{% url 'products' %}?category=earring" class="text-reset">Earrings</a>
                         </p>
                     </div>
                     <!-- Grid column -->
@@ -266,33 +241,26 @@
                             Useful links
                         </h6>
                         <p>
-                            <a href="#!" class="text-reset">Contact Us</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-reset">FAQ's</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-reset">Shipping & Handling</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-reset">Returns & Exchanges</a>
+                            <a href="{% url 'contact' %}" class="text-reset">Contact Us</a>
                         </p>
                     </div>
                     <!-- Grid column -->
 
                     <!-- Grid column -->
-                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                        <!-- Links -->
-                        <h6 class="text-uppercase fw-bold mb-4">
-                            Contact
-                        </h6>
-                        <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
-                        <p>
-                            <i class="fas fa-envelope me-3"></i>
-                            info@example.com
-                        </p>
-                        <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
-                        <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="mb-50 text-center">
+                            <div class="service-icon">
+                                <i class="fas fa-credit-card"></i>
+                            </div>
+                            <h5 class="service-text">Secure Payment</h5>
+                            <p class="service-text">Safer, faster, more secure way to pay online</p>
+                            <div class="service-icon">
+                                <i class="fab fa-cc-visa"></i>
+                                <i class="fab fa-cc-stripe"></i>
+                                <i class="fab fa-cc-mastercard"></i>
+                                <i class="fab fa-cc-amex"></i>
+                            </div>
+                        </div>
                     </div>
                     <!-- Grid column -->
                 </div>
@@ -300,6 +268,36 @@
             </div>
         </section>
         <!-- Section: Links  -->
+
+        <div class="row">
+            <div class="col-sm-6">
+                <h4 class="service-text">Follow us on Social Media <i class="fas fa-users"></i></h4>
+                <div class="pb-4">
+                    <a href="https://www.facebook.com" class="me-4 text-reset">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.twitter.com" class="me-4 text-reset">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/?hl=en" class="me-4 text-reset">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com" class="me-4 text-reset">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/" class="me-4 text-reset">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <h5 class="service-text">
+                    Website created by <span>&copy;</span>
+                    <a href="https://www.linkedin.com/in/goran-kuzma/" class="media-links" aria-label="Link to Linkedin" rel="noopener" target="_blank">Moira Hartigan</a>
+                    <span id="year"></span>
+                </h5>
+            </div>
+        </div>
 
         <!-- Copyright -->
         <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
