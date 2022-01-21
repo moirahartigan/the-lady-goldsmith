@@ -219,18 +219,12 @@
                         <h6 class="text-uppercase fw-bold mb-4">
                             Products
                         </h6>
-                        <p>
-                            <a href="{% url 'products' %}?category=bracelets" class="text-reset">Bracelets</a>
-                        </p>
-                        <p>
-                            <a href="{% url 'products' %}?category=rings" class="text-reset">Rings</a>
-                        </p>
-                        <p>
-                            <a href="{% url 'products' %}?category=necklaces" class="text-reset">Necklaces</a>
-                        </p>
-                        <p>
-                            <a href="{% url 'products' %}?category=earring" class="text-reset">Earrings</a>
-                        </p>
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-2"><a href="{% url 'products' %}?category=bracelets" class="font-black">Bracelets</a></li>
+                            <li class="mb-2"><a href="{% url 'products' %}?category=rings" class="font-black">Rings</a></li>
+                            <li class="mb-2"><a href="{% url 'products' %}?category=necklaces" class="font-black">Necklaces</a></li>
+                            <li class="mb-2"><a href="{% url 'products' %}?category=earring" class="font-black">Earrings</a></li>
+                        </ul>
                     </div>
                     <!-- Grid column -->
 
@@ -240,9 +234,20 @@
                         <h6 class="text-uppercase fw-bold mb-4">
                             Useful links
                         </h6>
-                        <p>
-                            <a href="{% url 'contact' %}" class="text-reset">Contact Us</a>
-                        </p>
+                        <ul class="list-unstyled mb-0">
+                            {% if request.user.is_authenticated %}
+                            {% if request.user.is_superuser %}
+                            <li class="mb-2"><a href="{% url 'add_product' %}" class="font-black">Product Management</a></li>
+                            <li class="mb-2"><a href="{% url 'profile' %}" class="font-black">My Profile</a></li>
+                            <li class="mb-2"><a href="{% url 'sale_items' %}" class="font-black">Sale</a></li>
+                            {% endif %}
+                            {% else %}
+                            <li class="mb-2"><a href="{% url 'account_signup' %}" class="font-black">Register</a></li>
+                            <li class="mb-2"><a href="{% url 'account_login' %}" class="font-black">Login</a></li>
+                            <li class="mb-2"><a href="{% url 'contact' %}" class="font-black">Contact Us</a></li>
+
+                            {% endif %}
+                        </ul>
                     </div>
                     <!-- Grid column -->
 
@@ -272,7 +277,7 @@
         <div class="row">
             <div class="col-sm-6">
                 <h4 class="service-text">Follow us on Social Media <i class="fas fa-users"></i></h4>
-                <div class="pb-4">
+                <div class="pb-4 mt-4">
                     <a href="https://www.facebook.com" class="me-4 text-reset">
                         <i class="fab fa-facebook-f"></i>
                     </a>
