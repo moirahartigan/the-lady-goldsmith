@@ -19,6 +19,8 @@
     {% block corecss %}
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora&family=Poppins&display=swap">
+    <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7_dtp.css" rel="stylesheet" type="text/css">
+
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="{% static 'favicon/favicon.png' %}" />
@@ -193,26 +195,7 @@
         <div class="container py-5">
             <!-- Section: Social media -->
             <section class="d-flex justify-content-center justify-content-lg-between p-0 border-bottom">
-                <div class="col-sm-12">
-                    <!-- <h4 class="service-text">Follow us on Social Media <i class="fas fa-users"></i></h4> -->
-                    <div class="pb-4 mt-4">
-                        <a href="https://www.facebook.com" class="me-4 m-1 text-reset">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="https://www.twitter.com" class="me-4 m-1 text-reset">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="https://www.instagram.com/?hl=en" class="me-4 m-1  text-reset">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://www.linkedin.com" class="me-4 m-1 text-reset">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="https://github.com/" class="me-4 m-1 text-reset">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </div>
-                </div>
+
             </section>
             <section class="">
                 <div class="container text-center text-md-start mt-5">
@@ -227,6 +210,23 @@
                             <p>
                                 We believe that everyone has a story to tell, and the jewellery they wear is a part of that. We are inspired by you and your life's moments.
                             </p>
+                            <div class="pb-4 mt-4">
+                                <a href="https://www.facebook.com" class="me-4 m-1 text-reset">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="https://www.twitter.com" class="me-4 m-1 text-reset">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="https://www.instagram.com/?hl=en" class="me-4 m-1  text-reset">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="https://www.linkedin.com" class="me-4 m-1 text-reset">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="https://github.com/" class="me-4 m-1 text-reset">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
                         </div>
                         <!-- Grid column -->
 
@@ -270,7 +270,24 @@
 
                         <!-- Grid column -->
                         <div class="col-lg-3 col-md-6 col-sm-6">
-                            <div class="mb-50 text-center">
+                            <div id="mc_embed_signup">
+                                <form action="https://github.us20.list-manage.com/subscribe/post?u=4560df26d52325822bc25a62a&amp;id=edf65faafe" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                                    <div id="mc_embed_signup_scroll">
+                                        <label for="mce-EMAIL">Subscribe!</label>
+                                        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+                                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_4560df26d52325822bc25a62a_edf65faafe" tabindex="-1" value=""></div>
+                                        <div class="optionalParent">
+                                            <div class="clear foot py-3">
+                                                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <!-- <div class="mb-50 text-center">
                                 <div class="service-icon">
                                     <i class="fas fa-credit-card"></i>
                                 </div>
@@ -282,7 +299,7 @@
                                     <i class="fab fa-cc-mastercard"></i>
                                     <i class="fab fa-cc-amex"></i>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                         <!-- Grid column -->
                     </div>
@@ -292,7 +309,13 @@
             <!-- Section: Links  -->
 
             <!-- Newsletter  -->
-            <div class="row">
+            <!-- Begin Mailchimp Signup Form -->
+
+            <!--End mc_embed_signup-->
+
+            <!--End mc_embed_signup-->
+
+            <!-- <div class="row">
                 <div class="col-12 mb-lg-0">
                     <h2 class="text-uppercase font-weight-bold mb-4 footer-text mb-4">Newsletter</h2>
                     <p class="mb-4">Sign up for a weekly newsletter for exclusive discounts</p>
@@ -308,7 +331,8 @@
                         </form>
                     </div>
                 </div>
-            </div>
+            </div> -->
+            <!-- end of newsletter -->
         </div>
         </div>
         <!-- Copyright -->
