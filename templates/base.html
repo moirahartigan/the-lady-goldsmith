@@ -19,7 +19,7 @@
     {% block corecss %}
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora&family=Poppins&display=swap">
-    <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7_dtp.css" rel="stylesheet" type="text/css">
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7_dtp.css" rel="stylesheet" type="text/css">
 
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
     <!-- Favicon -->
@@ -193,15 +193,10 @@
     <!-- Footer -->
     <footer class="text-center text-lg-start bg-light text-muted">
         <div class="container py-5">
-            <!-- Section: Social media -->
-            <section class="d-flex justify-content-center justify-content-lg-between p-0 border-bottom">
-
-            </section>
+            <!-- Section: About & Social media -->
             <section class="">
                 <div class="container text-center text-md-start mt-5">
-                    <!-- Grid row -->
                     <div class="row mt-3">
-                        <!-- Grid column -->
                         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                             <!-- Content -->
                             <h5 class="text-uppercase fw-bold mb-4">
@@ -228,9 +223,6 @@
                                 </a>
                             </div>
                         </div>
-                        <!-- Grid column -->
-
-                        <!-- Grid column -->
                         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                             <!-- Links -->
                             <h5 class="text-uppercase fw-bold mb-4">
@@ -243,9 +235,6 @@
                                 <li class="mb-2"><a href="{% url 'products' %}?category=earring" class="font-black">Earrings</a></li>
                             </ul>
                         </div>
-                        <!-- Grid column -->
-
-                        <!-- Grid column -->
                         <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                             <!-- Links -->
                             <h5 class="text-uppercase fw-bold mb-4">
@@ -266,73 +255,37 @@
                                 {% endif %}
                             </ul>
                         </div>
-                        <!-- Grid column -->
-
-                        <!-- Grid column -->
                         <div class="col-lg-3 col-md-6 col-sm-6">
+                            <!-- Begin Mailchimp Signup Form -->
                             <div id="mc_embed_signup">
                                 <form action="https://github.us20.list-manage.com/subscribe/post?u=4560df26d52325822bc25a62a&amp;id=edf65faafe" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                                     <div id="mc_embed_signup_scroll">
-                                        <label for="mce-EMAIL">Subscribe!</label>
-                                        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-                                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                        <h5 class="text-uppercase fw-bold">Subscribe!</h5>
+                                        <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+                                        <div class="mc-field-group">
+                                            <label for="mce-EMAIL">Email Address <span class="asterisk">*</span>
+                                            </label>
+                                            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                                        </div>
+                                        <div id="mce-responses" class="clear foot">
+                                            <div class="response" id="mce-error-response" style="display:none"></div>
+                                            <div class="response" id="mce-success-response" style="display:none"></div>
+                                        </div> <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                                         <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_4560df26d52325822bc25a62a_edf65faafe" tabindex="-1" value=""></div>
                                         <div class="optionalParent">
-                                            <div class="clear foot py-3">
+                                            <div class="clear foot">
                                                 <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-
                                             </div>
                                         </div>
                                     </div>
                                 </form>
                             </div>
-
-                            <!-- <div class="mb-50 text-center">
-                                <div class="service-icon">
-                                    <i class="fas fa-credit-card"></i>
-                                </div>
-                                <h5 class="text-uppercase service-text mb-4">Secure Payment</h5>
-                                <p class="service-text">Safer, faster, more secure way to pay online</p>
-                                <div class="service-icon">
-                                    <i class="fab fa-cc-visa"></i>
-                                    <i class="fab fa-cc-stripe"></i>
-                                    <i class="fab fa-cc-mastercard"></i>
-                                    <i class="fab fa-cc-amex"></i>
-                                </div>
-                            </div> -->
+                            <!--End mc_embed_signup-->
                         </div>
-                        <!-- Grid column -->
                     </div>
-                    <!-- Grid row -->
+
                 </div>
             </section>
-            <!-- Section: Links  -->
-
-            <!-- Newsletter  -->
-            <!-- Begin Mailchimp Signup Form -->
-
-            <!--End mc_embed_signup-->
-
-            <!--End mc_embed_signup-->
-
-            <!-- <div class="row">
-                <div class="col-12 mb-lg-0">
-                    <h2 class="text-uppercase font-weight-bold mb-4 footer-text mb-4">Newsletter</h2>
-                    <p class="mb-4">Sign up for a weekly newsletter for exclusive discounts</p>
-                    <div class="p-1 rounded border newsletter-input" id="mailing-list">
-                        <form id="mailinglistform" onsubmit="return sendMail(this);">
-                            <div class="input-group">
-                                <label for="email_address" hidden>Email Address:</label>
-                                <input type="email" placeholder="Enter your email address" id="email_address" name="email_address" aria-describedby="newsletter" class="form-control border-0 shadow-0">
-                                <div class="input-group-append">
-                                    <button id="newsletter" type="submit" value="newsletter" class="btn btn-link green-btn">Signup</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div> -->
-            <!-- end of newsletter -->
         </div>
         </div>
         <!-- Copyright -->
@@ -343,6 +296,26 @@
             {% block postloadjs %}
             <script type="text/javascript">
                 $('.toast').toast('show');
+            </script>
+            <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+            <script type='text/javascript'>
+                (function($) {
+                    window.fnames = new Array();
+                    window.ftypes = new Array();
+                    fnames[0] = 'EMAIL';
+                    ftypes[0] = 'email';
+                    fnames[1] = 'FNAME';
+                    ftypes[1] = 'text';
+                    fnames[2] = 'LNAME';
+                    ftypes[2] = 'text';
+                    fnames[3] = 'ADDRESS';
+                    ftypes[3] = 'address';
+                    fnames[4] = 'PHONE';
+                    ftypes[4] = 'phone';
+                    fnames[5] = 'BIRTHDAY';
+                    ftypes[5] = 'birthday';
+                }(jQuery));
+                var $mcj = jQuery.noConflict(true);
             </script>
             {% endblock %}
 

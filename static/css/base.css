@@ -341,9 +341,8 @@ input[name='q']::placeholder {
     padding-top: 150px;
 }
 
-#mc_embed_signup {
-    clear: left;
-    font: 14px Helvetica, Arial, sans-serif;
+#mc_embed_signup form {
+    padding: 0;
 }
 
 
