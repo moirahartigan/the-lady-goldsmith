@@ -341,12 +341,17 @@ input[name='q']::placeholder {
     padding-top: 150px;
 }
 
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
     .container {
         max-width: 100%;
+    }
+
+    .newsletter-container {
+        max-width: 80%
     }
 
     .carousel {
@@ -361,6 +366,7 @@ input[name='q']::placeholder {
     .section-holder {
         padding: 50px 40px;
     }
+
 }
 
 

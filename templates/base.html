@@ -190,120 +190,127 @@
 
     <!-- Footer -->
     <footer class="text-center text-lg-start bg-light text-muted">
-        <!-- Section: Social media -->
-        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-
-        </section>
-        <!-- Section: Social media -->
-
-        <!-- Section: Links  -->
-        <section class="">
-            <div class="container text-center text-md-start mt-5">
-                <!-- Grid row -->
-                <div class="row mt-3">
-                    <!-- Grid column -->
-                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                        <!-- Content -->
-                        <h6 class="text-uppercase fw-bold mb-4">
-                            <i class="fas fa-gem me-3"></i> The Lady Goldsmith
-                        </h6>
-                        <p>
-                            We believe that everyone has a story to tell, and the jewellery they wear is a part of that. We are inspired by you and your life's moments.
-                        </p>
+        <div class="container py-5">
+            <!-- Section: Social media -->
+            <section class="d-flex justify-content-center justify-content-lg-between p-0 border-bottom">
+                <div class="col-sm-12">
+                    <!-- <h4 class="service-text">Follow us on Social Media <i class="fas fa-users"></i></h4> -->
+                    <div class="pb-4 mt-4">
+                        <a href="https://www.facebook.com" class="me-4 m-1 text-reset">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.twitter.com" class="me-4 m-1 text-reset">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/?hl=en" class="me-4 m-1  text-reset">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com" class="me-4 m-1 text-reset">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/" class="me-4 m-1 text-reset">
+                            <i class="fab fa-github"></i>
+                        </a>
                     </div>
-                    <!-- Grid column -->
+                </div>
+            </section>
+            <section class="">
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <!-- Content -->
+                            <h5 class="text-uppercase fw-bold mb-4">
+                                <i class="fas fa-gem me-3"></i> The Lady Goldsmith
+                            </h5>
+                            <p>
+                                We believe that everyone has a story to tell, and the jewellery they wear is a part of that. We are inspired by you and your life's moments.
+                            </p>
+                        </div>
+                        <!-- Grid column -->
 
-                    <!-- Grid column -->
-                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                        <!-- Links -->
-                        <h6 class="text-uppercase fw-bold mb-4">
-                            Products
-                        </h6>
-                        <ul class="list-unstyled mb-0">
-                            <li class="mb-2"><a href="{% url 'products' %}?category=bracelets" class="font-black">Bracelets</a></li>
-                            <li class="mb-2"><a href="{% url 'products' %}?category=rings" class="font-black">Rings</a></li>
-                            <li class="mb-2"><a href="{% url 'products' %}?category=necklaces" class="font-black">Necklaces</a></li>
-                            <li class="mb-2"><a href="{% url 'products' %}?category=earring" class="font-black">Earrings</a></li>
-                        </ul>
-                    </div>
-                    <!-- Grid column -->
+                        <!-- Grid column -->
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h5 class="text-uppercase fw-bold mb-4">
+                                Products
+                            </h5>
+                            <ul class="list-unstyled mb-0">
+                                <li class="mb-2"><a href="{% url 'products' %}?category=bracelets" class="font-black">Bracelets</a></li>
+                                <li class="mb-2"><a href="{% url 'products' %}?category=rings" class="font-black">Rings</a></li>
+                                <li class="mb-2"><a href="{% url 'products' %}?category=necklaces" class="font-black">Necklaces</a></li>
+                                <li class="mb-2"><a href="{% url 'products' %}?category=earring" class="font-black">Earrings</a></li>
+                            </ul>
+                        </div>
+                        <!-- Grid column -->
 
-                    <!-- Grid column -->
-                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                        <!-- Links -->
-                        <h6 class="text-uppercase fw-bold mb-4">
-                            Useful links
-                        </h6>
-                        <ul class="list-unstyled mb-0">
-                            {% if request.user.is_authenticated %}
-                            {% if request.user.is_superuser %}
-                            <li class="mb-2"><a href="{% url 'add_product' %}" class="font-black">Product Management</a></li>
-                            <li class="mb-2"><a href="{% url 'profile' %}" class="font-black">My Profile</a></li>
-                            <li class="mb-2"><a href="{% url 'sale_items' %}" class="font-black">Sale</a></li>
-                            {% endif %}
-                            {% else %}
-                            <li class="mb-2"><a href="{% url 'account_signup' %}" class="font-black">Register</a></li>
-                            <li class="mb-2"><a href="{% url 'account_login' %}" class="font-black">Login</a></li>
-                            <li class="mb-2"><a href="{% url 'contact' %}" class="font-black">Contact Us</a></li>
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h5 class="text-uppercase fw-bold mb-4">
+                                Useful links
+                            </h5>
+                            <ul class="list-unstyled mb-0">
+                                {% if request.user.is_authenticated %}
+                                {% if request.user.is_superuser %}
+                                <li class="mb-2"><a href="{% url 'add_product' %}" class="font-black">Product Management</a></li>
+                                <li class="mb-2"><a href="{% url 'profile' %}" class="font-black">My Profile</a></li>
+                                <li class="mb-2"><a href="{% url 'sale_items' %}" class="font-black">Sale</a></li>
+                                {% endif %}
+                                {% else %}
+                                <li class="mb-2"><a href="{% url 'account_signup' %}" class="font-black">Register</a></li>
+                                <li class="mb-2"><a href="{% url 'account_login' %}" class="font-black">Login</a></li>
+                                <li class="mb-2"><a href="{% url 'contact' %}" class="font-black">Contact Us</a></li>
 
-                            {% endif %}
-                        </ul>
-                    </div>
-                    <!-- Grid column -->
+                                {% endif %}
+                            </ul>
+                        </div>
+                        <!-- Grid column -->
 
-                    <!-- Grid column -->
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="mb-50 text-center">
-                            <div class="service-icon">
-                                <i class="fas fa-credit-card"></i>
-                            </div>
-                            <h5 class="service-text">Secure Payment</h5>
-                            <p class="service-text">Safer, faster, more secure way to pay online</p>
-                            <div class="service-icon">
-                                <i class="fab fa-cc-visa"></i>
-                                <i class="fab fa-cc-stripe"></i>
-                                <i class="fab fa-cc-mastercard"></i>
-                                <i class="fab fa-cc-amex"></i>
+                        <!-- Grid column -->
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="mb-50 text-center">
+                                <div class="service-icon">
+                                    <i class="fas fa-credit-card"></i>
+                                </div>
+                                <h5 class="text-uppercase service-text mb-4">Secure Payment</h5>
+                                <p class="service-text">Safer, faster, more secure way to pay online</p>
+                                <div class="service-icon">
+                                    <i class="fab fa-cc-visa"></i>
+                                    <i class="fab fa-cc-stripe"></i>
+                                    <i class="fab fa-cc-mastercard"></i>
+                                    <i class="fab fa-cc-amex"></i>
+                                </div>
                             </div>
                         </div>
+                        <!-- Grid column -->
                     </div>
-                    <!-- Grid column -->
+                    <!-- Grid row -->
                 </div>
-                <!-- Grid row -->
-            </div>
-        </section>
-        <!-- Section: Links  -->
+            </section>
+            <!-- Section: Links  -->
 
-        <div class="row">
-            <div class="col-sm-6">
-                <h4 class="service-text">Follow us on Social Media <i class="fas fa-users"></i></h4>
-                <div class="pb-4 mt-4">
-                    <a href="https://www.facebook.com" class="me-4 text-reset">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="https://www.twitter.com" class="me-4 text-reset">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="https://www.instagram.com/?hl=en" class="me-4 text-reset">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="https://www.linkedin.com" class="me-4 text-reset">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://github.com/" class="me-4 text-reset">
-                        <i class="fab fa-github"></i>
-                    </a>
+            <!-- Newsletter  -->
+            <div class="row">
+                <div class="col-12 mb-lg-0">
+                    <h2 class="text-uppercase font-weight-bold mb-4 footer-text mb-4">Newsletter</h2>
+                    <p class="mb-4">Sign up for a weekly newsletter for exclusive discounts</p>
+                    <div class="p-1 rounded border newsletter-input" id="mailing-list">
+                        <form id="mailinglistform" onsubmit="return sendMail(this);">
+                            <div class="input-group">
+                                <label for="email_address" hidden>Email Address:</label>
+                                <input type="email" placeholder="Enter your email address" id="email_address" name="email_address" aria-describedby="newsletter" class="form-control border-0 shadow-0">
+                                <div class="input-group-append">
+                                    <button id="newsletter" type="submit" value="newsletter" class="btn btn-link green-btn">Signup</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-            </div>
-            <div class="col-sm-6">
-                <h5 class="service-text">
-                    Website created by <span>&copy;</span>
-                    <a href="https://www.linkedin.com/in/goran-kuzma/" class="media-links" aria-label="Link to Linkedin" rel="noopener" target="_blank">Moira Hartigan</a>
-                    <span id="year"></span>
-                </h5>
             </div>
         </div>
-
+        </div>
         <!-- Copyright -->
         <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
             © 2021 Copyright:
