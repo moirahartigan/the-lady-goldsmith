@@ -14,7 +14,7 @@ class ProductForm(forms.ModelForm):
     image = forms.ImageField(label='Image', required=False,
                              widget=CustomClearableFileInput)
 
-    # over ride the init method to make changes to the fields 
+    # over ride the init method to make changes to the fields
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         categories = Category.objects.all()

@@ -232,15 +232,17 @@
                             <ul class="list-unstyled mb-0">
                                 {% if request.user.is_authenticated %}
                                 {% if request.user.is_superuser %}
-                                <li class="mb-2"><a href="{% url 'add_product' %}" class="font-black">Product Management</a></li>
-                                <li class="mb-2"><a href="{% url 'profile' %}" class="font-black">My Profile</a></li>
-                                <li class="mb-2"><a href="{% url 'sale_items' %}" class="font-black">Sale</a></li>
+                                <li class="mb-2"><a href="{% url 'add_product' %}" class="dropdown-item footer-font">Product Management</a></li>
+                                <li class="mb-2"></li><a href="{% url 'account_logout' %}" class="footer-font">Logout</a></li>
+                                {% else %}
+                                <li class="mb-2"></li><a href="{% url 'profile' %}" class="footer-font">My Profile</a></li>
+                                <li class="mb-2"></li><a href="{% url 'sale' %}" class="footer-font">Sale</a></li>
+                                <!-- <li class="mb-2"></li><a href="{% url 'account_logout' %}" class="footer-font">Logout</a></li> -->
                                 {% endif %}
                                 {% else %}
-                                <li class="mb-2"><a href="{% url 'account_signup' %}" class="font-black">Register</a></li>
-                                <li class="mb-2"><a href="{% url 'account_login' %}" class="font-black">Login</a></li>
-                                <li class="mb-2"><a href="{% url 'contact' %}" class="font-black">Contact Us</a></li>
-
+                                <li class="mb-2"></li><a href="{% url 'account_signup' %}" class="footer-font">Register</a></li>
+                                <li class="mb-2"></li><a href="{% url 'account_login' %}" class="footer-font">Login</a></li>
+                                <li class="mb-2"><a href="{% url 'contact' %}" class="footer-font">Contact Us</a></li>
                                 {% endif %}
                             </ul>
                         </div>
