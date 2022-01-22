@@ -375,7 +375,7 @@ input[name='q']::placeholder {
 
 
 
-/* fixed top navbar only on medium and up */
+/* fixed top navbar only on medium and up (ipad-pro) */
 @media (min-width: 992px) {
     .fixed-top-desktop-only {
         position: fixed;
@@ -405,11 +405,25 @@ input[name='q']::placeholder {
         height: 700px;
         object-fit: cover;
     }
+
+    .contact-us {
+        padding-top: 280px;
+    }
+
+    .message-container {
+        top: 150px;
+        right: 60px;
+    }
+
+    .nav-link-pro {
+        padding: 0;
+
+    }
 }
 
 
 
-/* pad the top a bit when navbar is collapsed on mobile */
+/* pad the top a bit when navbar is collapsed on mobile (ipad)*/
 @media (max-width: 991px) {
     .header-container {
         padding-top: 116px;
@@ -421,6 +435,11 @@ input[name='q']::placeholder {
 
     .quantity-width {
         width: 60%;
+    }
+
+    .message-container {
+        top: 95px;
+        right: 50px;
     }
 
 }
@@ -439,9 +458,14 @@ input[name='q']::placeholder {
     .quantity-width {
         width: 80%;
     }
+
+    /* .message-container {
+        top: 95px;
+        right: 20px;
+    } */
 }
 
-/* SMALL SCREEN */
+/* SMALL SCREEN (iphone6) */
 @media screen and (max-width: 481px) {
     h1 {
         font-size: 1.6rem;
@@ -472,8 +496,8 @@ input[name='q']::placeholder {
     }
 
     .message-container {
-        top: 60px;
-        right: 15px;
+        top: 95px;
+        right: 20px;
     }
 
     /* --- Product detail page --- */
@@ -498,7 +522,7 @@ input[name='q']::placeholder {
         padding: 0;
     }
 
-    /* X-SMALL SCREEN */
+    /* X-SMALL SCREEN (iphone5) */
     @media (max-width: 320px) {
         .container {
             max-width: 100%;
@@ -514,13 +538,13 @@ input[name='q']::placeholder {
         }
 
         .message-container {
-            top: 60px;
-            right: -25px;
+            top: 75px;
+            right: 20px;
         }
 
-        .navbar {
+        /* .navbar {
             padding: 0;
-        }
+        } */
 
         .register-container {
             padding: 0;
