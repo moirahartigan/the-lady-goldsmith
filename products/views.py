@@ -12,7 +12,9 @@ from wishlist.models import Wishlist
 
 
 def all_products(request):
-    """ A view to show all products, including sorting and search queries """
+    """ 
+    A view to show all products, including sorting and search queries 
+    """
 
     products = Product.objects.all()
     query = None
@@ -73,7 +75,9 @@ def all_products(request):
 
 
 def product_detail(request, product_id):
-    """ A view to show individual product details """
+    """ 
+    A view to show individual product details 
+    """
 
     product = get_object_or_404(Product, pk=product_id)
     review_form = ProductReviewForm(data=request.POST or None)
@@ -104,10 +108,6 @@ def product_detail(request, product_id):
 def add_product(request):
     """
     A view to add a product
-    Args:
-        request (object): HTTP request object.
-    Returns:
-        Render of add product page with context
     """
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
@@ -138,11 +138,7 @@ def add_product(request):
 def edit_product(request, product_id):
     """
     A view to add a product
-    Args:
-        request (object): HTTP request object.
-        product_id: Product id
-    Returns:
-        Render of edit product page with context
+
     """
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
@@ -211,6 +207,39 @@ def add_review(request, product_id):
         messages.error(request, 'Failed to add product review')
     messages.error(request, 'Invalid Method.')
     return redirect(reverse('product_detail', args=[product.id]))
+
+
+# @login_required
+# def edit_review(request, review_id):
+#     """ Edit a review of a product """
+
+#     review = get_object_or_404(Review, pk=review_id)
+
+#     if request.method == 'POST':
+#         review_form = ProductReviewForm(request.POST, instance=review)
+        
+#         if review_form.is_valid():
+#             review_form.save()
+#             messages.success(request, 'Successfully updated product review!')
+#             return redirect(reverse('product_detail',
+#                                     args=[review.product.id]))
+        
+#         else:
+#             messages.error(request, 'Failed to update product review.' +
+#                            'Please ensure the form is valid.')
+    
+#     else:
+#         review_form = ProductReviewForm(instance=review)
+#         messages.info(request, 'You are editing your review for' +
+#                       f'{review.product.name}')
+
+#     template = 'products/edit_review.html'
+#     context = {
+#         'review_form': review_form,
+#         'review': review,
+#     }
+
+#     return render(request, 'products/edit_review.html', context)
 
 
 @login_required

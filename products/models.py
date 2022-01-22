@@ -22,20 +22,12 @@ class Category(models.Model):
     def __str__(self):
         """
         Returns the category name string
-        Args:
-            self (object): self.
-        Returns:
-            The category name string
         """
         return self.name
 
     def get_friendly_name(self):
         """
         Returns the category friendly name string
-        Args:
-            self (object): self.
-        Returns:
-            The category friendly name string
         """
         return self.friendly_name
 
@@ -98,10 +90,6 @@ class Product(models.Model):
     def __str__(self):
         """
         Returns the product name
-        Args:
-            self (object): self.
-        Returns:
-            The product name string
         """
         return self.name
 
@@ -146,9 +134,5 @@ class Review(models.Model):
     def __str__(self):
         """
         Returns the review text
-        Args:
-            self (object): self.
-        Returns:
-            The review text string
         """
         return self.review_text
