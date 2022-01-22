@@ -411,14 +411,10 @@ input[name='q']::placeholder {
     }
 
     .message-container {
-        top: 150px;
+        top: 200px;
         right: 60px;
     }
 
-    .nav-link-pro {
-        padding: 0;
-
-    }
 }
 
 
