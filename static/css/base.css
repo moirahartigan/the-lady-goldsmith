@@ -25,7 +25,7 @@ body {
     top: 0;
     left: 0;
     min-width: 100%;
-    height: 500px;
+    /* height: 500px; */
     max-width: none;
 }
 
@@ -371,6 +371,10 @@ input[name='q']::placeholder {
         height: 800px;
     }
 
+    .carousel-caption .btn {
+        width: 20%;
+    }
+
     img {
         height: 700px;
         object-fit: cover;
@@ -431,7 +435,7 @@ input[name='q']::placeholder {
 /* pad the top a bit when navbar is collapsed on mobile (ipad)*/
 @media (max-width: 991px) {
     .header-container {
-        padding-top: 116px;
+        padding-top: 88px;
     }
 
     body {
@@ -529,6 +533,10 @@ input[name='q']::placeholder {
 
     /* X-SMALL SCREEN (iphone5) */
     @media (max-width: 320px) {
+        .fixed-top {
+            padding-right: 0;
+        }
+
         .container {
             max-width: 100%;
         }
@@ -546,6 +554,17 @@ input[name='q']::placeholder {
             top: 75px;
             right: 20px;
         }
+
+        .carousel-caption h3 {
+            font-size: .75em;
+        }
+
+        /* .small-btn {
+            width: 50%;
+            height: 50%;
+        } */
+
+
 
         /* .navbar {
             padding: 0;
