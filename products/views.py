@@ -85,11 +85,6 @@ def product_detail(request, product_id):
     reviews = Review.objects.filter(product=product)
     number_of_reviews = reviews.count()
 
-    if reviews.exists():
-        any_reviews = True
-    else:
-        any_reviews = False
-
     try:
         wishlist = get_object_or_404(Wishlist, username=request.user.id)
     except Http404:
@@ -103,7 +98,6 @@ def product_detail(request, product_id):
         'review_form': review_form,
         'reviews': reviews,
         'number_of_reviews': number_of_reviews,
-        'any_reviews': any_reviews,
     }
 
     return render(request, 'products/product_detail.html', context)
@@ -215,28 +209,38 @@ def add_review(request, product_id):
 
 
 @login_required
-def edit_review(request, review_id):
+def edit_review(request, product_id,):
     """
     Edit exisiting review
     """
-    review = get_object_or_404(Review, pk=review_id)
-    if request.method == 'POST':
-        form = ProductReviewForm(request.POST, request.FILES, instance=review)
 
-        if form.is_valid():
-            form.save()
+    review = get_object_or_404(Review, pk=product_id)
+    product = review.product
+    if request.user != review.user:
+        messages.error(request, (
+                                'You have no permission to access this page'
+                                ))
+        return redirect('product_detail')
+    if request.method == 'POST':
+        review_form = ProductReviewForm(request.POST, instance=review)
+
+        if review_form.is_valid():
+            review = review_form.save(commit=False)
+            review.user = request.user
+            review.product = product
+            review.save()
             messages.success(request, 'Successfully updated your review!')
-            return redirect(reverse('product_detail', args=[review.id]))
+            return redirect(reverse('product_detail', args=[product.id]))
         else:
             messages.error(request, 'Failed to update product review')
     else:
-        form = ProductReviewForm(instance=review)
+        review_form = ProductReviewForm(instance=review)
         messages.info(request, 'You are editing your review for ' +
                       f'{review.product.name}')
 
     template = 'products/edit_review.html'
     context = {
-        'form': form,
+        'review_form': review_form,
         'review': review,
     }
 
