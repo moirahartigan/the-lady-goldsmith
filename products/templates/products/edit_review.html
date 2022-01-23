@@ -11,9 +11,9 @@
 
 {% block content %}
 <div class="container-fluid">
-    <div class="row">
-        <div class="col">
-            <h2 class="page-heading">Edit a product review</h2>
+    <div class="row mt-5 pt-5">
+        <div class="col-12 mt-5 p-3 text-center">
+            <h2 class="page-heading">Edit product review</h2>
             <h3> Updating review for: {{ review.product.name }} </h3>
         </div>
     </div>
@@ -26,8 +26,8 @@
                 {{ field | as_crispy_field }}
                 {% endfor %}
                 <div class="text-right">
-                    <a class="btn back-to-product text-uppercase" href="{% url 'product_detail' review.product.id %}">Back to product</a>
-                    <button class="edit-product-review text-uppercase" type="submit">Update Product Review</button>
+                    <a class="btn btn-danger" href="{% url 'product_detail' review.product.id %}">Back to product</a>
+                    <button class="btn btn-success rounded-0" type="submit">Update Product Review</button>
                 </div>
             </form>
         </div>

@@ -221,22 +221,22 @@ def edit_review(request, review_id):
     """
     review = get_object_or_404(Review, pk=review_id)
     if request.method == 'POST':
-        review_form = ProductReviewForm(request.POST, instance=review)
+        form = ProductReviewForm(request.POST, request.FILES, instance=review)
 
-        if review_form.is_valid():
-            review_form.save()
-            messages.info(request, 'Successfully updated your review!')
-            return redirect(reverse('product_detail', args=[product.id]))
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully updated your review!')
+            return redirect(reverse('product_detail', args=[review.id]))
         else:
             messages.error(request, 'Failed to update product review')
     else:
-        review_form = ProductReviewForm(instance=review)
+        form = ProductReviewForm(instance=review)
         messages.info(request, 'You are editing your review for ' +
                       f'{review.product.name}')
 
     template = 'products/edit_review.html'
     context = {
-        'review_form': review_form,
+        'form': form,
         'review': review,
     }
 
