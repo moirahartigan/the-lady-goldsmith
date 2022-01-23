@@ -142,7 +142,7 @@
             </nav>
         </div>
         <!-- Banner -->
-        <div id="info-banner" class="row text-center text-white bg-dark">
+        <div id="info-banner" class="row text-center text-white">
             <div class="col">
                 <div class="mt-1 mb-1">
                     <span class="d-none d-lg-inline font-white">Fast dispatch!</span>
@@ -180,20 +180,17 @@
     {% endblock %}
 
     <!-- Footer -->
-    <footer class="text-center text-lg-start bg-light text-muted">
+    <footer class="footer text-center text-muted">
         <div class="container py-5">
             <!-- Section: About & Social media -->
             <section class="">
-                <div class="container text-center text-md-start mt-5">
+                <div class="container text-center mt-5">
                     <div class="row mt-3">
-                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <div class="col-md-12 col-lg-4 col-xl-3 mb-lg-0 mb-4">
                             <!-- Content -->
                             <h5 class="text-uppercase fw-bold mb-4">
                                 <i class="fas fa-gem me-3"></i> The Lady Goldsmith
                             </h5>
-                            <p>
-                                We believe that everyone has a story to tell, and the jewellery they wear is a part of that. We are inspired by you and your life's moments.
-                            </p>
                             <div class="pb-4 mt-4">
                                 <a href="https://www.facebook.com" class="me-4 m-1 text-reset" target="_blank">
                                     <i class="fab fa-facebook-f"></i>
@@ -212,8 +209,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                            <!-- Links -->
+                        <div class="col-md-6 col-lg-2 col-xl-2 mb-lg-0 mb-4">
                             <h5 class="text-uppercase fw-bold mb-4">
                                 Products
                             </h5>
@@ -224,29 +220,29 @@
                                 <li class="mb-2"><a href="{% url 'products' %}?category=earring" class="font-black">Earrings</a></li>
                             </ul>
                         </div>
-                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                            <!-- Links -->
+                        <div class="col-md-6 col-lg-2 col-xs-6 col-xl-2 mb-lg-0 mb-4">
                             <h5 class="text-uppercase fw-bold mb-4">
                                 Useful links
                             </h5>
                             <ul class="list-unstyled mb-0">
                                 {% if request.user.is_authenticated %}
                                 {% if request.user.is_superuser %}
-                                <li class="mb-2"><a href="{% url 'add_product' %}" class="dropdown-item footer-font">Product Management</a></li>
-                                <li class="mb-2"></li><a href="{% url 'account_logout' %}" class="footer-font">Logout</a></li>
+                                <li class="mb-2"><a href="{% url 'add_product' %}" class="dropdown-item font-black">Product Management</a></li>
+                                <li class="mb-2"><a href="{% url 'account_logout' %}" class="font-black">Logout</a></li>
                                 {% else %}
-                                <li class="mb-2"></li><a href="{% url 'profile' %}" class="footer-font">My Profile</a></li>
-                                <li class="mb-2"></li><a href="{% url 'sale_items' %}" class="footer-font">Sale</a></li>
-                                <li class="mb-2"></li><a href="{% url 'account_logout' %}" class="footer-font">Logout</a></li>
+                                <li class="mb-2"><a href="{% url 'profile' %}" class="font-black">My Profile</a></li>
+                                <li class="mb-2"><a href="{% url 'sale_items' %}" class="font-black">Sale</a></li>
+                                <li class="mb-2"><a href="{% url 'account_logout' %}" class="font-black">Logout</a></li>
                                 {% endif %}
                                 {% else %}
-                                <li class="mb-2"></li><a href="{% url 'account_signup' %}" class="footer-font">Register</a></li>
-                                <li class="mb-2"></li><a href="{% url 'account_login' %}" class="footer-font">Login</a></li>
-                                <li class="mb-2"><a href="{% url 'contact' %}" class="footer-font">Contact Us</a></li>
+                                <li class="mb-2"><a href="{% url 'account_signup' %}" class="font-black">Register</a></li>
+                                <li class="mb-2"><a href="{% url 'account_login' %}" class="font-black">Login</a></li>
+                                <li class="mb-2"><a href="{% url 'contact' %}" class="font-black">Contact Us</a></li>
                                 {% endif %}
+                                <li class="mb-2"><a href="https://www.privacypolicygenerator.info/live.php?token=BcTNhoYRILhUngJywBOyki3kdo9zluNl" class="font-black" target="_blank">Privacy Policy</a></li>
                             </ul>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="col-lg-4 col-md-12 mb-lg-0">
                             <!-- Begin Mailchimp Signup Form -->
                             <div id="mc_embed_signup">
                                 <form action="https://github.us20.list-manage.com/subscribe/post?u=4560df26d52325822bc25a62a&amp;id=edf65faafe" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
@@ -273,9 +269,9 @@
                             </div>
                             <!--End mc_embed_signup-->
                         </div>
-                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                             <a href="https://www.privacypolicygenerator.info/live.php?token=BcTNhoYRILhUngJywBOyki3kdo9zluNl" target="_blank">Privacy Policy</a>
-                        </div>
+                        </div> -->
                     </div>
 
                 </div>

@@ -10,10 +10,41 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+/* ---Color Palette--- */
 /* nav bar */
 #sale-link {
     color: #dc3545;
 }
+
+/* Banner */
+#info-banner {
+    background-color: #874558;
+}
+
+/* footer */
+.font-black {
+    color: #555555;
+}
+
+/* links */
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+
+/* --- End Colot Palette--- */
 
 /* carousel */
 .car-title {
@@ -27,6 +58,11 @@ body {
     min-width: 100%;
     /* height: 500px; */
     max-width: none;
+}
+
+/* footer */
+.footer {
+    background-color: #F1E4E8;
 }
 
 /* product detail page */
@@ -90,13 +126,13 @@ body {
     width: fit-content;
 }
 
-.shop-now-button {
+/* .shop-now-button {
     background-color: transparent;
     min-width: 260px;
     color: #fff;
     border: 1px solid #fff;
     font-family: 'Poppins', sans-serif;
-}
+} */
 
 .btn {
     border-radius: 0.25rem;
@@ -399,7 +435,7 @@ input[name='q']::placeholder {
     }
 
     .header-container {
-        padding-top: 164px;
+        padding-top: 160px;
     }
 
     .quantity-width {
