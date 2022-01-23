@@ -3,15 +3,21 @@ html {
 }
 
 body {
-    /* background: url('/media/homepage_hero.jpg') no-repeat center center fixed;
-    background-size: cover; */
+    background-color: #F5F5F5;
     height: calc(100vh - 164px);
-    /* color: #555; */
     font-family: 'Poppins', sans-serif;
 }
 
 /* ---Color Palette--- */
 /* nav bar */
+/* #topnav {
+    background-color: #F8F2F3;
+}
+
+.navbar {
+    background-color: #F8F2F3;
+} */
+
 #sale-link {
     color: #dc3545;
 }
@@ -486,6 +492,14 @@ input[name='q']::placeholder {
         right: 60px;
     }
 
+    .products-container {
+        width: 100vw;
+    }
+
+    .card {
+        width: 18rem;
+    }
+
 }
 
 
@@ -613,20 +627,14 @@ input[name='q']::placeholder {
             right: 20px;
         }
 
+        .product-container {
+            margin-left: 0;
+        }
+
         .carousel-caption h3 {
             font-size: .75em;
         }
 
-        /* .small-btn {
-            width: 50%;
-            height: 50%;
-        } */
-
-
-
-        /* .navbar {
-            padding: 0;
-        } */
 
         .register-container {
             padding: 0;
