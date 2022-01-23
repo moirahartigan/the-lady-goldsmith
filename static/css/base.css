@@ -418,14 +418,10 @@ input[name='q']::placeholder {
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
     .container {
-        max-width: 100%;
+        /* max-width: 100%; */
+        width: 80%;
     }
 
-    /* .carousel-img {
-        min-width: 100%;
-        height: 700px;
-        max-width: none;
-    } */
 
     .newsletter-container {
         max-width: 80%
@@ -437,11 +433,6 @@ input[name='q']::placeholder {
 
     .carousel-caption .btn {
         width: 20%;
-    }
-
-    img {
-        height: 700px;
-        object-fit: cover;
     }
 
     .section-holder {
@@ -478,10 +469,6 @@ input[name='q']::placeholder {
         height: 700px;
     }
 
-    img {
-        height: 700px;
-        object-fit: cover;
-    }
 
     .contact-us {
         padding-top: 280px;
@@ -498,6 +485,10 @@ input[name='q']::placeholder {
 
     .card {
         width: 18rem;
+    }
+
+    .container {
+        width: 80%;
     }
 
 }
