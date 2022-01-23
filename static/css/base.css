@@ -163,6 +163,7 @@ a:active {
 .btn-black {
     background: black;
     color: white;
+    border-radius: 0.25rem;
 }
 
 .btn-outline-black {
@@ -170,6 +171,7 @@ a:active {
     color: black !important;
     /* use important to override link colors for <a> elements */
     border: 1px solid black;
+    border-radius: 0.25rem;
 }
 
 .shop-now-button:hover,
@@ -261,7 +263,7 @@ a.category-badge>span.badge:hover {
 }
 
 .card-img-product-detail {
-    height: 400px;
+    /* height: 400px; */
     width: 400px;
     border: 0;
     margin: auto;
@@ -278,11 +280,11 @@ a.category-badge>span.badge:hover {
 }
 
 /* bag */
-.section-holder {
+/* .section-holder {
     padding: 50px 10px;
-}
+} */
 
-.form-holder {
+/* .form-holder {
     max-width: 600px;
     margin: auto;
     padding: 60px 50px;
@@ -291,7 +293,7 @@ a.category-badge>span.badge:hover {
     border-bottom-right-radius: 30px;
     border-bottom-left-radius: 30px;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
-}
+} */
 
 /* ------------------------------- bootstrap toasts */
 
@@ -491,6 +493,22 @@ input[name='q']::placeholder {
         width: 80%;
     }
 
+    /* .form-holder {
+        margin: auto;
+        width: 100%;
+        padding: 60px 50px;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+        box-shadow: 0px 2px 10px rgb(0 0 0 / 8%);
+    } */
+
+    .detail-section {
+        width: 100%;
+    }
+
+
 }
 
 
@@ -561,7 +579,12 @@ input[name='q']::placeholder {
 
     .pricing {
         font-size: 1.3rem;
+        /* padding-left: 71px; */
     }
+
+    /* .bag-buttons {
+        ppadding: 0 131px 5px 20px;
+    } */
 
     .dropdown-menu {
         font-size: 0.8rem;
@@ -586,9 +609,13 @@ input[name='q']::placeholder {
         padding: 10px;
     }
 
-    .form-holder {
-        padding: 30px 20px 60px 20px;
+    .product-details {
+        padding: 50px 10px;
     }
+
+    /* .form-holder {
+        padding: 30px 52px 60px 20px;
+    } */
 
     .signin-container {
         padding: 0;
@@ -643,8 +670,8 @@ input[name='q']::placeholder {
             text-align: center;
         }
 
-        .form-holder {
-            padding: 10px 15px 50px 10px;
+        .form-holder-lg {
+            padding: 0;
         }
 
 
@@ -657,6 +684,14 @@ input[name='q']::placeholder {
 
         .quantity-width {
             width: 80%;
+        }
+
+        .product-details {
+            padding: 50px 10px;
+        }
+
+        .image-container {
+            padding-left: 33px;
         }
     }
 
