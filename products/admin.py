@@ -47,9 +47,16 @@ class ReviewAdmin(admin.ModelAdmin):
     Admin class for the Review model.
     """
     list_display = (
+        'user',
+        'product',
         'review_text',
         'product_rating',
+        'create_date',
+    )
 
+    list_filter = (
+        'user',
+        'product_rating',
     )
 
 
