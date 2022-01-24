@@ -8,15 +8,6 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-/* ---Color Palette--- */
-/* nav bar */
-/* #topnav {
-    background-color: #F8F2F3;
-}
-
-.navbar {
-    background-color: #F8F2F3;
-} */
 
 #sale-link {
     color: #dc3545;
@@ -76,6 +67,7 @@ a:active {
 
 .carousel-img {
     /* position: absolute; */
+    /* height: 730px; */
     top: 0;
     left: 0;
     min-width: 100%;
@@ -420,13 +412,19 @@ input[name='q']::placeholder {
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
     .container {
-        /* max-width: 100%; */
+        max-width: 100%;
         width: 80%;
     }
 
 
     .newsletter-container {
         max-width: 80%
+    }
+
+    .carousel-img {
+        min-width: 100%;
+        height: 700px;
+        max-width: none;
     }
 
     .carousel {
@@ -530,6 +528,10 @@ input[name='q']::placeholder {
     .message-container {
         top: 95px;
         right: 50px;
+    }
+
+    #mc_embed_signup_scroll {
+        padding-left: 30px
     }
 
 }
