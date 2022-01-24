@@ -68,10 +68,10 @@ a:active {
 .carousel-img {
     /* position: absolute; */
     /* height: 730px; */
-    top: 0;
+    /* top: 0;
     left: 0;
     min-width: 100%;
-    max-width: none;
+    max-width: none; */
 }
 
 /* footer */
@@ -422,9 +422,10 @@ input[name='q']::placeholder {
     }
 
     .carousel-img {
+        /* z-index: 1; */
         min-width: 100%;
         height: 700px;
-        max-width: none;
+        object-fit: cover;
     }
 
     .carousel {
@@ -551,6 +552,7 @@ input[name='q']::placeholder {
         width: 80%;
     }
 
+
     /* .message-container {
         top: 95px;
         right: 20px;
@@ -596,6 +598,23 @@ input[name='q']::placeholder {
         top: 95px;
         right: 20px;
     }
+
+    .btn-shop {
+        font-size: 60%;
+        padding: 6px;
+    }
+
+    .carousel-caption h3 {
+        font-size: 95%;
+    }
+
+    .car-cat {
+        padding-top: 11px;
+    }
+
+    /* .carousel-caption h3 {
+        font-size: 80%;
+    } */
 
     /* --- Product detail page --- */
     .card-img-product-detail {
@@ -652,7 +671,11 @@ input[name='q']::placeholder {
         }
 
         .carousel-caption h3 {
-            font-size: .75em;
+            font-size: 70%;
+        }
+
+        .car-cat {
+            padding-top: 10px;
         }
 
 
