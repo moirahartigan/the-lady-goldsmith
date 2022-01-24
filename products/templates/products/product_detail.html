@@ -89,11 +89,11 @@
 
                             <div class="row">
                                 <div class="col{% if s %}-12 mt-2{% endif %} bag-buttons">
-                                    <a href="{% url 'products' %}" class="btn btn-outline-black mt-3">
+                                    <a href="{% url 'products' %}" class="btn btn-outline-black">
                                         <span class="icon"><i class="fas fa-chevron-left"></i></span>
                                         <span class="text-uppercase">Keep Shopping</span>
                                     </a>
-                                    <input type="submit" class="btn btn-black text-uppercase mt-1" value="Add to Bag">
+                                    <input type="submit" class="btn btn-black text-uppercase" value="Add to Bag">
                                 </div>
                                 <input type="hidden" name="redirect_url" value="{{ request.path }}">
                                 {% endwith %}
@@ -176,7 +176,7 @@
                                     <p class="text-black mb-2 mt-3">Review Text: {{ review.review_text }}</p>
                                     {% if review.user == request.user or request.user.is_superuser %}
                                     <!-- Delete Button trigger modal -->
-                                    <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#delete-review{{ review.id }}">Delete
+                                    <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#delete-review{{ review.id }}"><i class="fa fa-trash" aria-hidden="true"></i> Delete
                                     </button>
                                     <!-- Delete Comment Modal -->
                                     <div class="modal fade" id="delete-review{{ review.id }}" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
