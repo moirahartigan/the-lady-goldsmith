@@ -10,24 +10,27 @@
 {% endblock %}
 
 {% block content %}
-<div class="container-fluid">
-    <div class="row mt-5 pt-5">
-        <div class="col-12 mt-5 p-3 text-center">
-            <h2 class="page-heading">Edit product review</h2>
-            <h3> Updating review for: {{ review.product.name }} </h3>
+<div class="overlay"></div>
+<div class="container review-container">
+    <div class="row">
+        <div class="review col-12 col-xl-10 text-center">
+            <hr>
+            <h2 class="logo-font mb-4">Updating review for:</h2>
+            <h5>{{ review.product.name }} </h5>
+            <hr>
         </div>
     </div>
 
     <div class="row">
-        <div class="col">
+        <div class="col-12 col-xl-10">
             <form method="POST" action="{% url 'edit_review' review.product.id %}" class="form mb-2">
                 {% csrf_token %}
                 {% for field in review_form %}
                 {{ field | as_crispy_field }}
                 {% endfor %}
                 <div class="text-right">
-                    <a class="btn btn-danger" href="{% url 'product_detail' review.product.id %}">Back to product</a>
-                    <button class="btn btn-success rounded-0" type="submit">Update Product Review</button>
+                    <a class="btn review-btn btn-danger" href="{% url 'product_detail' review.product.id %}">Back</a>
+                    <button class="btn btn-success" type="submit">Update</button>
                 </div>
             </form>
         </div>

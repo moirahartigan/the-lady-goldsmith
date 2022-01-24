@@ -524,6 +524,13 @@ input[name='q']::placeholder {
         padding-right: 102px;
     }
 
+    .review-container {
+        margin-top: 150px;
+        padding-top: 100px;
+        width: 80%;
+        width: 60%;
+        padding-bottom: 50px;
+    }
 
 }
 
@@ -556,6 +563,11 @@ input[name='q']::placeholder {
         padding-top: 15px;
     }
 
+    .review-container {
+        margin-top: 65px;
+        padding-top: 50px;
+    }
+
 }
 
 /* --- Greater than 576px --- */
@@ -572,7 +584,6 @@ input[name='q']::placeholder {
     .quantity-width {
         width: 80%;
     }
-
 
     /* .message-container {
         top: 95px;
@@ -624,6 +635,14 @@ input[name='q']::placeholder {
         font-size: 60%;
         padding: 6px;
     }
+
+    .bag-btn {
+        margin-bottom: 4px;
+    }
+
+    /* .review-btn {
+        margin-bottom: 4px;
+    } */
 
     .carousel-caption h3 {
         font-size: 95%;
@@ -719,6 +738,14 @@ input[name='q']::placeholder {
         .form-holder-lg {
             padding: 0;
         }
+
+        .bag-btn {
+            margin-bottom: 4px;
+        }
+
+        /* .review-btn {
+            margin-bottom: 4px;
+        } */
 
 
         /* --- Product detail page --- */
