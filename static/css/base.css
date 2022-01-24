@@ -47,10 +47,15 @@ a:active {
 .btn-shop {
     background-color: #CEA1AE;
     color: white;
-    padding: 14px 25px;
+    padding: 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
+    /* font-size: 80%; */
+}
+
+.car-cat {
+    padding-top: 15px;
 }
 
 /* a:hover,
@@ -533,6 +538,10 @@ input[name='q']::placeholder {
 
     #mc_embed_signup_scroll {
         padding-left: 30px
+    }
+
+    .car-cat {
+        padding-top: 15px;
     }
 
 }
