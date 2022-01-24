@@ -190,7 +190,7 @@
                                                     Are you sure you want to delete the review?
                                                 </div>
                                                 <div class="modal-footer">
-                                                    <a href="{% url 'product_detail' review.id %}" class="btn btn-dark"> Cancel</a>
+                                                    <a href="{% url 'product_detail' product.id %}" class="btn btn-dark"> Cancel</a>
                                                     <form action="{% url 'delete_review' product.id review.user.username %}" method="POST">
                                                         {% csrf_token %}
                                                         <button type="submit" class="btn btn-danger">Delete</button>
