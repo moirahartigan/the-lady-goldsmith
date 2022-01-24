@@ -176,7 +176,7 @@
                                     <p class="text-black mb-2 mt-3">Review Text: {{ review.review_text }}</p>
                                     {% if review.user == request.user or request.user.is_superuser %}
                                     <!-- Delete Button trigger modal -->
-                                    <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#delete-review{{ review.id }}"><i class="fa fa-trash" aria-hidden="true"></i> Delete
+                                    <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#delete-review{{ review.id }}">Delete
                                     </button>
                                     <!-- Delete Comment Modal -->
                                     <div class="modal fade" id="delete-review{{ review.id }}" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
