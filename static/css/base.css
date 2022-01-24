@@ -265,11 +265,13 @@ a.category-badge>span.badge:hover {
     border: 0;
     margin: auto;
     margin-bottom: 10px;
+    /* object-fit: contain; */
 }
 
 .card-img-top {
     width: 300px;
     height: 300px;
+    object-fit: contain;
 }
 
 .card-title {

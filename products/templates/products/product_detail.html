@@ -101,6 +101,8 @@
                         </form>
                         <br>
                         <!-- product cat and rating -->
+                        <p class="mb-0 uppercase">Colour: {{ product.colour }}</p>
+                        <p class="mb-0 uppercase">Sku: {{ product.sku }}</p>
                         {% if product.category %}
                         <p class="small mt-1 mb-0">
                             <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
