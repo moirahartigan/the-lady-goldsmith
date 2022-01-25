@@ -70,6 +70,10 @@ a:active {
     text-decoration: none;
 }
 
+.carousel {
+    object-fit: fill;
+}
+
 .carousel-img {
     /* position: absolute; */
     /* height: 730px; */
@@ -440,9 +444,9 @@ input[name='q']::placeholder {
         object-fit: cover;
     }
 
-    .carousel {
+    /* .carousel {
         height: 800px;
-    }
+    } */
 
     .carousel-caption .btn {
         width: 20%;
@@ -483,7 +487,7 @@ input[name='q']::placeholder {
     }
 
     .carousel {
-        height: 700px;
+        object-fit: fill;
     }
 
 
@@ -533,6 +537,22 @@ input[name='q']::placeholder {
         width: 80%;
         width: 60%;
         padding-bottom: 50px;
+    }
+
+    .register-container {
+        margin: 101px 0px 113px 0;
+    }
+
+    .signin-container {
+        margin: 161px 0px 113px 0;
+    }
+
+    .signout-container {
+        margin: 209px 18px 240px 0;
+    }
+
+    .container-footer {
+        margin: 0px 1px 50px 0;
     }
 
 }
@@ -740,6 +760,11 @@ input[name='q']::placeholder {
 
         .form-holder-lg {
             padding: 0;
+        }
+
+        .form-holder {
+            padding: 15px 20px 56px 15px;
+            margin: 12px 0px 20px;
         }
 
         .bag-btn {
