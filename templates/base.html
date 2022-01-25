@@ -1,10 +1,8 @@
 {% load static %}
-
 <!doctype html>
 <html lang="en">
 
 <head>
-
     {% block meta %}
     <meta http-equiv="X-UA-Compatible" content="id=edge">
     <meta charset="utf-8">
@@ -12,40 +10,38 @@
     <meta name="description" content="A Jewellery ecommerce site where shoppers can buy Jewellery items">
     <meta name="keywords" content="jewellery,jewlery,ring,bracelet,necklace,earring">
     {% endblock %}
-
-    {% block extrameta %}
+    {% block extra_meta %}
     {% endblock %}
-
     {% block corecss %}
+    <!-- Bootstrap css -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Google fonts css -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora&family=Poppins&display=swap">
     <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7_dtp.css" rel="stylesheet" type="text/css">
-
+    <!-- User style css -->
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="{% static 'favicon/favicon.png' %}" />
     {% endblock %}
-
     {% block extra_css %}
     {% endblock %}
-
     {% block corejs %}
+    <!-- FontAwesome js -->
     <script src="https://kit.fontawesome.com/841d64a4da.js" crossorigin="anonymous"></script>
+    <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Bootstrap and popper js -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <!-- stripe -->
     <script src="https://js.stripe.com/v3/"></script>
     {% endblock %}
-
     {% block extra_js %}
     {% endblock %}
-
     <title>The Lady Goldsmith {% block extra_title %}{% endblock %}</title>
 </head>
 
 <body>
-
     <header class="container-fluid fixed-top">
         <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
             <!-- logo  -->
@@ -154,7 +150,6 @@
             </div>
         </div>
     </header>
-
     {% if messages %}
     <div class="message-container">
         {% for message in messages %}
@@ -172,10 +167,8 @@
         {% endfor %}
     </div>
     {% endif %}
-
     {% block page_header %}
     {% endblock %}
-
     {% block content %}
     {% endblock %}
 
@@ -269,11 +262,7 @@
                             </div>
                             <!--End mc_embed_signup-->
                         </div>
-                        <!-- <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                            <a href="https://www.privacypolicygenerator.info/live.php?token=BcTNhoYRILhUngJywBOyki3kdo9zluNl" target="_blank">Privacy Policy</a>
-                        </div> -->
                     </div>
-
                 </div>
             </section>
         </div>
@@ -308,7 +297,6 @@
         var $mcj = jQuery.noConflict(true);
     </script>
     {% endblock %}
-
 </body>
 
 </html>
