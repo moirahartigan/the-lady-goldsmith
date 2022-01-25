@@ -42,9 +42,10 @@
 </head>
 
 <body>
+    <!-- Header -->
     <header class="container-fluid fixed-top">
+        <!-- Navbar -->
         <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
-            <!-- logo  -->
             <div class="col-12 col-lg-3 my-auto py-1 py-lg-0 text-center text-lg-left">
                 <a href="{% url 'home' %}" class="nav-link main-logo-link">
                     <h2 class="logo-font text-black my-0"><strong>The lady Goldsmith</strong></h2>
@@ -150,6 +151,7 @@
             </div>
         </div>
     </header>
+    <!-- Toast messages -->
     {% if messages %}
     <div class="message-container">
         {% for message in messages %}
@@ -273,29 +275,8 @@
         </div>
     </footer>
     {% block postloadjs %}
-    <script type="text/javascript">
-        $('.toast').toast('show');
-    </script>
-    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
-    <script type='text/javascript'>
-        (function($) {
-            window.fnames = new Array();
-            window.ftypes = new Array();
-            fnames[0] = 'EMAIL';
-            ftypes[0] = 'email';
-            fnames[1] = 'FNAME';
-            ftypes[1] = 'text';
-            fnames[2] = 'LNAME';
-            ftypes[2] = 'text';
-            fnames[3] = 'ADDRESS';
-            ftypes[3] = 'address';
-            fnames[4] = 'PHONE';
-            ftypes[4] = 'phone';
-            fnames[5] = 'BIRTHDAY';
-            ftypes[5] = 'birthday';
-        }(jQuery));
-        var $mcj = jQuery.noConflict(true);
-    </script>
+    <script src="{% static 'js/toast.js' %}"></script>
+    <script src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
     {% endblock %}
 </body>
 
