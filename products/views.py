@@ -57,7 +57,7 @@ def all_products(request):
     current_sorting = f'{sort}_{direction}'
     product_count = products.count()
 
-    products_paginator = Paginator(products, 4)
+    products_paginator = Paginator(products, 8)
     page_num = request.GET.get('page')
 
     page = products_paginator.get_page(page_num)
