@@ -132,7 +132,7 @@
     // Dom. Store the form in a variable and then call the forms submit method.
     $('.update-link').click(function(e) {
         var form = $(this).prev('.update-form');
-        form.submit();
+        form[0].requestSubmit();
     })
 
     // Remove item and reload on click
