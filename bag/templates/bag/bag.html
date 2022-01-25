@@ -12,7 +12,7 @@
 {% block content %}
 <div class="overlay"></div>
 <div>
-    <div class="section-holder">
+    <div class="shop-bag">
         <div class="form-holder-xlg">
             <div class="container mb-2">
                 <div class="row">
@@ -108,7 +108,7 @@
                         </div>
                         {% else %}
                         <p class="lead mb-2">Your bag is empty.</p>
-                        <a class="btn green-btn mb-4 text-uppercase" href="{% url 'products' %}">Keep Shopping</a>
+                        <a class="btn btn-black mb-4 text-uppercase" href="{% url 'products' %}">Keep Shopping</a>
                         {% endif %}
                     </div>
                 </div>
@@ -126,7 +126,7 @@
     })
 </script>
 {% include 'products/includes/quantity_input_script.html' %}
-<script type="text/javascript">
+<script>
     // Update quantity on click
     // use the previous method to find the most recently seen update form in the 
     // Dom. Store the form in a variable and then call the forms submit method.

@@ -555,6 +555,11 @@ input[name='q']::placeholder {
         margin: 0px 1px 50px 0;
     }
 
+    .shop-bag {
+        padding: 98px 73px 105px 36px;
+        margin: 94px 0px 208px;
+    }
+
 }
 
 
@@ -589,6 +594,11 @@ input[name='q']::placeholder {
     .review-container {
         margin-top: 65px;
         padding-top: 50px;
+    }
+
+    .shop-bag {
+        padding: 66px 20px 84px 55px;
+        margin: 45px 0px 62px;
     }
 
 }
@@ -730,7 +740,7 @@ input[name='q']::placeholder {
         }
 
         .product-container {
-            margin-left: 0;
+            margin-left: 20px;
         }
 
         .carousel-caption h3 {
@@ -767,6 +777,7 @@ input[name='q']::placeholder {
             margin: 12px 0px 20px;
         }
 
+
         .bag-btn {
             margin-bottom: 4px;
         }
@@ -793,6 +804,10 @@ input[name='q']::placeholder {
 
         .image-container {
             padding-left: 33px;
+        }
+
+        .search-bar {
+            margin-left: 40px;
         }
     }
 
