@@ -70,6 +70,10 @@ a:active {
     text-decoration: none;
 }
 
+.carousel {
+    object-fit: fill;
+}
+
 .carousel-img {
     /* position: absolute; */
     /* height: 730px; */
@@ -440,9 +444,9 @@ input[name='q']::placeholder {
         object-fit: cover;
     }
 
-    .carousel {
+    /* .carousel {
         height: 800px;
-    }
+    } */
 
     .carousel-caption .btn {
         width: 20%;
@@ -483,7 +487,7 @@ input[name='q']::placeholder {
     }
 
     .carousel {
-        height: 700px;
+        object-fit: fill;
     }
 
 
@@ -535,6 +539,27 @@ input[name='q']::placeholder {
         padding-bottom: 50px;
     }
 
+    .register-container {
+        margin: 101px 0px 113px 0;
+    }
+
+    .signin-container {
+        margin: 161px 0px 113px 0;
+    }
+
+    .signout-container {
+        margin: 209px 18px 240px 0;
+    }
+
+    .container-footer {
+        margin: 0px 1px 50px 0;
+    }
+
+    .shop-bag {
+        padding: 98px 73px 105px 36px;
+        margin: 94px 0px 208px;
+    }
+
 }
 
 
@@ -569,6 +594,11 @@ input[name='q']::placeholder {
     .review-container {
         margin-top: 65px;
         padding-top: 50px;
+    }
+
+    .shop-bag {
+        padding: 66px 20px 84px 55px;
+        margin: 45px 0px 62px;
     }
 
 }
@@ -710,7 +740,7 @@ input[name='q']::placeholder {
         }
 
         .product-container {
-            margin-left: 0;
+            margin-left: 20px;
         }
 
         .carousel-caption h3 {
@@ -742,6 +772,12 @@ input[name='q']::placeholder {
             padding: 0;
         }
 
+        .form-holder {
+            padding: 15px 20px 56px 15px;
+            margin: 12px 0px 20px;
+        }
+
+
         .bag-btn {
             margin-bottom: 4px;
         }
@@ -768,6 +804,10 @@ input[name='q']::placeholder {
 
         .image-container {
             padding-left: 33px;
+        }
+
+        .search-bar {
+            margin-left: 40px;
         }
     }
 

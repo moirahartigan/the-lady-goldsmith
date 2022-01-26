@@ -1,61 +1,58 @@
 {% load static %}
-
 <!doctype html>
 <html lang="en">
 
 <head>
-
     {% block meta %}
-    <meta http-equiv="X-UA-Compatible" content="id=edge">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="A Jewellery ecommerce site where shoppers can buy Jewellery items">
     <meta name="keywords" content="jewellery,jewlery,ring,bracelet,necklace,earring">
     {% endblock %}
-
-    {% block extrameta %}
+    {% block extra_meta %}
     {% endblock %}
-
     {% block corecss %}
+    <!-- Bootstrap css -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Google fonts css -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora&family=Poppins&display=swap">
     <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7_dtp.css" rel="stylesheet" type="text/css">
-
+    <!-- User style css -->
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="{% static 'favicon/favicon.png' %}" />
     {% endblock %}
-
     {% block extra_css %}
     {% endblock %}
-
     {% block corejs %}
+    <!-- FontAwesome js -->
     <script src="https://kit.fontawesome.com/841d64a4da.js" crossorigin="anonymous"></script>
+    <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Bootstrap and popper js -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <!-- stripe -->
     <script src="https://js.stripe.com/v3/"></script>
     {% endblock %}
-
     {% block extra_js %}
     {% endblock %}
-
     <title>The Lady Goldsmith {% block extra_title %}{% endblock %}</title>
 </head>
 
 <body>
-
+    <!-- Header -->
     <header class="container-fluid fixed-top">
+        <!-- Navbar -->
         <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
-            <!-- logo  -->
             <div class="col-12 col-lg-3 my-auto py-1 py-lg-0 text-center text-lg-left">
                 <a href="{% url 'home' %}" class="nav-link main-logo-link">
                     <h2 class="logo-font text-black my-0"><strong>The lady Goldsmith</strong></h2>
                 </a>
             </div>
             <!-- Search bar  -->
-            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+            <div class="search-bar col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <form method="GET" action="{% url 'products' %}">
                     <div class="input-group w-100">
                         <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search our site">
@@ -76,13 +73,13 @@
                     <!-- dropdown menu  -->
                     <li class="list-inline-item dropdown">
                         <!-- This is the parent menu containing a dropdown menu with user icon  -->
-                        <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="text-black nav-link" href="#" id="user-options-mobile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <div class="text-center">
                                 <div><i class="fas fa-user fa-lg"></i></div>
                                 <p class="my-0">My Account</p>
                             </div>
                         </a>
-                        <div class="dropdown-menu border-0" aria-labelledby="user-options">
+                        <div class="dropdown-menu border-0" aria-labelledby="user-options-mobile">
                             {% if request.user.is_authenticated %}
                             {% if request.user.is_superuser %}
                             <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
@@ -154,7 +151,7 @@
             </div>
         </div>
     </header>
-
+    <!-- Toast messages -->
     {% if messages %}
     <div class="message-container">
         {% for message in messages %}
@@ -172,18 +169,16 @@
         {% endfor %}
     </div>
     {% endif %}
-
     {% block page_header %}
     {% endblock %}
-
     {% block content %}
     {% endblock %}
 
     <!-- Footer -->
     <footer class="footer text-center text-muted">
-        <div class="container-footer py-5">
+        <div class="container-footer pt-1 px-lg-5">
             <!-- Section: About & Social media -->
-            <section class="">
+            <section>
                 <div class="container-fluid text-center mt-5">
                     <div class="row mt-3">
                         <div class="col-md-5 col-lg-4 col-xl-3 mb-lg-0 mb-4">
@@ -209,7 +204,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-md-3 col-lg-2 col-xl-2 mb-lg-0 mb-4">
+                        <div class="col-md-3 col-lg-4 col-xl-2 mb-lg-0 mb-4">
                             <h5 class="text-uppercase fw-bold mb-4">
                                 Products
                             </h5>
@@ -220,7 +215,7 @@
                                 <li class="mb-2"><a href="{% url 'products' %}?category=earring" class="font-black">Earrings</a></li>
                             </ul>
                         </div>
-                        <div class="col-md-3 col-lg-2 col-xs-6 col-xl-2 mb-lg-0 mb-4">
+                        <div class="col-md-3 col-lg-4 col-xs-6 col-xl-2 mb-lg-0 mb-4">
                             <h5 class="text-uppercase fw-bold mb-4">
                                 Useful links
                             </h5>
@@ -242,7 +237,7 @@
                                 <li class="mb-2"><a href="https://www.privacypolicygenerator.info/live.php?token=BcTNhoYRILhUngJywBOyki3kdo9zluNl" class="font-black" target="_blank">Privacy Policy</a></li>
                             </ul>
                         </div>
-                        <div class="col-lg-4 col-md-12 mb-lg-0">
+                        <div class="col-lg-12 col-xl-4 col-md-12 pt-xl-2 px-lg-5">
                             <!-- Begin Mailchimp Signup Form -->
                             <div id="mc_embed_signup">
                                 <form action="https://github.us20.list-manage.com/subscribe/post?u=4560df26d52325822bc25a62a&amp;id=edf65faafe" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
@@ -269,11 +264,7 @@
                             </div>
                             <!--End mc_embed_signup-->
                         </div>
-                        <!-- <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                            <a href="https://www.privacypolicygenerator.info/live.php?token=BcTNhoYRILhUngJywBOyki3kdo9zluNl" target="_blank">Privacy Policy</a>
-                        </div> -->
                     </div>
-
                 </div>
             </section>
         </div>
@@ -284,6 +275,7 @@
         </div>
     </footer>
     {% block postloadjs %}
+<<<<<<< HEAD
     <script type="text/javascript">
         $('.toast').toast('show');
     </script>
@@ -309,6 +301,11 @@
     </script>
     {% endblock %}
 
+=======
+    <script src="{% static 'js/toast.js' %}"></script>
+    <script src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+    {% endblock %}
+>>>>>>> 68c1078ce6e895c9be332f9d24ced463eaa2bf42
 </body>
 
 </html>
