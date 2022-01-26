@@ -3,13 +3,13 @@
         <ul class="navbar-nav w-auto mx-auto">
             <!-- home -->
             <li class="nav-item">
-                <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'home' %}" id="home-link">
+                <a href="{% url 'home' %}" class="logo-font font-weight-bold nav-link text-black mr-5" id="home-link">
                     Home
                 </a>
             </li>
             <!-- All products dropdown menu  -->
             <li class="nav-item dropdown">
-                <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'products' %}" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a href="{% url 'products' %}" class="logo-font font-weight-bold nav-link text-black mr-5" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     All Products
                 </a>
                 <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
@@ -21,7 +21,7 @@
             </li>
             <!-- Shop dropdown menu  -->
             <li class="nav-item dropdown">
-                <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="shop-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a href="#" class="logo-font font-weight-bold nav-link text-black mr-5" id="shop-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Shop
                 </a>
                 <div class="dropdown-menu border-0" aria-labelledby="shop-link">
@@ -34,13 +34,13 @@
             </li>
             <!-- Contact us dropdown menu  -->
             <li class="nav-item">
-                <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'contact' %}" id="contact-link" aria-haspopup="true" aria-expanded="false">
+                <a href="{% url 'contact' %}" class="logo-font font-weight-bold nav-link text-black mr-5" id="contact-link" aria-haspopup="true" aria-expanded="false">
                     Contact Us
                 </a>
             </li>
             <!-- Sale -->
             <li class="nav-item">
-                <a class="logo-font font-weight-bold nav-link" href="{% url 'sale_items' %}" id="sale-link" aria-haspopup="true" aria-expanded="false">
+                <a href="{% url 'sale_items' %}" class="logo-font font-weight-bold nav-link" id="sale-link" aria-haspopup="true" aria-expanded="false">
                     Sale
                 </a>
             </li>

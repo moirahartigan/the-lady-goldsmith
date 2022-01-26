@@ -1,5 +1,5 @@
 <div class="list-inline-item">
-    <a class="text-black nav-link d-block d-lg-none" href="#" id="mobile-search" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <a href="#" class="text-black nav-link d-block d-lg-none" id="mobile-search" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <div class="text-center">
             <div><i class="fas fa-search fa-lg"></i></div>
             <p class="my-0 d-none d-lg-block">Search</p>
@@ -23,7 +23,7 @@
 </div>
 <!-- my account -->
 <div class="list-inline-item dropdown p-0">
-    <a class="text-black nav-link d-block d-lg-none" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <a href="#" class="text-black nav-link d-block d-lg-none" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <div class="text-center">
             <div><i class="fas fa-user fa-lg"></i></div>
             <p class="my-0 d-none d-lg-block">My Account</p>
@@ -44,7 +44,7 @@
 </div>
 <!-- wishlist -->
 <div class="list-inline-item p-0">
-    <a class="{% if wishlist_count %}text-primary font-weight-bold{% else %}text-black{% endif %} nav-link d-block d-lg-none" href="">
+    <a href="#" class="{% if wishlist_count %}text-primary font-weight-bold{% else %}text-black{% endif %} nav-link d-block d-lg-none">
         <div class="text-center">
             <div><i class="fas fa-heart"></i></div>
             <p class="my-0 d-none d-lg-block">
@@ -55,12 +55,11 @@
                 {% endif %}
             </p>
         </div>
-
     </a>
 </div>
 <!-- shopping bag -->
 <div class="list-inline-item p-0">
-    <a class="{% if grand_total %}text-primary font-weight-bold{% else %}text-black{% endif %} nav-link d-block d-lg-none" href="{% url 'view_bag'%}">
+    <a href="{% url 'view_bag'%}" class="{% if grand_total %}text-primary font-weight-bold{% else %}text-black{% endif %} nav-link d-block d-lg-none">
         <div class="text-center">
             <div><i class="fas fa-shopping-bag fa-lg"></i></div>
             <p class="my-0 d-none d-lg-block">
