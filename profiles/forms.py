@@ -17,10 +17,6 @@ class UserProfileForm(forms.ModelForm):
         """
         Add placeholders and classes, remove auto-generated
         labels and set autofocus on first field
-        Args:
-            self (object): Self object
-            *args: *args
-            **kwargs: **kwargs
         Returns:
             N/A
         """
@@ -42,5 +38,6 @@ class UserProfileForm(forms.ModelForm):
                 else:
                     placeholder = placeholders[field]
                 self.fields[field].widget.attrs['placeholder'] = placeholder
-            self.fields[field].widget.attrs['class'] = 'border-black rounded-0 profile-form-input'
+            self.fields[field].widget.attrs['class'] = 'border-black \
+                                                rounded-0 profile-form-input'
             self.fields[field].label = False

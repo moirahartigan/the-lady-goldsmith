@@ -37,9 +37,6 @@ def profile(request):
 def order_history(request, order_number):
     """
     Display the user's profile.
-    Args:
-        request (object): HTTP request object.
-        orderr_number: Order number
     Returns:
         Render of users order history page with context
     """

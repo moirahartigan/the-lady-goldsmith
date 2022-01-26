@@ -11,9 +11,6 @@ from .models import Wishlist
 def view_product_wishlist(request):
     """
     A view that displays users wishlist
-    Args:
-        request (object): HTTP request object.
-    Returns:
         Renders the request, template and context
     """
     wishlist_items_count = 0
@@ -40,9 +37,6 @@ def view_product_wishlist(request):
 def add_product_to_wishlist(request, item_id):
     """
     Add a product item to wishlist
-    Args:
-        request (object): HTTP request object.
-        item_id: Item id
     Returns:
         Renders the product detail page
     """
@@ -63,9 +57,6 @@ def add_product_to_wishlist(request, item_id):
 def remove_product_from_wishlist(request, item_id, redirect_from):
     """
     Remove a product item from wishlist
-    Args:
-        request (object): HTTP request object.
-        item_id: Item id
     Returns:
         Returns the redirect url
     """

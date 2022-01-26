@@ -8,6 +8,7 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+/* Nav bar */
 
 #sale-link {
     color: #dc3545;
@@ -51,19 +52,11 @@ a:active {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    /* font-size: 80%; */
 }
 
 .car-cat {
     padding-top: 15px;
 }
-
-/* a:hover,
-a:active {
-    background-color: #B36B80
-} */
-
-/* --- End Colot Palette--- */
 
 /* carousel */
 .car-title {
@@ -72,15 +65,6 @@ a:active {
 
 .carousel {
     object-fit: fill;
-}
-
-.carousel-img {
-    /* position: absolute; */
-    /* height: 730px; */
-    /* top: 0;
-    left: 0;
-    min-width: 100%;
-    max-width: none; */
 }
 
 /* footer */
@@ -149,13 +133,6 @@ a:active {
     width: fit-content;
 }
 
-/* .shop-now-button {
-    background-color: transparent;
-    min-width: 260px;
-    color: #fff;
-    border: 1px solid #fff;
-    font-family: 'Poppins', sans-serif;
-} */
 
 .btn {
     border-radius: 0.25rem;
@@ -240,7 +217,7 @@ a.category-badge>span.badge:hover {
     width: 100%;
 }
 
-/* ------------------------------- Product detail */
+/* Product detail page */
 
 .wish-remove {
     cursor: pointer;
@@ -264,12 +241,10 @@ a.category-badge>span.badge:hover {
 }
 
 .card-img-product-detail {
-    /* height: 400px; */
     width: 400px;
     border: 0;
     margin: auto;
     margin-bottom: 10px;
-    /* object-fit: contain; */
 }
 
 .card-img-top {
@@ -282,21 +257,7 @@ a.category-badge>span.badge:hover {
     font-size: 1.3rem;
 }
 
-/* bag */
-/* .section-holder {
-    padding: 50px 10px;
-} */
 
-/* .form-holder {
-    max-width: 600px;
-    margin: auto;
-    padding: 60px 50px;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
-    border-bottom-left-radius: 30px;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
-} */
 
 /* ------------------------------- bootstrap toasts */
 
@@ -419,20 +380,14 @@ input[name='q']::placeholder {
     padding: 0;
 }
 
-/* .contact {
-    padding-right: 102px;
-} */
 
-
-/* -------------------------------- Media Queries */
-
-/* Slightly larger container on xl screens */
+/*  Media Queries */
+/* xl screens */
 @media (min-width: 1200px) {
     .container {
         max-width: 100%;
         width: 80%;
     }
-
 
     .newsletter-container {
         max-width: 80%
@@ -444,10 +399,6 @@ input[name='q']::placeholder {
         height: 700px;
         object-fit: cover;
     }
-
-    /* .carousel {
-        height: 800px;
-    } */
 
     .carousel-caption .btn {
         width: 20%;
@@ -462,7 +413,6 @@ input[name='q']::placeholder {
     }
 
 }
-
 
 
 /* fixed top navbar only on medium and up (ipad-pro) */
@@ -525,17 +475,6 @@ input[name='q']::placeholder {
         width: 80%;
     }
 
-    /* .form-holder {
-        margin: auto;
-        width: 100%;
-        padding: 60px 50px;
-        border-top-left-radius: 30px;
-        border-top-right-radius: 30px;
-        border-bottom-right-radius: 30px;
-        border-bottom-left-radius: 30px;
-        box-shadow: 0px 2px 10px rgb(0 0 0 / 8%);
-    } */
-
     .detail-section {
         width: 100%;
     }
@@ -570,7 +509,6 @@ input[name='q']::placeholder {
     }
 
 }
-
 
 
 /* pad the top a bit when navbar is collapsed on mobile (ipad)*/
@@ -626,11 +564,6 @@ input[name='q']::placeholder {
     .quantity-width {
         width: 80%;
     }
-
-    /* .message-container {
-        top: 95px;
-        right: 20px;
-    } */
 }
 
 /* SMALL SCREEN (iphone6) */
@@ -657,12 +590,7 @@ input[name='q']::placeholder {
 
     .pricing {
         font-size: 1.3rem;
-        /* padding-left: 71px; */
     }
-
-    /* .bag-buttons {
-        ppadding: 0 131px 5px 20px;
-    } */
 
     .dropdown-menu {
         font-size: 0.8rem;
@@ -682,10 +610,6 @@ input[name='q']::placeholder {
         margin-bottom: 4px;
     }
 
-    /* .review-btn {
-        margin-bottom: 4px;
-    } */
-
     .carousel-caption h3 {
         font-size: 95%;
     }
@@ -694,11 +618,6 @@ input[name='q']::placeholder {
         padding-top: 11px;
     }
 
-    /* .carousel-caption h3 {
-        font-size: 80%;
-    } */
-
-    /* --- Product detail page --- */
     .card-img-product-detail {
         height: 300px;
         width: 300px;
@@ -716,108 +635,101 @@ input[name='q']::placeholder {
         padding: 50px 10px;
     }
 
-    /* .form-holder {
-        padding: 30px 52px 60px 20px;
-    } */
+    .signin-container {
+        padding: 0;
+    }
+}
+
+/* X-SMALL SCREEN (iphone5) */
+@media (max-width: 320px) {
+    .fixed-top {
+        padding-right: 0;
+    }
+
+    .container {
+        max-width: 100%;
+    }
+
+    .card-img-top {
+        width: 200px;
+        height: 200px;
+    }
+
+    .dropdown-menu {
+        font-size: 0.7rem;
+    }
+
+    .message-container {
+        top: 75px;
+        right: 20px;
+    }
+
+    .product-container {
+        margin-left: 20px;
+    }
+
+    .carousel-caption h3 {
+        font-size: 70%;
+    }
+
+    .car-cat {
+        padding-top: 10px;
+    }
+
+
+    .register-container {
+        padding: 0;
+    }
 
     .signin-container {
         padding: 0;
     }
 
-    /* X-SMALL SCREEN (iphone5) */
-    @media (max-width: 320px) {
-        .fixed-top {
-            padding-right: 0;
-        }
-
-        .container {
-            max-width: 100%;
-        }
-
-        .card-img-top {
-            width: 200px;
-            height: 200px;
-        }
-
-        .dropdown-menu {
-            font-size: 0.7rem;
-        }
-
-        .message-container {
-            top: 75px;
-            right: 20px;
-        }
-
-        .product-container {
-            margin-left: 20px;
-        }
-
-        .carousel-caption h3 {
-            font-size: 70%;
-        }
-
-        .car-cat {
-            padding-top: 10px;
-        }
-
-
-        .register-container {
-            padding: 0;
-        }
-
-        .signin-container {
-            padding: 0;
-        }
-
-        .mobile-login {
-            padding: 0px 60px 20px 40px;
-        }
-
-        .forgot {
-            text-align: center;
-        }
-
-        .form-holder-lg {
-            padding: 0;
-        }
-
-        .form-holder {
-            padding: 15px 20px 56px 15px;
-            margin: 12px 0px 20px;
-        }
-
-
-        .bag-btn {
-            margin-bottom: 4px;
-        }
-
-        /* .review-btn {
-            margin-bottom: 4px;
-        } */
-
-
-        /* --- Product detail page --- */
-
-        .card-img-product-detail {
-            height: 200px;
-            width: 200px;
-        }
-
-        .quantity-width {
-            width: 80%;
-        }
-
-        .product-details {
-            padding: 50px 10px;
-        }
-
-        .image-container {
-            padding-left: 33px;
-        }
-
-        .search-bar {
-            margin-left: 40px;
-        }
+    .mobile-login {
+        padding: 0px 60px 20px 40px;
     }
 
-    /* ----- End of Media Queries ----- */
+    .forgot {
+        text-align: center;
+    }
+
+    .form-holder-lg {
+        padding: 0;
+    }
+
+    .form-holder {
+        padding: 15px 20px 56px 15px;
+        margin: 12px 0px 20px;
+    }
+
+    .bag-btn {
+        margin-bottom: 4px;
+    }
+
+    .card-img-product-detail {
+        height: 200px;
+        width: 200px;
+    }
+
+    .quantity-width {
+        width: 80%;
+    }
+
+    .product-details {
+        padding: 50px 10px;
+    }
+
+    .image-container {
+        padding-left: 33px;
+    }
+
+    .search-bar {
+        margin-left: 40px;
+    }
+
+    .footer {
+        font-size: 70%;
+    }
+}
+
+/* ----- End of Media Queries ----- */
