@@ -411,7 +411,8 @@ input[name='q']::placeholder {
 
 /* Contact us form */
 .contact-us {
-    padding-top: 150px;
+    margin: 100px 5px 10px 5px;
+    padding-right: 35px;
 }
 
 #mc_embed_signup form {
@@ -490,9 +491,21 @@ input[name='q']::placeholder {
         object-fit: fill;
     }
 
+    .wishlist-page {
+        margin-top: 45px;
+    }
+
+    .sale-page {
+        margin-top: 45px;
+    }
 
     .contact-us {
-        padding-top: 280px;
+        margin-top: 45px;
+    }
+
+    .contact {
+        padding-top: 150px;
+        padding-right: 102px;
     }
 
     .message-container {
@@ -527,10 +540,6 @@ input[name='q']::placeholder {
         width: 100%;
     }
 
-    .contact {
-        padding-right: 102px;
-    }
-
     .review-container {
         margin-top: 150px;
         padding-top: 100px;
@@ -552,7 +561,7 @@ input[name='q']::placeholder {
     }
 
     .container-footer {
-        margin: 0px 1px 50px 0;
+        margin: 53px 1px 3px 0;
     }
 
     .shop-bag {
