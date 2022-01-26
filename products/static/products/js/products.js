@@ -25,5 +25,10 @@ $('#new-image').change(function() {
 });
 
 $('#myModal').on('shown.bs.modal', function() {
-    $('#myInput').trigger('focus')
-})
+    $('#myInput').trigger('focus');
+});
+// add products
+$('#new-image').change(function() {
+    var file = $('#new-image')[0].files[0];
+    $('#filename').text(`Image will be set to: ${file.name}`);
+});
