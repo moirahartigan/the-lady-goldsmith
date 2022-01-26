@@ -2,14 +2,14 @@
  * [Favourites sorting functionality
  * Credit: Code Institute project Boutique Ado ]
  */
- $('.btt-link').click(function(e) {
-    window.scrollTo(0,0);
+$('.btt-link').click(function(e) {
+    window.scrollTo(0, 0);
 });
 $('#sort-selector').change(function() {
     var selector = $(this);
     var currentUrl = new URL(window.location);
     var selectedVal = selector.val();
-    if(selectedVal != "reset"){
+    if (selectedVal != "reset") {
         var sort = selectedVal.split("_")[0];
         var direction = selectedVal.split("_")[1];
         currentUrl.searchParams.set("sort", sort);
@@ -23,6 +23,6 @@ $('#sort-selector').change(function() {
 });
 
 
-$('#myModal').on('shown.bs.modal', function () {
-    $('#myInput').trigger('focus')
-  })
+$('#myModal').on('shown.bs.modal', function() {
+    $('#myInput').trigger('focus');
+});
