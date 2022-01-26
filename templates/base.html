@@ -275,12 +275,11 @@
         </div>
     </footer>
     {% block postloadjs %}
-<<<<<<< HEAD
-    <script type="text/javascript">
+    <script>
         $('.toast').toast('show');
     </script>
-    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
-    <script type='text/javascript'>
+    <script src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+    <script>
         (function($) {
             window.fnames = new Array();
             window.ftypes = new Array();
@@ -300,12 +299,6 @@
         var $mcj = jQuery.noConflict(true);
     </script>
     {% endblock %}
-
-=======
-    <script src="{% static 'js/toast.js' %}"></script>
-    <script src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
-    {% endblock %}
->>>>>>> 68c1078ce6e895c9be332f9d24ced463eaa2bf42
 </body>
 
 </html>
