@@ -108,6 +108,21 @@
 |Delete product button      |Click   |Open delete confirmation modal|Pass|
 |Modal cancel button        |Click   |Close modal                   |Pass|
 |Modal delete button        |Click   |Delete product                |Pass|
+| **Reviews**               |        |                          |    |
+|**If user not in session** |        |                          |    |
+|Reviews                    |Click   |Redirect to login page    |Pass|
+|**If user in session:**   |        |                              |    |
+|Form dropdown              |Click   |Show dropdown options        |Pass|
+|Form Text Input         |Just input whitespace|On Submit: Form won't submit |Pass  |
+|Post Review button(form valid) |Click      |Form submit                     |Pass  |
+|                               |           |Redirect to product detail page |Pass  |
+|                               |           |Product uploaded toast appears  |Pass  |
+|Post Review button(form invalid)|Click     |Form doesn't submit             |Pass  |
+|                               |           |Error messages on invalid fields|Pass  |
+|Edit review button        |Click   |Redirect to edit product page |Pass|
+|Delete Review button      |Click   |Open delete confirmation modal|Pass|
+|Modal cancel button        |Click   |Close modal                   |Pass|
+|Modal delete button        |Click   |Delete product                |Pass|
 
 ---
 
