@@ -9,8 +9,8 @@ Page | Result | Test Detail/Screenshot
 bag/templates/bag/bag.html  | 0 errors and 0 contrast errors| [Results]() 
 bag/templates/bag/bag.html (Empty)  | 0 errors and 0 contrast errors| [Results]() 
 checkout/templates/checkout/checkout.html | 0 errors and 0 contrast errors| [Results]()  
-checkout/templates/checkout/checkout_success.html | 0 errors and 0 contrast errors| [Results]()  
-favourites/templates/favourites/favourites.html | 0 errors and 0 contrast errors| [Results]()  
+checkout/templates/checkout/checkout_success.html | 0 errors and 0 contrast errors| [Results]()    
+contact/templates/contact/contact.html | 0 errors and 0 contrast errors| [Results]()    
 home/templates/home/index.html | 0 errors and 0 contrast errors| [Results]()
 products/templates/products/add_product.html | 0 errors and 0 contrast errors| [Results]()
 products/templates/products/edit_product.html | 0 errors and 0 contrast errors| [Results]()  
@@ -21,5 +21,6 @@ profile/templates/profile/profile.html | 0 errors and 0 contrast errors| [Result
 profile/templates/profile/order_history.html | 0 errors and 0 contrast errors| [Results]()  
 templates/allauth/account/login.html | 0 errors and 0 contrast errors| [Results]()
 templates/allauth/account/logout.html | 0 errors and 0 contrast errors| [Results]()
-templates/allauth/account/register.html | 0 errors and 0 contrast errors| [Results]() 
+templates/allauth/account/register.html | 0 errors and 0 contrast errors| [Results]()
+wishlist/templates/wishlist/wishlist.html | 0 errors and 0 contrast errors| [Results]() 
 <br>
