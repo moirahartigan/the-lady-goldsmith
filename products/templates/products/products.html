@@ -48,12 +48,12 @@
             <div class="row">
                 {% for product in products %}
                 <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                    <div class="card text-center rounded-0" style="width: 18rem">
+                    <div class="card rounded-0" style="width: 18rem">
                         {% if product.image %}
-                        <a href="{% url 'product_detail' product.id %}">
+                        <a href="{% url 'product_detail' product.id %}" class="image-cards">
                             <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}"></a>
                         {% else %}
-                        <a href="{% url 'product_detail' product.id %}">
+                        <a href="{% url 'product_detail' product.id %}" class="image-cards">
                             <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}"></a>
                         {% endif %}
                         <div class="card-body text-left pb-0">
@@ -151,14 +151,14 @@
             <ul class="pagination">
                 {% if page.has_previous %}
                 <li class="page-item">
-                    <a class="page-link" href="{% url 'products' %}?page={{ page.previous_page_number }}">&#8592;
+                    <a href="{% url 'products' %}?page={{ page.previous_page_number }}" class="page-link">&#8592;
                         Previous</a>
                 </li>
                 {% endif %}
                 <li class="page-link">{{ page.number }}</li>
                 {% if page.has_next %}
                 <li class="page-item">
-                    <a class="page-link" href="{% url 'products' %}?page={{ page.next_page_number }}">Next &#8594;</a>
+                    <a href="{% url 'products' %}?page={{ page.next_page_number }}" class="page-link">Next &#8594;</a>
                 </li>
                 {% endif %}
             </ul>

@@ -6,9 +6,9 @@ from django.core.paginator import Paginator
 from django.db.models import Q
 from django.db.models.functions import Lower
 
+from wishlist.models import Wishlist
 from .models import Product, Category, Review
 from .forms import ProductForm, ProductReviewForm
-from wishlist.models import Wishlist
 
 
 def all_products(request):
@@ -16,7 +16,7 @@ def all_products(request):
     A view to show all products, including sorting and search queries
     """
 
-    products = Product.objects.all()
+    products = Product.objects.all().order_by('id')
     query = None
     categories = None
     sort = None
@@ -58,11 +58,13 @@ def all_products(request):
     current_sorting = f'{sort}_{direction}'
     product_count = products.count()
 
-    products_paginator = Paginator(products, 8)
+    products_list = Product.objects.all().order_by('id')
+    products_paginator = Paginator(products_list, 2)
     page_num = request.GET.get('page')
+    print(page_num) 
 
     page = products_paginator.get_page(page_num)
-
+    print(page) 
     context = {
         'products': products,
         'page': page,
@@ -211,12 +213,12 @@ def add_review(request, product_id):
 
 
 @login_required
-def edit_review(request, product_id,):
+def edit_review(request, review_id):
     """
     Edit exisiting review
     """
 
-    review = get_object_or_404(Review, pk=product_id)
+    review = get_object_or_404(Review, pk=review_id)
     product = review.product
     if request.user != review.user:
         messages.error(request, (
