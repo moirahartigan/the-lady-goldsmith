@@ -61,10 +61,10 @@ def all_products(request):
     products_list = Product.objects.all().order_by('id')
     products_paginator = Paginator(products_list, 2)
     page_num = request.GET.get('page')
-    print(page_num) 
+    print(page_num)
 
     page = products_paginator.get_page(page_num)
-    print(page) 
+    print(page)
     context = {
         'products': products,
         'page': page,
