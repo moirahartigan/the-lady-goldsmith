@@ -76,11 +76,15 @@
                                             <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}</a>
                                     </p>
                                     {% endif %}
-                                    <!-- <small class="text-muted">{{ product.review }}</small>                                  -->
                                     {% if product.rating %}
                                     <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
                                     {% else %}
                                     <small class="text-muted">No Rating</small>
+                                    {% endif %}
+                                    {% if is_product_in_wishlist %}
+                                    <a href="{% url 'remove_product_from_wishlist' product.id 'product' %}" aria-label="remove product from wishlist" class="wish wish-remove text-danger ml-3"><i class="fas fa-heart"></i></a>
+                                    {% else %}
+                                    <a href="{% url 'add_product_to_wishlist' product.id %}" aria-label="add product to wishlist" class="wish text-danger ml-3"><i class="far fa-heart"></i></a>
                                     {% endif %}
                                 </div>
                             </div>
