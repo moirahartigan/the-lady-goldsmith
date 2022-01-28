@@ -135,15 +135,15 @@ The website consists of a **Home** page with 16 other core pages**.
 
 - **Home** (`index.html`)<br>The landing page of the website. 
 
-- **All Products** (`products.html`)<br>
-- **Product Detail** (`product_detail.html`)<br>
-- **Add Product** (`add_product.html`)<br>
-- **Edit Product** (`edit_product.html`)<br>
-- **Sale** (`sale_items.html`)<br>
-- **Contact Us** (`contact.html`)<br>
-- **Shopping Bag** (`bag.html`)<br>
-- **Checkout** (`checkout.html`)<br>
-- **Wishlist** (`wishlist.html`)<br>
+- **All Products** (`products.html`)<br> The page where users can view all the products available.
+- **Product Detail** (`product_detail.html`)<br> The page where users can view each product description and additional information.
+- **Add Product** (`add_product.html`)<br> The page were the site owner can add a new product to the site.
+- **Edit Product** (`edit_product.html`)<br> The page where the site owner can edit the information on an existing product already on the site.
+- **Sale** (`sale_items.html`)<br> The page where users can view all the sale items.
+- **Contact Us** (`contact.html`)<br> The page were a user can send a message to the business.
+- **Shopping Bag** (`bag.html`)<br> The page where the user can view items they have placed in their bag.
+- **Checkout** (`checkout.html`)<br> The page where users can add their payment information.
+- **Wishlist** (`wishlist.html`)<br> The page where users can see all their favourite items.
 - **Profile** (`profile.html`)<br>The page where users will be led when they create an account or log in.
 - **Register** (`account/signup.html`)<br>The page where users can create an account. Once a user creates an account successfully, they will be led to *Profile* page
 - **Login** (`account/login.html`)<br>The page where users who have an account can log in to the website. Once users log in successfully, they will be led to *Profile* page. Again the navigation bar is different to *Home* page, and once a user is logged in, the *profile* page and *logout* page is now visible on the navbar.
@@ -160,7 +160,7 @@ The website consists of a **Home** page with 16 other core pages**.
 
 ## Skeleton
 
-It is a mobile-first website because people usually cook with a recipe so a good mobile-first design helps users whose main purpose is seeing recipes. For users whose main purpose is creating and posting recipes, the form is also well designed on both mobile and desktop sizes. There are wireframes of mobile and desktop sizes for all the core pages of the website.
+It is a mobile-first website because people want to be able to shop online from anywhere, and have access on the go, so a good mobile-first design helps users whose main purpose is shop on the go and from anywhere, not just from their pc.
 
 ### Wireframes
 
@@ -180,21 +180,23 @@ It is a mobile-first website because people usually cook with a recipe so a good
 - [Wireframes: Profile](https://github.com/moirahartigan/the-lady-goldsmith/blob/main/readme/wireframes/profile_page.png)
 
 
-
-
 ## Surface
 
 — **Colour** —
 
-As this is a recipes website, I kept the colour scheme simple and clean as I wanted the main focus to be on the images.
+While white is the main colour for the site and will be itilized as much as possible, I chose accent colours that I thought would not be overwhelming and add an elegance to it.
+
 <br>
-The background 
+
+![colour scheme](readme/misc/colour_scheme.png)
+
+The colours are muted and quite neutral so as to not overwhelm the user.
 
 — **Typography** —
 
-* As a main font I used Lato, and as a backup font sans-serif
-* On the logo text I used ...................
-* On large headings I used ..................., and cursive as a backup font;
+* As a main font I used Poppins, and as a backup font sans-serif
+* On the logo text I used Lora and sans-serif as backup font
+
 <br>
 
 [^ back to top ^](#Table-of-contents)
@@ -211,18 +213,58 @@ The navigation menu will help the user move easily across all pages.
 
 The navigation buttons update depending on whether a user is logged in, and whether that user is the admin:
 
-| Nav Link              |Not logged in  |Logged in as user
-|:-------------         |:------------- |:------------- 
-|Home                   |&#9989;        |&#9989;        
-|#######                |&#9989;        |&#9989;        
-|Register               |&#9989;        |&#10060;        
-|Profile                |&#10060;       |&#9989;        
-|Log Out                |&#10060;       |&#9989;             
-|Log In                 |&#9989;        |&#10060;       
+| Nav Link              |Not logged in  |Logged in as user|Logged in as admin
+|:-------------         |:------------- |:----------------|:------------- |
+|Logo(back to home)     |&#9989;        |&#9989;          |&#9989;
+|Product Management     |&#10060;       |&#10060;         |&#9989;
+|My Profile             |&#10060;       |&#9989;          |&#9989;
+|Sign Out               |&#10060;       |&#9989;          |&#9989;
+|Register               |&#9989;        |&#10060;         |&#10060;
+|Sign In                |&#9989;        |&#10060;         |&#10060;
+|All Products           |&#9989;        |&#9989;          |&#9989;
+|Shop                   |&#9989;        |&#9989;          |&#9989;
+|Necklaces               |&#9989;        |&#9989;          |&#9989;
+|Rings                   |&#9989;        |&#9989;          |&#9989;
+|Earrings                |&#9989;        |&#9989;          |&#9989;
+|Bracelets                |&#9989;        |&#9989;          |&#9989;
+|Contact Us                |&#9989;        |&#9989;          |&#9989;
+|Sale                     |&#9989;        |&#9989;          |&#9989;
 
+### **User registration not required**
+
+It was important that the user was given the option to purchase from the store without having to register for an account. It's a personal pet peeve of mine to have to make accounts on online stores when I'm not guaranteed to go back again and Jewlery isn't necessarily a regular purchase. 
+
+Even if a user doesn't have an account, they are still able to purchase, input a delivery address and have a confirmation email sent to them when they have completed a purchase. 
+
+### **User profile creation**
+
+A user has an option to create an account if they want to. 
+Registration process:
+
++ Username
+   + A user can choose a username as long as it hasn't already been taken
+   + The user will receive an error notification immediately if their username has already been taken
+
++ Email address
+   + A user needs to sign up using an email address
+   + The email has to be inputted twice to avoid typo issues
+   + This triggers an automatic email to be sent to the user to confirm the email address as correct and set up the account. 
+
++ Password
+   + The password has to be inputted twice to avoid typo issues
+
+With a user profile: 
++ the user has access to the class videos. 
++ order history is saved & displayed in their profile.
++ Save default delivery information to their profile from the checkout page.
++ Update default delivery information to their profile from their profile page.
+
+---      
 
 ## Features to Implement in the future 
-+ 
++ Users ability to delete their account.
++ An online booking service where shoppers can book a time to come into store to try on particular item, 
+given the current covid environment this would be a very useful feature.
 <br>
 
 [^ back to top ^](#Table-of-contents)
@@ -232,13 +274,63 @@ The navigation buttons update depending on whether a user is logged in, and whet
 # Database
 
 Two relational databases were used to create this site - during production SQLite was used and then Postgres was used for the deployed Heroku version. 
-Cloudinary is used for all images both by the superuser and a standard user for all images uploaded to the website.
+
 <br>
+
+Below is an image of how the database models relate to each other:
+
+![Main site image](readme/misc/database_schema.png)
+
 The database contains three custom models - categories recipes and comments. The built in Django user model was utilized and each model linked to this. Each registered user is assigned a user id. They can add recipes which will be linked to their id, and each recipe has an auto generated slug field (this is derived from the recipe's title). The recipe can be edited and deleted by the person who added it or by admin. 
 
-Below is the chart of the custom data model used.
+#### Models
+- The following models were created to represent the database model structure for the website
+##### User Model
+- The User model contains information about the user. It is part of the Django allauth library
+- The model contains the following fields: username, password, first_name, last_name, email, is_staff, is_active, is_superuser, last_login, date_joined
 
-![database](##################)<br>
+##### UserProfile Model
+- The UserProfile model has a one-to-one relationship with User
+- The model contains the following fields: default_phone_number, default_street_address1, default_street_address2
+default_town_or_city, default_county, default_postcode and default_country
+
+##### Order Model
+- The Order model contains information about orders made on the website.
+- It contains UserProfile as a foreign-key.
+- The model contains the following fields: order_number, user_profile, full_name, email, phone_number, country, postcode, town_or_city, street_address1
+, street_address2, county, date, delivery_cost, order_total, grand_total, original_bag, stripe_pid
+
+##### OrderLineItem Model
+- The OrderLineItem model contains information about an entry in an order, for orders made on the website.
+- It contains Order and Product as foreign-keys.
+- The model contains the following fields: order, product, product_size, quantity, lineitem_total
+
+##### Wishlist Model
+- The Wishlist model contains a users favourite products
+- It contains Products as many-to-many field, and User as a one-to-one relationship
+- The model contains the following fields: products, username
+
+##### Products Model
+- The Product Model represents a product and its details
+- It contains Category as a foreign-key
+- The model contains the following fields: name, category, price, colour, sku, description, has_sizes, rating, pre_sale_price, image_url, image
+- The image field contains the product image
+- The image_url field contains the url to where the image file is physically stored, for example AWS S3 bucket
+
+##### Rating Model
+- The Rating model contains a rating for a product by a user
+- It contains User and Product as foreign-keys.
+- The model contains the following fields: user, product, product_rating, review_text, create_date
+
+##### Category Model
+- The Category model contains a product category
+- The model contains the following fields: name, friendly_name
+
+##### Review Model
+- The Review model contains a review of a product by a user
+- It contains User and Product as foreign-keys.
+- The model contains the following fields: user, product, product_rating, review_text, create_date
+
 
 ###
 
