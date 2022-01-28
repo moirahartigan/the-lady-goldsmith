@@ -385,6 +385,13 @@ input[name='q']::placeholder {
     padding: 0;
 }
 
+/* error pages */
+
+.error-page {
+    width: 50vw;
+    display: block;
+    margin: 0 auto;
+}
 
 /*  Media Queries */
 /* xl screens */

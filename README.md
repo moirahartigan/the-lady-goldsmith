@@ -1,8 +1,8 @@
 # The Lady Goldsmith
 ## **Code Institute - Portfolio Project 5: _E-commerce Application_** 
-The Lady Goldsmith! is an online e-commerce fine jewellery store.
+The Lady Goldsmith! is an online e-commerce fine jewellery store. This site was developed  for my portfolio 5 project as part of the Code Institute - Full Stack Diploma in Software Development (ecommerce) course.
+ <br>
 
-It is a community based experience that allows casual, one-time users to browse recipes, and allows returning users to create profiles and upload and manage recipes.
 ## Demo
 
 **View the Live Website [Here](https://ecommerce-pp5.herokuapp.com/)**
@@ -42,17 +42,28 @@ It is a community based experience that allows casual, one-time users to browse 
 The primary goal of The lady Goldsmith is to enable users to purchase jewellery through an fully functional ecommerce website. The goal for the design was to make it as easy as possible to access information, while striving for a minimalist and user-friendly layout.
 
 ## User Stories
-**As a Casual User, I want to:**
 
-1. 
+1. As an Shopper I want to see that the navigation bar is displayed with a logo on all pages so I can easily find my way through the site.
+2. As an Shopper I want to browse through all available products so I can select some items I wish to purchase.
+3. As a Shopper I want to be able to view individual product details so I can identify the price, product description, rating and images.
+4. As a Shopper I want to add products to my Wishlist so I can keep track of the items I like the most for a future site visit.
+5. As a Shopper I want to view my cart and any items I currently have awaiting payment in my bag so I can avoid spending too much.
+12. As a Shopper I want to be able to view items in my shopping cart to be purchased so I can identify the total cost of my purchase and all the items I will receive.
+13. As a Shopper I want to easily enter my payment information so I can checkout quickly and with no issues
 
-**As a Registered User, I want to:**
-
-1. 
+6. As a Shopper I want to Easily register an account so I can have a personal account and view my profile.
+7. As a Shopper I want to have the ability to log in to the site so I can access my personal details.
+8. As a Shopper I want to easily recover my password if I forget it so I can regain access to my account information.
+9. As a Shopper I want to receive email confirmation after registering so I can verify that my account registration was successful.
+10. As a Shopper I want to have a personalized user profile so I can view my personal order history and save my payment information.
+11. As a Shopper I want to be able to use the search option so I can search the site for specific keywords.
+3. As a Shopper I want to receive email notifications when a user submits through the contact page so I can respond to the customers query in a timely manor.
 
 **As an Administrative Account holder, I want to:**
 
-1. 
+1. As a Site Owner I want to be able to log in to an admin panel so I can see all product/ order and users.
+2. As a Site Owner I want to be able to add, update or remove products so I can make changes without visiting the admin pane.
+3. As a Site Owner I want to receive email notifications when a user submits through the contact page so I can respond to the customers query in a timely manor.
 
 <br>
 
@@ -66,30 +77,32 @@ The primary goal of The lady Goldsmith is to enable users to purchase jewellery 
  <br>
  The methodology requires a detailed and thorough project planning process, to design and create a web-based interactive application.I distinguished the required functionality of the site and how it would answer the user stories, as described above, these user stories were then developed through the use of the Five Development Planes framework. To keep track of my development I created a user stories kanban board in github projects. I created an issue for each user story which was set to automatically display in my user story project. As I worked each user story, it was moved to the in progress column and finally into the completed column once it was complete.  
 <br>
- The design of the website is meaningful and simple so that the purpose of the website is very clear for first-time users, and they can easily adapt to the website. This also applies to all the functions to create, post, edit and delete porducts for the Admin/site owners. The owner’s main goal is to provide a ecommerce platform that is easy to use whether they are first-time or returning users, and this is the key to grow the community for further business opportunities. To achieve this, the website is designed and created by users first concept.
+ The design of the website is meaningful and simple so that the purpose of the website is very clear for first-time users, and they can easily adapt to the website. This also applies to all the functions to create, post, edit and delete porducts for the Admin/site owners. The owner’s main goal is to provide a ecommerce platform that is easy to use whether they are first-time or returning users, which will inturn generate business sales. To achieve this, the website is designed and created by users first concept.
 
 The functions on the tables below are minimum requirements for the website to achieve the current user's and owner's goals. On a scale of 1  - 5 
 
 | Opportunity                                 | Importance | Viability / Feasibility |
 | :------------------------------------------ | :--------: | :---------------------: |
-| Register                                    |           |                        |
-| Login / Log out                             |           |                        |
-| Categories page                             |           |                        |
-| Search by Category                          |           |                        |
-| Create / Edit / Delete                      |           |                        |
-| Search Products By Keywords                 |           |                        |
-| Review By Other Users                       |           |                        |
-| Wishlist                                    |           |                        |
-| Responsiveness                              |           |                        |
-| Page 404                                    |           |                        |
+| Register                                    |    5       |           5             |
+| Login / Log out                             |    5       |           5             |
+| Categories page                             |    5       |           5             |
+| Search by Category                          |    5       |           5             |
+| Create / Edit / Delete                      |    5       |           5             |
+| Search Products By Keywords                 |    4       |           4             |
+| Review By Other Users                       |    3       |           3             |
+| Wishlist                                    |    4       |           4             |
+| Responsiveness                              |    5       |           5             |
+| Page 404                                    |    3       |           3             |
+| Resetting Password When Users Forget It     |    5       |           5             |
+| Contact us form                             |    5       |           5             |
 
 Below are the additional functions that can improve the website, however, these are not mandatory to achieve the current user's and owner's goals. Some are not implemented due to a lack of my current skills & knowledge and also due to a lack of time allocated for this project.
 
 | Opportunity                             | Importance | Viability / Feasibility |
 | :-------------------------------------- | :--------: | :---------------------: |
-| Resetting Password When Users Forget It |           |                        |
-| Contact us form                         |           |                        |
-| “Like” Reaction By Other Users          |           |                        |
+| Currency selection                      |    4       |           2             |
+| Shop our instagram                      |    3       |           2             |
+| Virtual Appointments                    |    2       |           1             |
 
 <br>
 
@@ -107,7 +120,9 @@ To achieve user and owner’s goals, above are the minimum features to be includ
 - Logout function that users can log out the website
 - Profile page 
 - Search 
-- 404 page that appears for invalid URL and takes users back to *Home* page of the website safely
+- If a user encounters an error, the relevant error page is displayed (400, 403, 404 or 500)
+<br>
+<br>![404](readme/misc/404_page.png)
 
 > **Note:**<br>
 > 
@@ -116,29 +131,26 @@ To achieve user and owner’s goals, above are the minimum features to be includ
 
 ### **Front end pages** 
 
-The website consists of a **Home** page with **???? other core pages**.
+The website consists of a **Home** page with 16 other core pages**.
 
 - **Home** (`index.html`)<br>The landing page of the website. 
 
-- **R** (`.html`)<br>
-
-- **Product Detail** (`.html`)<br>
-
-- **Register** (`account/signup.html`)<br>The page where users can create an account. Once a user creates an account successfully, they will be led to *Profile* page 
-
+- **All Products** (`products.html`)<br>
+- **Product Detail** (`product_detail.html`)<br>
+- **Add Product** (`add_product.html`)<br>
+- **Edit Product** (`edit_product.html`)<br>
+- **Sale** (`sale_items.html`)<br>
+- **Contact Us** (`contact.html`)<br>
+- **Shopping Bag** (`bag.html`)<br>
+- **Checkout** (`checkout.html`)<br>
+- **Wishlist** (`wishlist.html`)<br>
+- **Profile** (`profile.html`)<br>The page where users will be led when they create an account or log in.
+- **Register** (`account/signup.html`)<br>The page where users can create an account. Once a user creates an account successfully, they will be led to *Profile* page
 - **Login** (`account/login.html`)<br>The page where users who have an account can log in to the website. Once users log in successfully, they will be led to *Profile* page. Again the navigation bar is different to *Home* page, and once a user is logged in, the *profile* page and *logout* page is now visible on the navbar.
 **Note:**<br>
 > Please note that login is **case sensitive** 
 
-- **Profile** (`profile.html`)<br>The page where users will be led when they create an account or log in. 
-
-- **Search Results** (`search_results.html`)<br>
-
-- **Delete Recipe** (`recipe_delete.html`)<br>
-
-- **Delete Confirmation** (`recipe_delete_confirmation.html`)<br>The page where users get a confirmation message if they really wish to delete.
-
-- **Page 404** (`page_404.html`)<br>The page that informs users, that the page they are looking for is not found and takes them back to *Home* page safely. 
+- **Error Pages** (`404.html`)(`403.html`)(`400.html`)(`500.html`)<br>These pages inform users, that the page they are looking for is not found and takes them back to *Home* page safely. 
 
 <br>
 
