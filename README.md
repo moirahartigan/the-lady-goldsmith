@@ -29,6 +29,7 @@ It is a community based experience that allows casual, one-time users to browse 
      + [General Resources](#General-Resources)
      + [Tools](#Tools)
 + [Testing](#Testing) ☞ **[Testing.md](TESTING.md)**
++ [APIs and configuration](#APIs-and-configuration)
 + [Deployment](#Deployment)
      + [Heroku Deployment](#Heroku-Deployment)
      + [Forking the Repository](#Forking-the-Repository)
@@ -271,11 +272,14 @@ Below is the chart of the custom data model used.
 
 # Testing
 Due to the size of the testing section, I have created a separate document for it. You can find it [here](). 
+<br>
 
 # APIs and configuration
+
 The project also uses a number of API's and configuration, below are the steps to configure the API in your environment
 
 ## Google emails
+
 To set up the project to send emails and to use a Google account as an SMTP server, the following steps are required
 1. Create an email account at google.com, login, navigate to Settings in your gmail account and then click on Other Google Account Settings
 2. Turn on 2-step verification and follow the steps to enable
@@ -291,6 +295,7 @@ To set up the project to send emails and to use a Google account as an SMTP serv
      | EMAIL_HOST_USER           |*the email used above*  |
 
 7. Set and confirm the following values in the settings.py file to successfully send emails
+<br>
 <br><code>EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'</code>
 <br><code>EMAIL_USE_TLS = True</code>
 <br><code>EMAIL_PORT = 587</code>
@@ -303,15 +308,21 @@ To set up the project to send emails and to use a Google account as an SMTP serv
 1. Register for an account at stripe.com
 2. Click on the Developers section of your account once logged in
 3. Under Developers, click on the API keys section
+<br>
 <br>![API keys](readme/misc/stripe_keys.png)
+<br>
 4. Note the values for the publishable and secret keys
 5. In heroku, create environment variables STRIPE_PUBLIC_KEY and STRIPE_SECRET_KEY with the publishable and secret key values
+<br>
 <br><code>os.environ.setdefault('STRIPE_PUBLIC_KEY', 'YOUR_VALUE_GOES_HERE')</code>
 <br><code>os.environ.setdefault('STRIPE_SECRET_KEY', 'YOUR_VALUE_GOES_HERE')</code>
+<br>
 6. Back in the Developers section of your stripe account click on Webhooks
 7. Create a webhook with the url of your website <url>/checkout/wh/, for example: https://ecommerce-pp5.herokuapp.com/checkout/wh/
 8. Select the payment_intent.payment_failed and payment_intent.succeeded as events to send
+<br>
 <br>![Webhook](readme/misc/webhook.png)
+<br>
 9. Note the key created for this webhook
 10. In heroku, create environment variable STRIPE_WH_SECRET with the secret values
 <code>os.environ.setdefault('STRIPE_WH_SECRET', 'YOUR_VALUE_GOES_HERE')</code>
@@ -358,156 +369,47 @@ There are a number of applications that need to be configured to run this applic
 25. The configuration also requires the media/static folders that must be setup in the AWS S3 bucket to store the media and static files 
 
 
-# Deployment
 ## Heroku Deployment
 This project was deployed through Heroku using the following steps:
 
-### Step. 1 Installing Django and supporting libraries
-
-Heroku needs to know which technologies are being used and any requirements, so the following commands were used in the Terminal in GitPod:
-+ In the GitPod terminal, type ```pip3 install django gnuicorn``` to install django and gunicorn.
-+ In the GitPod terminal, type ```pip3 install dj_database_url psycopg2``` to install the supporting libraries.
-+ In the GitPod terminal, type ```pip3 install dj3-cloudinary-storage``` to install cloudinary libraries.
+### Requirements and Procfile
+Heroku needs to know which technologies are being used and any requirements, so I created files to let it know. Before creating the Heroku app, create these files using the following steps in GitPod: 
 + In the GitPod terminal, type ```pip3 freeze --local > requirements.txt``` to create your requirements file.
-+ In the GitPod terminal, type ```django-admin startproject recipebook .``` to create your project. (Don't forget the .)
-+ In the GitPod terminal, type ```python3 manage.py startapp the-lady-goldsmith``` to create your requirements file.
-#### In settings.py file:
-+ In the settings.py file type ```the-lady-goldsmith``` to create your requirements file.
++ Create your Procfile and insert the following code: ```web: gunicorn ARTstop.wsgi:application``` and make sure there is no additional blank line after it. 
++ Push these files to your repository.
 
-### Step. 2 Deploying an app to Heroku
-#### 2.1 Create the Heroku app:
+### Creating Heroku App
 + Log into Heroku
 + Select 'Create New App' from your dashboard
-+ Choose an app name (lets_cook_it_app)
++ Choose an app name (if there has been an app made with that name, you will be informed and will need to choose an alternative)
 + Select the appropriate region based on your location
 + Click 'Create App'
-+ Add Database to App Resources - Located in the Resources Tab, Add-ons, search and add 'Heroku Postgres
-+ Copy DATABASE_URL - Located in the settings Tab, in Config Vars, Copy Text
 
-#### 2.2 Attach the Database:
-#### In gitpod:
-+ Create a new env.py file on the top level directory
-#### In env.py file:
-<br>
+### Connecting to GitHub
++ From the dashboard, click the 'Deploy' tab towards the top of the screen
++ From here, locate 'Deployment Method' and choose 'GitHub'
++ From the search bar newly appeared, locate your repository by name
++ When you have located the correct repository, click 'Connect'
++ DO NOT CLICK 'ENABLE AUTOMATIC DEPLOYMENT': This can cause unexpected errors before configuration. We'll come back to this.
 
-```
-import os
+### Environment Variables
++ Click the 'Settings' tab towards the top of the page
++ Locate the 'Config Vars' and click 'Reveal Config Vars'
++ The following variables all need to be added:
 
-os.environ["DATABASE_URL"] - "Paste in Heroku DATABASE_URL Link"
-oos.environ["SECRET_KEY"] - "Make up a ramdom a randomSecretKey"
-```
+|Variable name         |Value/where to find value                                |
+| ---------------------|---------------------------------------------------------|
+|AWS_ACCESS_KEY_ID     |AWS CSV file(instuctions above)                          |
+|AWS_SECRET_ACCESS_KEY |AWS CSV file(instuctions above)                          |
+|DATABASE_URL          |Postgres generated (instructions above)                  |
+|EMAIL_HOST_PASS       |Password from email client                               |
+|EMAIL_HOST_USER       |Site's email address                                     |
+|SECRET_KEY            |Random key generated online                              |
+|STRIPE_PUBLIC_KEY     |Stripe Dashboard > Developers tab > API Keys > Publishable key |
+|STRIPE_SECRET_KEY     |Stripe Dashboard > Developers tab > API Keys > Secret key |
+|STRIPE_WH_SECRET      |Stripe Dashboard > Developers tab > Webhooks > site endpoint > Signing secret |
+|USE_AWS               |True (when AWS set up - instructions below)              |
 
-#### In heroku.com
-+ Add Secret Key to Confid Vars
-
-| Key                    | Value               |
-| -------------          |:------------------- |
-| SECRET_KEY             |*Secure secret key*  |
- 
-#### 2.3 Prepare our environment and settings.py file:
-#### In settings.py:
-
-+ Reference env.py
-
-```
-from pathlib import Path 
-import os
-import dj_database_url
-
-if os.path.isfile("env.py"):
-     import env
-
-```
-+ Remove the insecure secret key and replace - links to the secret key variable on Heroku
-
-```
-SECRET_KEY = os.environ.get('SECRET_KEY')
-
-```
-
-+ Replace DATABASES Section (comment out the old DataBases Section) - links to the DATABASE_URL variable on Heroku
-
-```
-DATABASES = {
-     'default':
-     dj_database_url.parse(os.environ.get("DATABASE_URL"))
-}
-
-```
-#### In the Terminal 
-+ In the GitPod terminal, type ```python3 manage.py migrate``` to Make Migrations.
-
-#### 2.4 Get our static and media files stored on Cloudinary:
-#### In Cloudinary.com: 
-+ Copy your CLOUDINARY_URL. eg. API Environment Variable copied from the Cloudinary Dashboard
-
-#### In env.py: 
-+ Add Clouldinary URL to env.py - be sure to paste in the correct section of the link
-
-```
-os.environ["CLOUDINARY_URL"] ="cloudinary://591333544891113:I7YqdHhfN01xRGjt55dcLywRks4@cloudmoira"
-
-```
-
-#### In Heroku.com:
-+ Add Clouldinary URL to Heroku Config Vars - be sure to paste in the correct section of the link
-+ Add DISABLE_COLLECTSTATIC to Heroku Config Vars **(temporary step for the moment, must be removed before deployment)**
-
-| Key                    | Value               |
-| -------------          |:------------------- |
-| CLOUDINARY_URL         |cloudinary://5913333 |
-| DATABASE_URL           |postgres://bxctnwwfx |
-| SECRET_KEY             |*Secure secret key*  |
-| DISABLE_COLLECTSTATIC  |1                    |
-
-#### In settings.py:
-+ Add Cloudinary Libraries to installed apps **(note: the order is important)**
-
-```
-'cloudinary_storage',
-'django.contrib.staticfiles',
-'cloudinary',
-
-```
-+ Tell Django to use Cloudinary to store media and static files *Place under the static files*
-
-```
-STATIC_URL = '/static/'
-STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'), ]
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-
-MEDIA_URL = '/media/'
-DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
-
-```
-+ Change the templates directory to TEMPLATES_DIR *Place within the TEMPLATES array*
-+ Link file to the templates directory in Heroku *Placeunder the BASE_DIR line*
-
-```
-BASE_DIR = Path(__file__).resolve().parent.parent
-TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
-
-```
-
-+ Add Heroku Hostname to ALLOWED_HOSTS
-
-```
-ALLOWED_HOSTS = ["the-lady-goldsmith.herokuapp.com", "localhost"]
-
-```
-
-#### In Gitpod:
-+ Create 3 new folders on the top level directory ```media, static, templates```
-+ Create a Procfile on the top level directory also ```Procfile```
-
-#### In the Procfile:
-+ Add the following code ```web: gunicorn recipebook.wsgi```
-
-#### In the Terminal 
-+ Add ```git add .```
-+ Commit ```git commit -m "Deployment Commit```
-+ Push ```git push```
 
 #### In Heroku.com:
 + From the dashboard, click the 'Deploy' tab towards the top of the screen
