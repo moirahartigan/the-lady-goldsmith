@@ -272,6 +272,92 @@ Below is the chart of the custom data model used.
 # Testing
 Due to the size of the testing section, I have created a separate document for it. You can find it [here](). 
 
+# APIs and configuration
+The project also uses a number of API's and configuration, below are the steps to configure the API in your environment
+
+## Google emails
+To set up the project to send emails and to use a Google account as an SMTP server, the following steps are required
+1. Create an email account at google.com, login, navigate to Settings in your gmail account and then click on Other Google Account Settings
+2. Turn on 2-step verification and follow the steps to enable
+3. Click on app passwords, select Other as the app and give the password a name, for example Django
+<br>
+<br>![App password](readme/misc/gmail_app_passwords.png)
+4. Click create and a 16 digit password will be generated, note the password down
+5. Go to heroku app config vars and set
+
+     | Key                    | Value               |
+     | -------------          |:------------------- |
+     | EMAIL_HOST_PASS           |*paste in password*  |
+     | EMAIL_HOST_USER           |*the email used above*  |
+
+7. Set and confirm the following values in the settings.py file to successfully send emails
+<br><code>EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'</code>
+<br><code>EMAIL_USE_TLS = True</code>
+<br><code>EMAIL_PORT = 587</code>
+<br><code>EMAIL_HOST = 'smtp.gmail.com'</code>
+<br><code>EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')</code>
+<br><code>EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASS')</code>
+<br><code>DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')</code>
+
+## Stripe
+1. Register for an account at stripe.com
+2. Click on the Developers section of your account once logged in
+3. Under Developers, click on the API keys section
+<br>![API keys](readme/misc/stripe_keys.png)
+4. Note the values for the publishable and secret keys
+5. In heroku, create environment variables STRIPE_PUBLIC_KEY and STRIPE_SECRET_KEY with the publishable and secret key values
+<br><code>os.environ.setdefault('STRIPE_PUBLIC_KEY', 'YOUR_VALUE_GOES_HERE')</code>
+<br><code>os.environ.setdefault('STRIPE_SECRET_KEY', 'YOUR_VALUE_GOES_HERE')</code>
+6. Back in the Developers section of your stripe account click on Webhooks
+7. Create a webhook with the url of your website <url>/checkout/wh/, for example: https://ecommerce-pp5.herokuapp.com/checkout/wh/
+8. Select the payment_intent.payment_failed and payment_intent.succeeded as events to send
+<br>![Webhook](readme/misc/webhook.png)
+9. Note the key created for this webhook
+10. In heroku, create environment variable STRIPE_WH_SECRET with the secret values
+<code>os.environ.setdefault('STRIPE_WH_SECRET', 'YOUR_VALUE_GOES_HERE')</code>
+11. Feel free to test out the webhook and note the success/fail attempts for troubleshooting
+
+# Deployment
+There are a number of applications that need to be configured to run this application locally or on a cloud based service, for example Heroku
+
+## Amazon WebServices
+1. Create an account at aws.amazon.com
+2. Open the S3 application and create an S3 bucket named "ecommerce-pp5"
+3. Uncheck the "Block All Public access setting"
+4. In the Properties section, navigate to the "Static Website Hosting" section and click edit
+5. Enable the setting, and set the index.html and the error.html values
+<br>![AWS Static](readme/misc/aws_s3_static.png)
+6. In the Permissions section, click edit on the CORS configuration and set the below configuration
+<br>![AWS CORS](readme/misc/aws_cors.png)
+7. In the permissions section, click edit on the bucket policy and generate and set the below configuration(or similar to your settings)
+<br>![AWS Bucket Policy](readme/misc/aws_bucket.png)
+8. In the permissions section, click edit on the Access control list(ACL)
+9. Set Read access for the Bucket ACL for Everyone(Public Access)
+10. The bucket is created, the next step is to open the IAM application to set up access
+11. Create a new user group named "ecommerce-pp5"
+12. Add the "AmazonS3FullAccess" policy permission for the user group
+13. Go to "Policies" and click "Create New Policy"
+14. Click "Import Managed Policy" and select "AmazonS3FullAccess" > Click 'Import'.
+15. In the JSON editor, update the policy "Resource" to the following
+<br><code>"Resource": [</code>
+<br><code>"arn:aws:s3:::ecommerce-pp5",</code>
+<br><code>"arn:aws:s3:::ecommerce-pp5/*"</code>
+<br><code>]</code>
+16. Give the policy a name and click "Create Policy"
+17. Add the newly created policy to the user group
+<br>![AWS Bucket Policy](readme/misc/aws_policy.png)
+18. Go to Users and create a new user
+19. Add the user to the user group ecommerce-pp5
+20. Select "Programmatic access" for the access type
+21. Note the AWS_SECRET_ACCESS_KEY and AWS_ACCESS_KEY_ID variables, they are used in other parts of this README for local deployment and Heroku setup
+22. The user is now created with the correct user group and policy
+<br>![AWS Bucket Policy](readme/misc/aws_users.png)
+23. Note the AWS code in settings.py. Note an environment variable called USE_AWS must be set to use these settings, otherwise it will use local storage
+<br>![AWS Settings](readme/misc/aws_settings_gitpod.PNG)
+24. These settings set up a cache policy, set the bucket name, and the environment variables AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY that you set in your aws account
+25. The configuration also requires the media/static folders that must be setup in the AWS S3 bucket to store the media and static files 
+
+
 # Deployment
 ## Heroku Deployment
 This project was deployed through Heroku using the following steps:
