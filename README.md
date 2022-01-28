@@ -5,9 +5,9 @@ The Lady Goldsmith! is an online e-commerce fine jewellery store.
 It is a community based experience that allows casual, one-time users to browse recipes, and allows returning users to create profiles and upload and manage recipes.
 ## Demo
 
-[View the Live Website Here](###############)
-
-<img src="###############">
+**View the Live Website [Here](https://ecommerce-pp5.herokuapp.com/)**
+<br>
+<img src="https://github.com/moirahartigan/the-lady-goldsmith/blob/main/readme/responsiveness/responsiveness.png">
 
 
 ## Table of contents
