@@ -164,15 +164,39 @@ wishlist/templates/wishlist/wishlist.html | 97 | 100 | 87 | 90 ||
 <br>
 
 [^ back to top ^](#contents)
-
+---
+---
 # Testing From User Stories
 
+### As an Shopper I want to 
++ *see that the navigation bar is displayed with a logo on all pages so I can easily find my way through the site.*
 
+<img alt="user story" src="readme/user_stories/nav_bar.png" width="700">
 
+---
++ * browse through all available products so I can select some items I wish to purchase.*
+
+<img alt="user story" src="readme/user_stories/all_products.png" width="700">
+
+---
++ * be able to view individual product details so I can identify the price, product description, rating and images.*
+
+<img alt="user story" src="readme/user_stories/product_detail.png" width="700">
+
+---
++ * add products to my Wishlist so I can keep track of the items I like the most for a future site visit.*
+
+<img alt="user story" src="readme/user_stories/wishlist.png" width="700">
+
+---
++ * view my cart and any items I currently have awaiting payment in my bag so I can avoid spending too much.*
+
+<img alt="user story" src="readme/user_stories/wishlist.png" width="700">
 
 
 
 <br>
+
 # Manually Testing Functionality
 ### **Navigation**
 

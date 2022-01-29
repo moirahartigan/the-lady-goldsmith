@@ -262,6 +262,10 @@ a.category-badge>span.badge:hover {
     font-size: 1.3rem;
 }
 
+.bag-img {
+    height: 100px;
+}
+
 
 
 /* ------------------------------- bootstrap toasts */
@@ -519,7 +523,6 @@ input[name='q']::placeholder {
     }
 
     .shop-bag {
-        padding: 98px 73px 105px 36px;
         margin: 94px 0px 208px;
     }
 
@@ -563,7 +566,6 @@ input[name='q']::placeholder {
     }
 
     .shop-bag {
-        padding: 66px 20px 84px 55px;
         margin: 45px 0px 62px;
     }
 
