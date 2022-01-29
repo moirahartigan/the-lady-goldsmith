@@ -168,32 +168,110 @@ wishlist/templates/wishlist/wishlist.html | 97 | 100 | 87 | 90 ||
 ---
 # Testing From User Stories
 
-### As an Shopper I want to 
+### As an Unregistered user, I want to: 
 + *see that the navigation bar is displayed with a logo on all pages so I can easily find my way through the site.*
 
 <img alt="user story" src="readme/user_stories/nav_bar.png" width="700">
 
 ---
-+ * browse through all available products so I can select some items I wish to purchase.*
++ *browse through all available products so I can select some items I wish to purchase.*
 
 <img alt="user story" src="readme/user_stories/all_products.png" width="700">
 
 ---
-+ * be able to view individual product details so I can identify the price, product description, rating and images.*
++ *be able to view individual product details so I can identify the price, product description, rating and images.*
 
 <img alt="user story" src="readme/user_stories/product_detail.png" width="700">
 
 ---
-+ * add products to my Wishlist so I can keep track of the items I like the most for a future site visit.*
++ *easily register an account so I can have a personal account and view my profile.*
+
+<img alt="user story" src="readme/user_stories/register.png" width="700">
+
+---
++ *receive email confirmation after registering so I can verify that my account registration was successful.*
+
+<img alt="user story" src="readme/user_stories/register_email_conf.png" width="700">
+
+---
++ *be able to use the search option so I can search the site for specific keywords.*
+
+<img alt="user story" src="readme/user_stories/search.png" width="700">
+
+---
++ *be able to browse the Sale Items*
+
+<img alt="user story" src="readme/user_stories/sale.png" width="700">
+
+---
++ *be able to send a message to the business from the contact page.*
+
+<img alt="user story" src="readme/user_stories/contact_us.png" width="700">
+
+---
+
+### As a registered user, I want to:
++ *have the ability to log in to the site so I can access my personal details.*
+
+<img alt="user story" src="readme/user_stories/signin.png" width="700">
+
+---
++ *be able to view items in my shopping bag to be purchased so I can identify the total cost of my purchase and all the items I will receive.*
+
+<img alt="user story" src="readme/user_stories/bag_icon.png" width="700">
+
+---
++ *add products to my Wishlist so I can keep track of the items I like the most for a future site visit.*
 
 <img alt="user story" src="readme/user_stories/wishlist.png" width="700">
 
 ---
-+ * view my cart and any items I currently have awaiting payment in my bag so I can avoid spending too much.*
++ *view my shopping bag and any items I currently have awaiting payment in my bag so I can avoid spending too much.*
 
-<img alt="user story" src="readme/user_stories/wishlist.png" width="700">
+<img alt="user story" src="readme/user_stories/bag.png" width="700">
 
+---
++ *easily enter my payment information so I can checkout quickly and with no issues.*
 
+<img alt="user story" src="readme/user_stories/checkout_page.png" width="700">
+
+---
++ *easily recover my password if I forget it so I can regain access to my account information.*
+
+<img alt="user story" src="readme/user_stories/signin.png" width="700">
+
+---
++ *have a personalized user profile so I can view my personal order history and save my payment information.*
+
+<img alt="user story" src="readme/user_stories/profile_page.png" width="700">
+
+---
+
+### As a site admin, I want to:
++ *be able to log in to an admin panel so I can see all product/ order and users.*
+
+<img alt="user story" src="readme/user_stories/admin_login.png" width="700">
+
+---
++ *be able to add, update or remove products so I can make changes without visiting the admin pane.*
+
+<img alt="user story" src="readme/user_stories/add_product.png" width="700">
+<br>
+Once the items have been uploaded, the admin will be able to edit/delete from the item detail page:
+
+<img alt="user story" src="readme/user_stories/admin_buttons.png" width="700">
+
+The edit button will open a form that is a replica of the add form but with the previous information populating the fields.
+To ensure that an item isn't deleted by mistake, a confirmation has been added to each item:
+
+<img alt="user story" src="readme/user_stories/delete_model.png" width="700">
+
+---
++ *Receive email notifications when a user submits through the contact page so I can respond to the customers query in a timely manor.*
+
+<img alt="user story" src="readme/user_stories/contact_email.png" width="700">
+
+---
 
 <br>
 

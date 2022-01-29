@@ -43,26 +43,32 @@ The primary goal of The lady Goldsmith is to enable users to purchase jewellery 
 
 ## User Stories
 
-1. As an Shopper I want to see that the navigation bar is displayed with a logo on all pages so I can easily find my way through the site.
-2. As an Shopper I want to browse through all available products so I can select some items I wish to purchase.
-3. As a Shopper I want to be able to view individual product details so I can identify the price, product description, rating and images.
-4. As a Shopper I want to add products to my Wishlist so I can keep track of the items I like the most for a future site visit.
-5. As a Shopper I want to view my cart and any items I currently have awaiting payment in my bag so I can avoid spending too much.
-6. As a Shopper I want to be able to view items in my shopping cart to be purchased so I can identify the total cost of my purchase and all the items I will receive.
-7. As a Shopper I want to easily enter my payment information so I can checkout quickly and with no issues.
-8. As a Shopper I want to Easily register an account so I can have a personal account and view my profile.
-9. As a Shopper I want to have the ability to log in to the site so I can access my personal details.
-10. As a Shopper I want to easily recover my password if I forget it so I can regain access to my account information.
-11. As a Shopper I want to receive email confirmation after registering so I can verify that my account registration was successful.
-12. As a Shopper I want to have a personalized user profile so I can view my personal order history and save my payment information.
-13. As a Shopper I want to be able to use the search option so I can search the site for specific keywords.
-14. As a Shopper I want to receive email notifications when a user submits through the contact page so I can respond to the customers query in a timely manor.
+**As an unregistered User, I want to:**
+
++ See that the navigation bar is displayed with a logo on all pages so I can easily find my way through the site.
++ Browse through all available products so I can select some items I wish to purchase.
++ Be able to view individual product details so I can identify the price, product description, rating and images.
++ Easily register an account so I can have a personal account and view my profile.
++ Receive email confirmation after registering so I can verify that my account registration was successful.
++ Be able to use the search option so I can search the site for specific keywords.
++ Be able to browse the Sale Items.
++ Be able to send a message to the business from the contact page.
+
+**As an Registered User, I want to:**
+
++ Have the ability to log in to the site so I can access my personal details.
++ Easily recover my password if I forget it so I can regain access to my account information.
++ As a Shopper I want to have a personalized user profile so I can view my personal order history and save my payment information.
++ Add products to my Wishlist so I can keep track of the items I like the most for a future site visit.
++ View my bag and any items I currently have awaiting payment in my bag so I can avoid spending too much.
++ Be able to view items in my shopping bag to be purchased so I can identify the total cost of my purchase and all the items I will receive.
++ Easily enter my payment information so I can checkout quickly and with no issues.
 
 **As an Administrative Account holder, I want to:**
 
-1. As a Site Owner I want to be able to log in to an admin panel so I can see all product/ order and users.
-2. As a Site Owner I want to be able to add, update or remove products so I can make changes without visiting the admin pane.
-3. As a Site Owner I want to receive email notifications when a user submits through the contact page so I can respond to the customers query in a timely manor.
++ Be able to log in to an admin panel so I can see all product/ order and users.
++ Be able to add, update or remove products so I can make changes without visiting the admin pane.
++ Receive email notifications when a user submits through the contact page so I can respond to the customers query in a timely manor.
 
 <br>
 
