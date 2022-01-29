@@ -65,13 +65,13 @@ The primary goal of The lady Goldsmith is to enable users to purchase jewellery 
 + Add products to my Wishlist so I can keep track of the items I like the most for a future site visit.
 + View my bag and any items I currently have awaiting payment in my bag so I can avoid spending too much.
 + Be able to view items in my shopping bag to be purchased so I can identify the total cost of my purchase and all the items I will receive.
-+ Easily enter my payment information so I can checkout quickly and with no issues.
++ Easily enter my payment information so I can check-out quickly and with no issues.
 
 **As an Administrative Account holder, I want to:**
 
 + Be able to log in to an admin panel so I can see all product/ order and users.
 + Be able to add, update or remove products so I can make changes without visiting the admin pane.
-+ Receive email notifications when a user submits through the contact page so I can respond to the customers query in a timely manor.
++ Receive email notifications when a user submits through the contact page so I can respond to the customers query in a timely manner.
 
 <br>
 
@@ -83,9 +83,9 @@ The primary goal of The lady Goldsmith is to enable users to purchase jewellery 
 
  Agile development was implemented from the onset of this project and simply explained Agile is an iterative approach to project management and software development that helps teams deliver value to their customers, faster and with fewer headaches. Instead of betting everything on a "big bang" launch, an agile team delivers work in small, but consumable, increments. As the development team for this project was a single developer I attempted to use this approach for building this project.  
  <br>
- The methodology requires a detailed and thorough project planning process, to design and create a web-based interactive application.I distinguished the required functionality of the site and how it would answer the user stories, as described above, these user stories were then developed through the use of the Five Development Planes framework. To keep track of my development I created a user stories kanban board in github projects. I created an issue for each user story which was set to automatically display in my user story project. As I worked each user story, it was moved to the in progress column and finally into the completed column once it was complete.  
+ The methodology requires a detailed and thorough project planning process, to design and create a web-based interactive application. I distinguished the required functionality of the site and how it would answer the user stories, as described above, these user stories were then developed through the use of the Five Development Planes framework. To keep track of my development I created a user stories kanban board in github projects. I created an issue for each user story which was set to automatically display in my user story project. As I worked each user story, it was moved to the in progress column and finally into the completed column once it was complete.  
 <br>
- The design of the website is meaningful and simple so that the purpose of the website is very clear for first-time users, and they can easily adapt to the website. This also applies to all the functions to create, post, edit and delete porducts for the Admin/site owners. The owner’s main goal is to provide a ecommerce platform that is easy to use whether they are first-time or returning users, which will inturn generate business sales. To achieve this, the website is designed and created by users first concept.
+ The design of the website is meaningful and simple so that the purpose of the website is very clear for first-time users, and they can easily adapt to the website. This also applies to all the functions to create, post, edit and delete products for the Admin/site owners. The owner’s main goal is to provide a ecommerce platform that is easy to use whether they are first-time or returning users, which will in turn generate business sales. To achieve this, the website is designed and created by users first concept.
 
 The functions on the tables below are minimum requirements for the website to achieve the current user's and owner's goals. On a scale of 1  - 5 
 
@@ -109,8 +109,10 @@ Below are the additional functions that can improve the website, however, these 
 | Opportunity                             | Importance | Viability / Feasibility |
 | :-------------------------------------- | :--------: | :---------------------: |
 | Currency selection                      |    4       |           2             |
-| Shop our instagram                      |    3       |           2             |
+| Shop our Instagram                      |    3       |           2             |
 | Virtual Appointments                    |    2       |           1             |
+| Delete Profile                          |    2       |           1             |
+| Choose currency                         |    2       |           1             |
 
 <br>
 
@@ -191,7 +193,7 @@ It is a mobile-first website because people want to be able to shop online from 
 
 — **Colour** —
 
-While white is the main colour for the site and will be itilized as much as possible, I chose accent colours that I thought would not be overwhelming and add an elegance to it.
+While white is the main colour for the site and will be utilized as much as possible, I chose accent colours that I thought would not be overwhelming and add an elegance to it.
 
 <br>
 
@@ -242,7 +244,7 @@ The navigation buttons update depending on whether a user is logged in, and whet
 
 ### **User registration not required**
 
-It was important that the user was given the option to purchase from the store without having to register for an account. It's a personal pet peeve of mine to have to make accounts on online stores when I'm not guaranteed to go back again and Jewlery isn't necessarily a regular purchase. 
+It was important that the user was given the option to purchase from the store without having to register for an account. It's a personal pet peeve of mine to have to make accounts on online stores when I'm not guaranteed to go back again and Jewellery isn't necessarily a regular purchase. 
 
 Even if a user doesn't have an account, they are still able to purchase, input a delivery address and have a confirmation email sent to them when they have completed a purchase. 
 
@@ -299,12 +301,12 @@ From the product detail page, the user can view:
 + Product name
 + Product price
 + Product category
-+ Product color
++ Product colour
 + Product rating 
 + Product description 
 + Delivery and Returns info
 
-The user can can then either go back to the products page, add a single item to ther bag or adjust the quantity to add to the bag
+The user can then either go back to the products page, add a single item to their bag or adjust the quantity to add to the bag
 
 ---
 ### **Admin CRUD functionality**
@@ -314,7 +316,7 @@ As well as all of the above features(read), the admin can add, edit and delete p
 From the 'My Account' dropdown, the admin can choose 'Product Management'. This allows them to create the item by filling in the form.
 
 + Edit(*Update*): 
-From the item detail page, the admin has an edit button that will direct them to the edit page. All of the form fields wil be populated with the item information that can then be updated and saved. 
+From the item detail page, the admin has an edit button that will direct them to the edit page. All of the form fields will be populated with the item information that can then be updated and saved. 
 
 + Delete(*Delete*)
 From the item detail page, the admin has a delete button that will trigger a confirmation modal. Once the admin confirms deletion, the item will be removed from the database
@@ -323,15 +325,15 @@ From the item detail page, the admin has a delete button that will trigger a con
 
 ### **Wishlist**
 
-- A user can open the Wishlist page at any point and see what items thay have in there. 
+- A user can open the Wishlist page at any point and see what items they have in there. 
 
-- From here a user can remove items from the wishlist and access the product detail. 
+- From here a user can remove items from the Wishlist and access the product detail. 
 
 ---
 
 ### **Bag**
 
-- A user can open the bag page at any point and see what items thay have in there. 
+- A user can open the bag page at any point and see what items they have in there. 
 
 - From here a user can update product quantities, remove items from the bag or access the checkout page. 
 
@@ -346,7 +348,7 @@ The checkout page allows the user to:
 + Pay via Stripe for secure payments
 + A loading screen will appear when a payment is being processed to stop the user clicking away
 + If the payment form doesn't submit properly or the user closes the browser during the wait animation, Stripe will still create the order for the user. 
-+ An email wil be sent to the user with their order confirmation
++ An email will be sent to the user with their order confirmation
 
 ---
 
@@ -361,16 +363,16 @@ The user can fill out a contact form and send a message to the site admin. This 
 There are four types of toasts that are displayed to the user when specific actions happen. This keeps the user informed about what is happening when it happens. The toasts are:
 
 + Success
-   + When a user sucessfuly signs in/signs out
+   + When a user sucessfully signs in/signs out
    + When a user adds a product to a bag
-   + When the user adds a product to their wishlist
+   + When the user adds a product to their Wishlist
    + When an admin adds/edits items
 + Info
    + When a user is viewing previous order details
 + Warning
    + Stripe key not found 
 + Error
-   + When a user is trying to access a page they are not autorized to
+   + When a user is trying to access a page they are not authorized to
    + When an admin's CRUD action fails
 
 *These are just a few examples*
@@ -431,7 +433,7 @@ default_town_or_city, default_county, default_postcode and default_country
 - The model contains the following fields: order, product, product_size, quantity, lineitem_total
 
 ##### Wishlist Model
-- The Wishlist model contains a users favourite products
+- The Wishlist model contains the users favourite products
 - It contains Products as many-to-many field, and User as a one-to-one relationship
 - The model contains the following fields: products, username
 
@@ -472,7 +474,7 @@ In a real world situation a sitemap should be registered with Google in the Goog
 
 # Web Marketing
 
-## Facebook Campagne
+## Facebook Campaign
 
 As Facebook is be a staple in any social media marketing strategy. A Facebook Business Page was created for my site and the facebook social link on the footer will bring a user directly here. 
 
@@ -486,9 +488,9 @@ As Facebook is be a staple in any social media marketing strategy. A Facebook Bu
 
 <br>
 
-## Newsletter Marketing Campagne
+## Newsletter Marketing Campaign
 
-Mailchimp email marketing was used generate an email signup form for the footer. This free service allows the site owner to manage, run and analyse the success of their newsletter marketing campagne by following the simple steps on the mailchimp site to generate an email form.
+Mailchimp email marketing was used generate an email signup form for the footer. This free service allows the site owner to manage, run and analyse the success of their newsletter marketing campaign by following the simple steps on the mailchimp site to generate an email form.
 
 <br>
 
@@ -498,7 +500,7 @@ Mailchimp email marketing was used generate an email signup form for the footer.
 
 ## GDPR Considerations
 
-As this site is an ecommerce web application where payment information and other customer details will be colleced, consideration to data protection law has been given on this project. A privacy policy was generated [here](https://www.privacypolicygenerator.info/) and a link to privacy policy created has been provided on the footer.
+As this site is an ecommerce web application where payment information and other customer details will be collected, consideration to data protection law has been given on this project. A privacy policy was generated [here](https://www.privacypolicygenerator.info/) and a link to privacy policy created has been provided on the footer.
 The purpose of this privacy policy is to inform site users about how their data is being collected and processed. 
 
 <br>
@@ -540,7 +542,7 @@ The purpose of this privacy policy is to inform site users about how their data 
 + [Am I Responsive](http://ami.responsivedesign.is/) used to generate README intro image.
 + [favicon.io](https://favicon.io/) used to create a site favicon.
 + [facebook](https://www.facebook.com/The-Lady-Goldsmith-106978708561394/?ref=pages_you_manage) used to create a facebook business page.
-+ [mailchimp](https://mailchimp.com//) used to create a newsletter marketing campagne.
++ [mailchimp](https://mailchimp.com//) used to create a newsletter marketing campaign.
 + [Privacy Policy](https://www.privacypolicygenerator.info/) used to generate a privacy policy generator.
 + [GDPR](https://gdpr.eu/what-is-gdpr/) 
 
@@ -558,7 +560,6 @@ The purpose of this privacy policy is to inform site users about how their data 
 ## Tools
 
 + [Balsamiq](https://balsamiq.com/) for wireframes
-+ [Tinypng](https://tinypng.com/) for resizing images
 + [Tinypng](https://tinypng.com/) for resizing images
 + [W3C Markup Validation Service](https://validator.w3.org/) for testing HTML code
 + [W3C CSS Validation Service](https://jigsaw.w3.org/css+validator/) for testing CSS code

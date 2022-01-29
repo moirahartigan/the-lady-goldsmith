@@ -704,11 +704,11 @@ Through devices that I have at home/readily available to me, I was able to conti
 
 ### **Pylint & Flake8 Errors**
 
-When refactoring the code I was able to reduce all but one of the pylint erros that were in the code. 
+When refactoring the code I was able to reduce all but one of the pylint errors that were in the code. 
 
 + *line too long*
 
-In the code that I have written, I have followed the line length rule. However, in the products views file on line 54, i could not break the line length without breaking the code.
+In the code that I have written, I have followed the line length rule. However, in the products views file on line 54, I could not break the line length without breaking the code.
 I have left it error in place for that reason.
 
 ### **Duplicate ID Issue**
@@ -717,7 +717,7 @@ When validating the HTML I had an issues with duplicate ID's:
 
 + *Duplicate ID*
 
-Because there are two versions of the nav bar for mobile vs desktop, I had duplicated the samw one twice. I updated the ID in the mobile top header file and made sure to update the aria-labledby attr too.
+Because there are two versions of the nav bar for mobile vs desktop, I had duplicated the same one twice. I updated the ID in the mobile top header file and made sure to update the aria-labledby attr too.
 
 When I re-ran the HTML, it validated.
 
