@@ -452,41 +452,47 @@ default_town_or_city, default_county, default_postcode and default_country
 + [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 + [Python3](https://www.python.org/)
 
-- [Django3](https://www.djangoproject.com/) framework
-- [HTML5](https://en.wikipedia.org/wiki/HTML) for markup
-- [CSS3](https://en.wikipedia.org/wiki/CSS) for style
-- [Postgressql](https://www.postgresql.org/) for the database
-- [Bootstrap 5 ](https://mdbootstrap.com/) for the mainframe of the website
-- [JavaScript](https://en.wikipedia.org/wiki/JavaScript) for interaction
-- [Python3](https://www.python.org/) as a backend programming language
-- [Google Fonts](https://fonts.google.com/) for fonts
-- [Font Awesome](https://fontawesome.com/) for icons
-- [Cloudinary](https://cloudinary.com/) for images
-- [Summernote](https://summernote.org/) editor for adding and editing the recipes
-- [Gitpod](https://www.gitpod.io/) as Integrated Development Environment
-- [Git](https://git-scm.com/) for local version control, keeping the files & documents
-- [GitHub](https://github.com/) for online version control and keeping the files & documents
-- [Heroku](https://www.heroku.com/) for deploying the website
+## Frameworks and Libraries
 
++ [Django3](https://www.djangoproject.com/)
++ [Pip3](https://pip.pypa.io/en/stable/)
++ [jQuery](https://jquery.com/)
++ [FontAwesome](https://fontawesome.com/)
++ [Postgressql](https://www.postgresql.org/) 
++ [Bootstrap 4 ](https://mdbootstrap.com/) 
++ [Google Fonts](https://fonts.google.com/) 
+
+## All Others
++ [Heroku](https://www.heroku.com/) used to deploy live site.
++ [Stripe](https://stripe.com/en-ie) used for the payments system.
++ [AWS](https://aws.amazon.com/) used for file storage.
++ [GitHub](https://github.com/) used to host repository.
++ [GitPod](https://www.gitpod.io/) used to develop project and organise version control.
++ [ResizeImage.net](https://resizeimage.net/) used to cut and re-size site images. 
++ [Balsamiq](https://balsamiq.com/) used to create wireframes.
++ [RandomKeygen](https://randomkeygen.com/) used to create a strong password for required  `<SECRET_KEY>`.
++ [Lighthouse](https://developers.google.com/web/tools/lighthouse) for performance review.
++ [Am I Responsive](http://ami.responsivedesign.is/) used to generate README intro image.
++ [favicon.io](https://favicon.io/) used to create a site favicon.
 
 ## General Resources
 
-- Code Institute Course Materials
-- [Stack Overflow](https://stackoverflow.com/)
-- [YouTube](https://www.youtube.com/)
-- [W3schools](https://www.w3schools.com/)
-- [Google](https://www.google.com/)
++ Code Institute Course Materials
++ [Stack Overflow](https://stackoverflow.com/)
++ [YouTube](https://www.youtube.com/)
++ [W3schools](https://www.w3schools.com/)
++ [Google](https://www.google.com/)
 
 ## Tools
 
-- [Balsamiq](https://balsamiq.com/) for wireframes
-- [Tinypng](https://tinypng.com/) for resizing images
-- [Tinypng](https://tinypng.com/) for resizing images
-- [W3C Markup Validation Service](https://validator.w3.org/) for testing HTML code
-- [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) for testing CSS code
-- [jshint](https://jshint.com/) for testing JavaScript code
-- [PEP8 Online](http://pep8online.com/) for checking Python code compliance
-- [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools) for testing, style checking and debugging
++ [Balsamiq](https://balsamiq.com/) for wireframes
++ [Tinypng](https://tinypng.com/) for resizing images
++ [Tinypng](https://tinypng.com/) for resizing images
++ [W3C Markup Validation Service](https://validator.w3.org/) for testing HTML code
++ [W3C CSS Validation Service](https://jigsaw.w3.org/css+validator/) for testing CSS code
++ [jshint](https://jshint.com/) for testing JavaScript code
++ [PEP8 Online](http://pep8online.com/) for checking Python code compliance
++ [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools) for testing, style checking and debugging
 
 ***
 
