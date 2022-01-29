@@ -91,7 +91,6 @@
                             <!-- Admin edit and delete -->
                             {% if request.user.is_superuser %}
                             <div class="text-center center-div pt-3">
-                                <!-- <a class="btn btn-outline-success mx-2" href="{% url 'edit_product' product.id %}">Edit</a> -->
                                 <a class="btn btn-outline-success mx-2" href="{% url 'edit_product' product.id %}"><i class="fa fa-edit"></i></a>
                                 <a class="btn btn-outline-danger" data-toggle="modal" data-target="#deleteProduct{{ product.id }}"><i class="fa fa-trash"></i></a>
                                 <div class="modal fade" id="deleteProduct{{ product.id }}" data-backdrop="static" tabindex="-1" aria-hidden="true">
