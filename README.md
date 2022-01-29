@@ -457,6 +457,19 @@ default_town_or_city, default_county, default_postcode and default_country
 - The model contains the following fields: user, product, product_rating, review_text, create_date
 
 ---
+
+# SEO
+
+In order to improve the sites search engine ranking two important files were added to the project :
+- A sitemap.xml file 
+This file was added to help speed up content discovery for search engines when they crawl and index the web applications.
+- A robots.txt file
+This fil was added to acknowledge that search engines are allowed on the site and that they may have free access to it.
+A robots.txt file is a simple text file that tells search engines where they are not allowed  
+to go on a website. It lists out any folders or files that will not be crawled or indexed by search engine spiders. 
+
+In a real world situation a sitemap should be registered with Google in the Google Search console. However as payments are required for this it was not actioned for this project.
+
 # Web Marketing
 
 ## Facebook Campagne
@@ -473,6 +486,26 @@ As Facebook is be a staple in any social media marketing strategy. A Facebook Bu
 
 <br>
 
+## Newsletter Marketing Campagne
+
+Mailchimp email marketing was used generate an email signup form for the footer. This free service allows the site owner to manage, run and analyse the success of their newsletter marketing campagne by following the simple steps on the mailchimp site to generate an email form.
+
+<br>
+
+<img alt="email_signup_form" src="readme/misc/email_signup.png" width="700">
+
+<br>
+
+## GDPR Considerations
+
+As this site is an ecommerce web application where payment information and other customer details will be colleced, consideration to data protection law has been given on this project. A privacy policy was generated [here](https://www.privacypolicygenerator.info/) and a link to privacy policy created has been provided on the footer.
+The purpose of this privacy policy is to inform site users about how their data is being collected and processed. 
+
+<br>
+
+<img alt="Privacy Policy" src="readme/misc/privacy_policy.png" width="700">
+
+<br>
 ---
 
 # Technologies Used
@@ -506,6 +539,13 @@ As Facebook is be a staple in any social media marketing strategy. A Facebook Bu
 + [Lighthouse](https://developers.google.com/web/tools/lighthouse) for performance review.
 + [Am I Responsive](http://ami.responsivedesign.is/) used to generate README intro image.
 + [favicon.io](https://favicon.io/) used to create a site favicon.
++ [facebook](https://www.facebook.com/The-Lady-Goldsmith-106978708561394/?ref=pages_you_manage) used to create a facebook business page.
++ [mailchimp](https://mailchimp.com//) used to create a newsletter marketing campagne.
++ [Privacy Policy](https://www.privacypolicygenerator.info/) used to generate a privacy policy generator.
++ [GDPR](https://gdpr.eu/what-is-gdpr/) 
+
+
+
 
 ## General Resources
 
