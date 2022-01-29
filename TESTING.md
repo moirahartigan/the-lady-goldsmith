@@ -238,7 +238,7 @@ wishlist/templates/wishlist/wishlist.html | 97 | 100 | 87 | 90 ||
 ---
 + *easily recover my password if I forget it so I can regain access to my account information.*
 
-<img alt="user story" src="readme/user_stories/signin.png" width="700">
+<img alt="user story" src="readme/user_stories/password_reset.png" width="700">
 
 ---
 + *have a personalized user profile so I can view my personal order history and save my payment information.*
@@ -258,13 +258,13 @@ wishlist/templates/wishlist/wishlist.html | 97 | 100 | 87 | 90 ||
 <img alt="user story" src="readme/user_stories/add_product.png" width="700">
 <br>
 Once the items have been uploaded, the admin will be able to edit/delete from the item detail page:
-
+<br>
 <img alt="user story" src="readme/user_stories/admin_buttons.png" width="700">
-
+<br>
 The edit button will open a form that is a replica of the add form but with the previous information populating the fields.
 To ensure that an item isn't deleted by mistake, a confirmation has been added to each item:
-
-<img alt="user story" src="readme/user_stories/delete_model.png" width="700">
+<br>
+<img alt="user story" src="readme/user_stories/delete_modal.png" width="700">
 
 ---
 + *Receive email notifications when a user submits through the contact page so I can respond to the customers query in a timely manor.*
