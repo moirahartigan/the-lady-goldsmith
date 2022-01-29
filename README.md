@@ -526,7 +526,6 @@ As Facebook is be a staple in any social media marketing strategy. A Facebook Bu
 + [PEP8 Online](http://pep8online.com/) for checking Python code compliance
 + [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools) for testing, style checking and debugging
 
-***
 
 <br>
 
@@ -540,6 +539,8 @@ As Facebook is be a staple in any social media marketing strategy. A Facebook Bu
 Due to the size of the testing section, I have created a separate document for it. You can find it [here](). 
 
 <br>
+
+---
 
 # APIs and configuration
 

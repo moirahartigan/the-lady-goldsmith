@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/accounts/signup/</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/accounts/login/</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/accounts/login/?next=/wishlist/view_product_wishlist/</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/bag/</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/products/</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/products/?sort=price&amp;direction=asc</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/products/?sort=rating&amp;direction=desc</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/products/?sort=category&amp;direction=asc</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/products/?category=necklaces,rings,earrings,bracelets,gift_cards</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/products/?category=necklaces</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/products/?category=rings</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/products/?category=earrings</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/products/?category=bracelets</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/contact/</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/products/sale_items</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/products/?category=earring</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/accounts/password/reset/</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fview_product_wishlist%2F</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/products/7/</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/accounts/login/?next=/wishlist/add_product_to_wishlist/7/</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/products/8/</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/accounts/login/?next=/wishlist/add_product_to_wishlist/8/</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/products/9/</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/accounts/login/?next=/wishlist/add_product_to_wishlist/9/</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/products/10/</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/accounts/login/?next=/wishlist/add_product_to_wishlist/10/</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/products/11/</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/accounts/login/?next=/wishlist/add_product_to_wishlist/11/</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/products/12/</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/accounts/login/?next=/wishlist/add_product_to_wishlist/12/</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/products/13/</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/accounts/login/?next=/wishlist/add_product_to_wishlist/13/</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/products/14/</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/accounts/login/?next=/wishlist/add_product_to_wishlist/14/</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/products/15/</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/accounts/login/?next=/wishlist/add_product_to_wishlist/15/</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/products/16/</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/accounts/login/?next=/wishlist/add_product_to_wishlist/16/</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/products/17/</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/accounts/login/?next=/wishlist/add_product_to_wishlist/17/</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/products/18/</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/accounts/login/?next=/wishlist/add_product_to_wishlist/18/</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/products/19/</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/accounts/login/?next=/wishlist/add_product_to_wishlist/19/</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/products/20/</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/accounts/login/?next=/wishlist/add_product_to_wishlist/20/</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/products/21/</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/accounts/login/?next=/wishlist/add_product_to_wishlist/21/</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/products/22/</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/accounts/login/?next=/wishlist/add_product_to_wishlist/22/</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/products/23/</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/accounts/login/?next=/wishlist/add_product_to_wishlist/23/</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/products/24/</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/accounts/login/?next=/wishlist/add_product_to_wishlist/24/</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/products/25/</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/accounts/login/?next=/wishlist/add_product_to_wishlist/25/</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/products/26/</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/accounts/login/?next=/wishlist/add_product_to_wishlist/26/</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/products/27/</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/accounts/login/?next=/wishlist/add_product_to_wishlist/27/</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/products/28/</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/accounts/login/?next=/wishlist/add_product_to_wishlist/28/</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/products/29/</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/accounts/login/?next=/wishlist/add_product_to_wishlist/29/</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/products/30/</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/accounts/login/?next=/wishlist/add_product_to_wishlist/30/</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/accounts/login/?next=%2Fwishlist%2Fview_product_wishlist%2F</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd_product_to_wishlist%2F7%2F</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd_product_to_wishlist%2F8%2F</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd_product_to_wishlist%2F9%2F</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd_product_to_wishlist%2F10%2F</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd_product_to_wishlist%2F11%2F</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd_product_to_wishlist%2F12%2F</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd_product_to_wishlist%2F13%2F</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd_product_to_wishlist%2F14%2F</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd_product_to_wishlist%2F15%2F</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd_product_to_wishlist%2F16%2F</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd_product_to_wishlist%2F17%2F</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd_product_to_wishlist%2F18%2F</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd_product_to_wishlist%2F19%2F</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd_product_to_wishlist%2F20%2F</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd_product_to_wishlist%2F21%2F</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd_product_to_wishlist%2F22%2F</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd_product_to_wishlist%2F23%2F</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd_product_to_wishlist%2F24%2F</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd_product_to_wishlist%2F25%2F</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd_product_to_wishlist%2F26%2F</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd_product_to_wishlist%2F27%2F</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd_product_to_wishlist%2F28%2F</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd_product_to_wishlist%2F29%2F</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd_product_to_wishlist%2F30%2F</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/accounts/login/?next=%2Fwishlist%2Fadd_product_to_wishlist%2F7%2F</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/accounts/login/?next=%2Fwishlist%2Fadd_product_to_wishlist%2F8%2F</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/accounts/login/?next=%2Fwishlist%2Fadd_product_to_wishlist%2F9%2F</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/accounts/login/?next=%2Fwishlist%2Fadd_product_to_wishlist%2F10%2F</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/accounts/login/?next=%2Fwishlist%2Fadd_product_to_wishlist%2F11%2F</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/accounts/login/?next=%2Fwishlist%2Fadd_product_to_wishlist%2F12%2F</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/accounts/login/?next=%2Fwishlist%2Fadd_product_to_wishlist%2F13%2F</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/accounts/login/?next=%2Fwishlist%2Fadd_product_to_wishlist%2F14%2F</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/accounts/login/?next=%2Fwishlist%2Fadd_product_to_wishlist%2F15%2F</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/accounts/login/?next=%2Fwishlist%2Fadd_product_to_wishlist%2F16%2F</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/accounts/login/?next=%2Fwishlist%2Fadd_product_to_wishlist%2F17%2F</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/accounts/login/?next=%2Fwishlist%2Fadd_product_to_wishlist%2F18%2F</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/accounts/login/?next=%2Fwishlist%2Fadd_product_to_wishlist%2F19%2F</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/accounts/login/?next=%2Fwishlist%2Fadd_product_to_wishlist%2F20%2F</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/accounts/login/?next=%2Fwishlist%2Fadd_product_to_wishlist%2F21%2F</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/accounts/login/?next=%2Fwishlist%2Fadd_product_to_wishlist%2F22%2F</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/accounts/login/?next=%2Fwishlist%2Fadd_product_to_wishlist%2F23%2F</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/accounts/login/?next=%2Fwishlist%2Fadd_product_to_wishlist%2F24%2F</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/accounts/login/?next=%2Fwishlist%2Fadd_product_to_wishlist%2F25%2F</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/accounts/login/?next=%2Fwishlist%2Fadd_product_to_wishlist%2F26%2F</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/accounts/login/?next=%2Fwishlist%2Fadd_product_to_wishlist%2F27%2F</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/accounts/login/?next=%2Fwishlist%2Fadd_product_to_wishlist%2F28%2F</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/accounts/login/?next=%2Fwishlist%2Fadd_product_to_wishlist%2F29%2F</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://ecommerce-pp5.herokuapp.com/accounts/login/?next=%2Fwishlist%2Fadd_product_to_wishlist%2F30%2F</loc>
+  <lastmod>2022-01-29T15:46:03+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+
+
+</urlset>
