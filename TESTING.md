@@ -126,20 +126,20 @@ manage.py | No errors/warnings
 ### Desktop
 Page  | Performance (%) | Accessibility (%) | Best Practices (%) | SEO (%)
 ------------  | ------------ | ------------- | ------------- | -------------
-bag/templates/bag/bag.html | 96 | 93 | 90 | 89 |
-checkout/templates/checkout/checkout.html | 82 | 100 | 80 | 100 |
-checkout/templates/checkout/checkout_success.html | 95 | 100 | 87 | 100 ||
-contact/templates/contact/contact.html | 95 | 100 | 87 | 100 |
-home/templates/home/index.html | 90 | 94 | 87 | 90 ||
-products/templates/products/add_product.html | 94 | 92 | 87 | 100 |
-products/templates/products/edit_product.html | 97 | 92 | 87 | 100 |
-products/templates/products/product_detail.html | 96 | 100 | 80 | 100 |
-products/templates/products/products.html  | 96 | 100 | 87 | 100 |
-products/templates/products/sale_items.html | 96 | 100 | 87 | 100 |
-profile/templates/profile/profile.html | 97 | 100 | 87 | 100 |
-templates/allauth/account/login.html | 94 | 100 |87 | 100 |
-templates/allauth/account/logout.html | 93 | 100 | 87 | 100 |
-templates/allauth/account/register.html | 98| 100 | 87 | 100 |
+bag/templates/bag/bag.html | 98 | 93 | 93 | 100 |
+checkout/templates/checkout/checkout.html | 90 | 94 | 93 | 100 |
+checkout/templates/checkout/checkout_success.html | 97 | 93 | 93 | 100 ||
+contact/templates/contact/contact.html | 98 | 93 | 93 | 100 |
+home/templates/home/index.html | 90 | 94 | 93 | 100 ||
+products/templates/products/add_product.html | 98 | 84 | 93 | 89 |
+products/templates/products/edit_product.html | 98 | 85 | 87 | 90 |
+products/templates/products/product_detail.html | 93 | 77 | 87 | 90 |
+products/templates/products/products.html  | 73 | 93 | 87 | 90 |
+products/templates/products/sale_items.html | 96 | 93 | 93 | 100 |
+profile/templates/profile/profile.html | 94 | 93 | 93 | 89 |
+templates/allauth/account/login.html | 97 | 93 |93 | 100 |
+templates/allauth/account/logout.html | 99 | 93 | 93 | 100 |
+templates/allauth/account/register.html | 98| 93 | 93 | 100 |
 wishlist/templates/wishlist/wishlist.html | 97 | 100 | 87 | 90 |
 
 ### Mobile
