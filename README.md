@@ -48,16 +48,15 @@ The primary goal of The lady Goldsmith is to enable users to purchase jewellery 
 3. As a Shopper I want to be able to view individual product details so I can identify the price, product description, rating and images.
 4. As a Shopper I want to add products to my Wishlist so I can keep track of the items I like the most for a future site visit.
 5. As a Shopper I want to view my cart and any items I currently have awaiting payment in my bag so I can avoid spending too much.
-12. As a Shopper I want to be able to view items in my shopping cart to be purchased so I can identify the total cost of my purchase and all the items I will receive.
-13. As a Shopper I want to easily enter my payment information so I can checkout quickly and with no issues
-
-6. As a Shopper I want to Easily register an account so I can have a personal account and view my profile.
-7. As a Shopper I want to have the ability to log in to the site so I can access my personal details.
-8. As a Shopper I want to easily recover my password if I forget it so I can regain access to my account information.
-9. As a Shopper I want to receive email confirmation after registering so I can verify that my account registration was successful.
-10. As a Shopper I want to have a personalized user profile so I can view my personal order history and save my payment information.
-11. As a Shopper I want to be able to use the search option so I can search the site for specific keywords.
-3. As a Shopper I want to receive email notifications when a user submits through the contact page so I can respond to the customers query in a timely manor.
+6. As a Shopper I want to be able to view items in my shopping cart to be purchased so I can identify the total cost of my purchase and all the items I will receive.
+7. As a Shopper I want to easily enter my payment information so I can checkout quickly and with no issues.
+8. As a Shopper I want to Easily register an account so I can have a personal account and view my profile.
+9. As a Shopper I want to have the ability to log in to the site so I can access my personal details.
+10. As a Shopper I want to easily recover my password if I forget it so I can regain access to my account information.
+11. As a Shopper I want to receive email confirmation after registering so I can verify that my account registration was successful.
+12. As a Shopper I want to have a personalized user profile so I can view my personal order history and save my payment information.
+13. As a Shopper I want to be able to use the search option so I can search the site for specific keywords.
+14. As a Shopper I want to receive email notifications when a user submits through the contact page so I can respond to the customers query in a timely manor.
 
 **As an Administrative Account holder, I want to:**
 
