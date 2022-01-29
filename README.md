@@ -260,10 +260,118 @@ With a user profile:
 + Save default delivery information to their profile from the checkout page.
 + Update default delivery information to their profile from their profile page.
 
----      
+---  
+
+### **Products Page**
+
+All users can browse through the available products.
+Products can be sorted by:
++ Price
++ Rating
++ Category
++ All Products
+
+All users can shop by category under the following categories:
+
++ Shop:
+   + View all
+   + Necklaces
+   + Rings
+   + Earrings
+   + Bracelets
+
+If a user wants to know more about a product, they can click it and open the product detail page.
+
+---
+
+### **Product Details Page**
+
+From the product detail page, the user can view:
++ Product name
++ Product price
++ Product category
++ Product color
++ Product rating 
++ Product description 
++ Delivery and Returns info
+
+The user can can then either go back to the products page, add a single item to ther bag or adjust the quantity to add to the bag
+
+---
+### **Admin CRUD functionality**
+
+As well as all of the above features(read), the admin can add, edit and delete products from the site - they don't have to visit the admin panel for this. 
++ Add(*Create*): 
+From the 'My Account' dropdown, the admin can choose 'Product Management'. This allows them to create the item by filling in the form.
+
++ Edit(*Update*): 
+From the item detail page, the admin has an edit button that will direct them to the edit page. All of the form fields wil be populated with the item information that can then be updated and saved. 
+
++ Delete(*Delete*)
+From the item detail page, the admin has a delete button that will trigger a confirmation modal. Once the admin confirms deletion, the item will be removed from the database
+
+---
+
+### **Wishlist**
+
+A user can open the Wishlist page at any point and see what items thay have in there. 
+
+From here a user can remove items from the wishlist and access the product detail. 
+
+---
+
+### **Bag**
+
+A user can open the bag page at any point and see what items thay have in there. 
+
+From here a user can update product quantities, remove items from the bag or access the checkout page. 
+
+---
+
+### **Checkout**
+
+The checkout page allows the user to:
++ use their default delivery address(if they have an account, are logged in and have saved those details)
++ input new delivery information if needed.
++ update their profile with the inputted delivery information(if they have an account and are logged in)
++ Pay via Stripe for secure payments
++ A loading screen will appear when a payment is being processed to stop the user clicking away
++ If the payment form doesn't submit properly or the user closes the browser during the wait animation, Stripe will still create the order for the user. 
++ An email wil be sent to the user with their order confirmation
+
+---
+
+### **Contact page**
+
+The user can fill out a contact form and send a message to the site admin. This will send an email directly to the admin's email rather than to the admin console. 
+
+---
+
+### **Toasts**
+
+There are four types of toasts that are displayed to the user when specific actions happen. This keeps the user informed about what is happening when it happens. The toasts are:
+
++ Success
+   + When a user sucessfuly signs in/signs out
+   + When a user adds a product to a bag
+   + When the user adds a product to their wishlist
+   + When an admin adds/edits items
++ Info
+   + When a user is viewing previous order details
++ Warning
+   + Stripe key not found 
++ Error
+   + When a user is trying to access a page they are not autorized to
+   + When an admin's CRUD action fails
+
+*These are just a few examples*
+
+---
 
 ## Features to Implement in the future 
 + Users ability to delete their account.
++ A choice of currency selector so a user can shop in their home currency.
++ Alternative payment options such as paypal or amazon pay.
 + An online booking service where shoppers can book a time to come into store to try on particular item, 
 given the current covid environment this would be a very useful feature.
 <br>
@@ -336,6 +444,13 @@ default_town_or_city, default_county, default_postcode and default_country
 ###
 
 # Technologies Used
+
+## Languages
+
++ [HTML5](https://en.wikipedia.org/wiki/HTML5)
++ [CSS3](https://en.wikipedia.org/wiki/CSS)
++ [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
++ [Python3](https://www.python.org/)
 
 - [Django3](https://www.djangoproject.com/) framework
 - [HTML5](https://en.wikipedia.org/wiki/HTML) for markup
