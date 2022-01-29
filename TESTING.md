@@ -6,7 +6,7 @@
 + [Manually Testing Functionality](#manually-testing-functionality)
 + [Responsive Testing](#responsive-testing)
 + [Bugs and Fixes](#bugs-and-fixes)
-+ [Known Bugs](#known-bugs)
+
 ---
 ---
 
@@ -678,7 +678,23 @@ To ensure that an item isn't deleted by mistake, a confirmation has been added t
 [^ back to top ^](#contents)
 
 # Responsive Testing
-
+Through devices that I have at home/readily available to me, I was able to continuously test on:
+### Phone:
++ Samsung Galaxy S9
+  + Google Chrome
+  + Samsung Internet
++ iPhone 5
+  + Safari
+### Tablet
++ iPad 9.7"
+  + Safari
+### Computer
+* Dell 27" Monitor
+  * Google Chrome
+  * Microsoft Edge
+* Dell 20" Monitor 
+  * Google Chrome
+  * Microsoft Edge
 
 <br>
 
@@ -686,16 +702,24 @@ To ensure that an item isn't deleted by mistake, a confirmation has been added t
 
 # Bugs and Fixes
 
+### **Pylint & Flake8 Errors**
 
+When refactoring the code I was able to reduce all but one of the pylint erros that were in the code. 
 
++ *line too long*
 
+In the code that I have written, I have followed the line length rule. However, in the products views file on line 54, i could not break the line length without breaking the code.
+I have left it error in place for that reason.
 
-<br>
+### **Duplicate ID Issue**
 
-[^ back to top ^](#contents)
+When validating the HTML I had an issues with duplicate ID's:
 
-# Known Bugs
++ *Duplicate ID*
 
+Because there are two versions of the nav bar for mobile vs desktop, I had duplicated the samw one twice. I updated the ID in the mobile top header file and made sure to update the aria-labledby attr too.
+
+When I re-ran the HTML, it validated.
 
 <br>
 
