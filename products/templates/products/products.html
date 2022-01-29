@@ -144,27 +144,6 @@
     </div>
     <!-- end of products row -->
 </div>
-<!-- pagination -->
-<div class="row no-gutters">
-    <div class="col-lg-12 offset-3 offset-md-4 offset-lg-5">
-        <nav aria-label="Page navigation">
-            <ul class="pagination">
-                {% if page.has_previous %}
-                <li class="page-item">
-                    <a href="{% url 'products' %}?page={{ page.previous_page_number }}" class="page-link">&#8592;
-                        Previous</a>
-                </li>
-                {% endif %}
-                <li class="page-link">{{ page.number }}</li>
-                {% if page.has_next %}
-                <li class="page-item">
-                    <a href="{% url 'products' %}?page={{ page.next_page_number }}" class="page-link">Next &#8594;</a>
-                </li>
-                {% endif %}
-            </ul>
-        </nav>
-    </div>
-</div>
 <div class="btt-button shadow-sm rounded-0 border border-black">
     <a class="btt-link d-flex h-100">
         <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>

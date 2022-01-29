@@ -129,17 +129,13 @@ To achieve user and owner’s goals, above are the minimum features to be includ
 <br>
 <br>![404](readme/misc/404_page.png)
 
-> **Note:**<br>
-> 
-
 ## Structure
 
 ### **Front end pages** 
 
-The website consists of a **Home** page with 16 other core pages**.
+The website consists of the following core pages:
 
 - **Home** (`index.html`)<br>The landing page of the website. 
-
 - **All Products** (`products.html`)<br> The page where users can view all the products available.
 - **Product Detail** (`product_detail.html`)<br> The page where users can view each product description and additional information.
 - **Add Product** (`add_product.html`)<br> The page were the site owner can add a new product to the site.
