@@ -1,6 +1,6 @@
 # The Lady Goldsmith
 ## **Code Institute - Portfolio Project 5: _E-commerce Application_** 
-The Lady Goldsmith! is an online e-commerce fine jewellery store. This site was developed  for my portfolio 5 project as part of the Code Institute - Full Stack Diploma in Software Development (ecommerce) course.
+The Lady Goldsmith! is an online e-commerce fine jewellery store. This site was developed for my portfolio 5 project as part of the Code Institute - Full Stack Diploma in Software Development (ecommerce) course.
  <br>
 
 ## Demo
@@ -28,6 +28,10 @@ The Lady Goldsmith! is an online e-commerce fine jewellery store. This site was 
      + [Features to Implement in the future](#Features-to-Implement-in-the-future)
 + [Database](#Database)
 + [Web Marketing](#Web-Marketing)
+     + [SEO](#SEO)
+     + [Facebook Campaign](#Facebook-Campaign)
+     + [Newsletter Marketing Campaign](#Making-a-Local-Clone)
+     + [GDPR Considerations](#GDPR-Considerations)
 + [Technologies Used](#Technologies-Used)
      + [General Resources](#General-Resources)
      + [Tools](#Tools)
@@ -35,14 +39,14 @@ The Lady Goldsmith! is an online e-commerce fine jewellery store. This site was 
 + [APIs and configuration](#APIs-and-configuration)
 + [Deployment](#Deployment)
      + [Heroku Deployment](#Heroku-Deployment)
-     + [Forking the Repository](#Forking-the-Repository)
+     + [Forking the Repository](#Forking-the-Repository)     
      + [Making a Local Clone](#Making-a-Local-Clone)
 + [Credits](#Credits)
 
 ***
 # User Experience
 ## Project Goals
-The primary goal of The lady Goldsmith is to enable users to purchase jewellery through an fully functional ecommerce website. The goal for the design was to make it as easy as possible to access information, while striving for a minimalist and user-friendly layout.
+The primary goal of The lady Goldsmith is to enable users to purchase jewellery through an fully functional, ecommerce website. The business model for the basis of this project is a Business to Consumer (B2C) model. The goal for the design was to make it as easy as possible to access information, while striving for a minimalist and user-friendly layout. Furthermore, this application has been designed so that its contents can be adjusted quickly and adapt to new customer needs, without causing delays in service. This has been achieved through the use of both front and back-end CRUD functionality, for the administrator of the site.
 
 ## User Stories
 
@@ -76,6 +80,7 @@ The primary goal of The lady Goldsmith is to enable users to purchase jewellery 
 <br>
 
 [^ back to top ^](#Table-of-contents)
+
 <br>
 
 ## Strategy
@@ -117,6 +122,7 @@ Below are the additional functions that can improve the website, however, these 
 <br>
 
 [^ back to top ^](#Table-of-contents)
+
 <br>
 
 
@@ -460,7 +466,15 @@ default_town_or_city, default_county, default_postcode and default_country
 
 ---
 
-# SEO
+<br>
+
+[^ back to top ^](#Table-of-contents)
+
+<br>
+
+# Web Marketing
+
+## SEO
 
 In order to improve the sites search engine ranking two important files were added to the project :
 - A sitemap.xml file 
@@ -472,7 +486,6 @@ to go on a website. It lists out any folders or files that will not be crawled o
 
 In a real world situation a sitemap should be registered with Google in the Google Search console. However as payments are required for this it was not actioned for this project.
 
-# Web Marketing
 
 ## Facebook Campaign
 
@@ -507,7 +520,13 @@ The purpose of this privacy policy is to inform site users about how their data 
 
 <img alt="Privacy Policy" src="readme/misc/privacy_policy.png" width="700">
 
+
 <br>
+
+[^ back to top ^](#Table-of-contents)
+
+<br>
+
 ---
 
 # Technologies Used
@@ -793,6 +812,7 @@ Heroku needs to know which technologies are being used and any requirements, so 
 <br>
 
 [^ back to top ^](#Table-of-contents)
+
 <br>
 
 ---
