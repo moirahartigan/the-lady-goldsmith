@@ -204,45 +204,6 @@ def add_review(request, product_id):
 
 
 @login_required
-def edit_review(request, review_id):
-    """
-    Edit exisiting review
-    """
-
-    review = get_object_or_404(Review, pk=review_id)
-    product = review.product
-    if request.user != review.user:
-        messages.error(request, (
-                                'You have no permission to access this page'
-                                ))
-        return redirect('product_detail')
-    if request.method == 'POST':
-        review_form = ProductReviewForm(request.POST, instance=review)
-
-        if review_form.is_valid():
-            review = review_form.save(commit=False)
-            review.user = request.user
-            review.product = product
-            review.save()
-            messages.success(request, 'Successfully updated your review!')
-            return redirect(reverse('product_detail', args=[product.id]))
-        else:
-            messages.error(request, 'Failed to update product review')
-    else:
-        review_form = ProductReviewForm(instance=review)
-        messages.info(request, 'You are editing your review for ' +
-                      f'{review.product.name}')
-
-    template = 'products/edit_review.html'
-    context = {
-        'review_form': review_form,
-        'review': review,
-    }
-
-    return render(request, template, context)
-
-
-@login_required
 def delete_review(request, product_id, review_user):
     """
     A view to delete a review to a product

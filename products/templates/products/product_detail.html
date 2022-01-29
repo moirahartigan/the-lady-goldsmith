@@ -202,9 +202,6 @@
                                         </div>
                                     </div>
                                     {% endif %}
-                                    {% if review.user == request.user %}
-                                    <a class="btn edit2 btn-success" href="{% url 'edit_review' review.id %}">Edit</a>
-                                    {% endif %}
                                 </div>
                                 {% endfor %}
                             </div>
