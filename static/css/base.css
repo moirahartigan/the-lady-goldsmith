@@ -218,7 +218,6 @@ a.category-badge>span.badge:hover {
 }
 
 .signin-container {
-    padding: 50px 10px;
     width: 100%;
 }
 
@@ -510,7 +509,7 @@ input[name='q']::placeholder {
     }
 
     .register-container {
-        margin: 101px 0px 113px 0;
+        margin: 40px 0px 113px 0;
     }
 
     .signin-container {
