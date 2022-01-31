@@ -17,6 +17,12 @@ The Lady Goldsmith! is an online e-commerce fine jewellery store. This site was 
      + [Project Goals](#Project-Goals)
      + [User Stories](#User-Stories)
      + [Strategy](#Strategy)
+         + [Project Planning](#Project-planning)
+         + [Web Marketing](#Web-Marketing)
+            + [Facebook Campaign](#Facebook-Campaign)
+            + [Newsletter Marketing Campaign](#Making-a-Local-Clone)
+         + [SEO](#SEO)
+         + [GDPR Considerations](#GDPR-Considerations)
      + [Scope](#Scope)
      + [Structure](#Structure)
           + [Front end Pages](Front-end-Pages)
@@ -27,11 +33,6 @@ The Lady Goldsmith! is an online e-commerce fine jewellery store. This site was 
      + [Existing Features](#Existing-Features)
      + [Features to Implement in the future](#Features-to-Implement-in-the-future)
 + [Database](#Database)
-+ [Web Marketing](#Web-Marketing)
-     + [SEO](#SEO)
-     + [Facebook Campaign](#Facebook-Campaign)
-     + [Newsletter Marketing Campaign](#Making-a-Local-Clone)
-     + [GDPR Considerations](#GDPR-Considerations)
 + [Technologies Used](#Technologies-Used)
      + [General Resources](#General-Resources)
      + [Tools](#Tools)
@@ -46,7 +47,7 @@ The Lady Goldsmith! is an online e-commerce fine jewellery store. This site was 
 ***
 # User Experience
 ## Project Goals
-The primary goal of The lady Goldsmith is to enable users to purchase jewellery through an fully functional, ecommerce website. The business model for the basis of this project is a Business to Consumer (B2C) model. The goal for the design was to make it as easy as possible to access information, while striving for a minimalist and user-friendly layout. Furthermore, this application has been designed so that its contents can be adjusted quickly and adapt to new customer needs, without causing delays in service. This has been achieved through the use of both front and back-end CRUD functionality, for the administrator of the site.
+The primary goal of The lady Goldsmith is to enable users to purchase jewellery through an fully functional, ecommerce website. The business model for the basis of this project is a Business to Consumer (B2C) model. The goal for the design was to make it as easy as possible to access information and make an online purchase, while striving for a minimalist and user-friendly layout. Furthermore, this application has been designed so that its contents can be adjusted quickly and adapt to new customer needs, without causing delays in service. This has been achieved through the use of both front and back-end CRUD functionality, for the administrator of the site.
 
 ## User Stories
 
@@ -125,6 +126,63 @@ Below are the additional functions that can improve the website, however, these 
 
 <br>
 
+### — Web Marketing —
+<br>
+
+#### **Facebook Campaign**
+<br>
+
+As Facebook is be a staple in any social media marketing strategy. A Facebook Business Page was created for my site and the facebook social link on the footer will bring a user directly here. 
+
+<br>
+
+**View the Live Website [Here](https://www.facebook.com/The-Lady-Goldsmith-106978708561394/?ref=pages_you_manage)**
+
+<br>
+
+<img alt="Facebook Business Page" src="readme/misc/fb_page.png" width="700">
+
+<br>
+
+#### **Newsletter Marketing Campaign**
+
+<br>
+
+Mailchimp email marketing was used generate an email signup form for the footer. This free service allows the site owner to manage, run and analyse the success of their newsletter marketing campaign by following the simple steps on the mailchimp site to generate an email form.
+
+<br>
+
+<img alt="email_signup_form" src="readme/misc/email_signup.png" width="700">
+
+<br>
+
+### — SEO —
+
+In order to improve the sites search engine ranking two important files were added to the project :
+- A sitemap.xml file 
+This file was added to help speed up content discovery for search engines when they crawl and index the web applications.
+- A robots.txt file
+This fil was added to acknowledge that search engines are allowed on the site and that they may have free access to it.
+A robots.txt file is a simple text file that tells search engines where they are not allowed  
+to go on a website. It lists out any folders or files that will not be crawled or indexed by search engine spiders. 
+
+In a real world situation a sitemap should be registered with Google in the Google Search console. However as payments are required for this it was not actioned for this project.
+
+### — GDPR Considerations —
+
+As this site is an ecommerce web application where payment information and other customer details will be collected, consideration to data protection law has been given on this project. A privacy policy was generated [here](https://www.privacypolicygenerator.info/) and a link to privacy policy created has been provided on the footer.
+The purpose of this privacy policy is to inform site users about how their data is being collected and processed. 
+
+<br>
+
+<img alt="Privacy Policy" src="readme/misc/privacy_policy.png" width="700">
+
+<br>
+
+**View Privacy Policy [Here](https://www.privacypolicygenerator.info/live.php?token=BcTNhoYRILhUngJywBOyki3kdo9zluNl)**
+
+<br>
+
 
 ## Scope
 
@@ -144,7 +202,7 @@ To achieve user and owner’s goals, above are the minimum features to be includ
 
 ## Structure
 
-### **Front end pages** 
+### **— Front end pages —** 
 
 The website consists of the following core pages:
 
@@ -177,7 +235,7 @@ The website consists of the following core pages:
 
 It is a mobile-first website because people want to be able to shop online from anywhere, and have access on the go, so a good mobile-first design helps users whose main purpose is shop on the go and from anywhere, not just from their pc.
 
-### Wireframes
+### **— Wireframes —**
 
 - [Wireframes: Home](https://github.com/moirahartigan/the-lady-goldsmith/blob/main/readme/wireframes/home_page.png)
 - [Wireframes: All Products](https://github.com/moirahartigan/the-lady-goldsmith/blob/main/readme/wireframes/products_page.png)
@@ -197,7 +255,7 @@ It is a mobile-first website because people want to be able to shop online from 
 
 ## Surface
 
-— **Colour** —
+ **Colour** 
 
 While white is the main colour for the site and will be utilized as much as possible, I chose accent colours that I thought would not be overwhelming and add an elegance to it.
 
@@ -209,7 +267,7 @@ While white is the main colour for the site and will be utilized as much as poss
 
 The colours are muted and quite neutral so as to not overwhelm the user.
 
-— **Typography** —
+ **Typography** 
 
 * As a main font I used Poppins, and as a backup font sans-serif
 * On the logo text I used Lora and sans-serif as backup font
@@ -248,13 +306,13 @@ The navigation buttons update depending on whether a user is logged in, and whet
 |Contact Us                |&#9989;        |&#9989;          |&#9989;
 |Sale                     |&#9989;        |&#9989;          |&#9989;
 
-### **User registration not required**
+### **— User registration not required —**
 
 It was important that the user was given the option to purchase from the store without having to register for an account. It's a personal pet peeve of mine to have to make accounts on online stores when I'm not guaranteed to go back again and Jewellery isn't necessarily a regular purchase. 
 
 Even if a user doesn't have an account, they are still able to purchase, input a delivery address and have a confirmation email sent to them when they have completed a purchase. 
 
-### **User profile creation**
+### **— User profile creation —**
 
 A user has an option to create an account if they want to. 
 Registration process:
@@ -279,7 +337,7 @@ With a user profile:
 
 ---  
 
-### **Products Page**
+### **— Products Page —**
 
 All users can browse through the available products.
 Products can be sorted by:
@@ -301,7 +359,7 @@ If a user wants to know more about a product, they can click it and open the pro
 
 ---
 
-### **Product Details Page**
+### **— Product Details Page —**
 
 From the product detail page, the user can view:
 + Product name
@@ -315,7 +373,7 @@ From the product detail page, the user can view:
 The user can then either go back to the products page, add a single item to their bag or adjust the quantity to add to the bag
 
 ---
-### **Admin CRUD functionality**
+### **— Admin CRUD functionality —**
 
 As well as all of the above features(read), the admin can add, edit and delete products from the site - they don't have to visit the admin panel for this. 
 + Add(*Create*): 
@@ -329,7 +387,7 @@ From the item detail page, the admin has a delete button that will trigger a con
 
 ---
 
-### **Wishlist**
+### **— Wishlist —**
 
 - A user can open the Wishlist page at any point and see what items they have in there. 
 
@@ -337,7 +395,7 @@ From the item detail page, the admin has a delete button that will trigger a con
 
 ---
 
-### **Bag**
+### **— Bag —**
 
 - A user can open the bag page at any point and see what items they have in there. 
 
@@ -345,7 +403,7 @@ From the item detail page, the admin has a delete button that will trigger a con
 
 ---
 
-### **Checkout**
+### **— Checkout —**
 
 The checkout page allows the user to:
 + use their default delivery address(if they have an account, are logged in and have saved those details)
@@ -358,13 +416,13 @@ The checkout page allows the user to:
 
 ---
 
-### **Contact page**
+### **— Contact page —**
 
 The user can fill out a contact form and send a message to the site admin. This will send an email directly to the admin's email rather than to the admin console. 
 
 ---
 
-### **Toasts**
+### **— Toasts —**
 
 There are four types of toasts that are displayed to the user when specific actions happen. This keeps the user informed about what is happening when it happens. The toasts are:
 
@@ -466,62 +524,6 @@ default_town_or_city, default_county, default_postcode and default_country
 
 ---
 
-<br>
-
-[^ back to top ^](#Table-of-contents)
-
-<br>
-
-# Web Marketing
-
-## SEO
-
-In order to improve the sites search engine ranking two important files were added to the project :
-- A sitemap.xml file 
-This file was added to help speed up content discovery for search engines when they crawl and index the web applications.
-- A robots.txt file
-This fil was added to acknowledge that search engines are allowed on the site and that they may have free access to it.
-A robots.txt file is a simple text file that tells search engines where they are not allowed  
-to go on a website. It lists out any folders or files that will not be crawled or indexed by search engine spiders. 
-
-In a real world situation a sitemap should be registered with Google in the Google Search console. However as payments are required for this it was not actioned for this project.
-
-
-## Facebook Campaign
-
-As Facebook is be a staple in any social media marketing strategy. A Facebook Business Page was created for my site and the facebook social link on the footer will bring a user directly here. 
-
-<br>
-
-**View the Live Website [Here](https://www.facebook.com/The-Lady-Goldsmith-106978708561394/?ref=pages_you_manage)**
-
-<br>
-
-<img alt="Facebook Business Page" src="readme/misc/fb_page.png" width="700">
-
-<br>
-
-## Newsletter Marketing Campaign
-
-Mailchimp email marketing was used generate an email signup form for the footer. This free service allows the site owner to manage, run and analyse the success of their newsletter marketing campaign by following the simple steps on the mailchimp site to generate an email form.
-
-<br>
-
-<img alt="email_signup_form" src="readme/misc/email_signup.png" width="700">
-
-<br>
-
-## GDPR Considerations
-
-As this site is an ecommerce web application where payment information and other customer details will be collected, consideration to data protection law has been given on this project. A privacy policy was generated [here](https://www.privacypolicygenerator.info/) and a link to privacy policy created has been provided on the footer.
-The purpose of this privacy policy is to inform site users about how their data is being collected and processed. 
-
-<br>
-
-<img alt="Privacy Policy" src="readme/misc/privacy_policy.png" width="700">
-
-
-<br>
 
 [^ back to top ^](#Table-of-contents)
 
